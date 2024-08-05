@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+  }
+
+/* #banner{
+  scroll-margin-top: 120px;
+}
+
+#evaluation{
+  scroll-margin-top: 120px;
+}
+
+#pricing{
+  scroll-margin-top: 120px;
+}
+
+#solutions{
+  scroll-margin-top: 120px;
+}
+
+#services{
+  scroll-margin-top: 120px;
+}
+ */
