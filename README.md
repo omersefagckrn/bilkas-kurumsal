@@ -1,7 +1,3 @@
-Sure, here’s a more engaging README template for your React + Vite project:
-
----
-
 # 🚀 React + Vite Boilerplate
 
 Welcome to the ultimate React + Vite boilerplate! This setup provides a blazing fast development environment with Hot Module Replacement (HMR) and a robust set of ESLint rules to keep your code clean and error-free.
