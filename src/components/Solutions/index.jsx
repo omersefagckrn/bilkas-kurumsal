@@ -10,15 +10,12 @@ const Solutions = () => {
 	const fadeVariant = {
 		hidden: { opacity: 0, scale: 0.8 },
 		visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'easeOut' } },
-		exit: { opacity: 0, scale: 0.8, transition: { duration: 0.5, ease: 'easeIn' } }
-	};
-
-	const hoverVariant = {
+		exit: { opacity: 0, scale: 0.8, transition: { duration: 0.5, ease: 'easeIn' } },
 		hover: { scale: 1.05, transition: { duration: 0.3 } }
 	};
 
 	return (
-		<section id='solutions' className='py-12 select-none'>
+		<section id='solutions' className='py-12 bg-gray-50'>
 			<motion.div className='container mx-auto px-4' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
 				<div className='text-center mb-12'>
 					<h2 className='text-3xl font-semibold mb-2'>Çalışmalarımız</h2>
@@ -41,7 +38,7 @@ const Solutions = () => {
 						{filteredWorks.map((work) => (
 							<motion.div
 								key={work.id}
-								className='bg-white p-4 rounded-lg shadow-md flex flex-col justify-between cursor-pointer'
+								className='bg-white p-4 rounded-xl flex flex-col justify-between cursor-pointer shadow-md'
 								variants={fadeVariant}
 								initial='hidden'
 								animate='visible'
@@ -49,7 +46,7 @@ const Solutions = () => {
 								whileHover='hover'
 								transition={{ duration: 0.5 }}
 							>
-								<motion.img src={work.image} alt={work.title} className='rounded-lg mb-2 object-contain' variants={hoverVariant} />
+								<img src={work.image} alt={work.title} className='rounded-lg mb-2 object-contain' />
 								<h3 className='text-lg font-semibold mb-2'>{work.title}</h3>
 								<p className='text-gray-600 text-sm'>{work.description}</p>
 							</motion.div>

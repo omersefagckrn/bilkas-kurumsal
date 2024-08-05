@@ -25,7 +25,7 @@ const Footer = () => {
 
 	return (
 		<>
-			<footer id='contact' className='text-black pt-16 pb-4 select-none'>
+			<footer id='contact' className='text-black bg-gray-50 pt-16 pb-4'>
 				<div className='container mx-auto w-full'>
 					<div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-0'>
 						<motion.div
@@ -44,7 +44,7 @@ const Footer = () => {
 									müşterilerimize en kaliteli ürünleri sunmayı hedefliyoruz.
 								</div>
 							</div>
-							<div className='pt-10 lg:mt-0'>
+							<div className='pt-10 lg:mt-0 hidden lg:block'>
 								<Logo />
 							</div>
 						</motion.div>

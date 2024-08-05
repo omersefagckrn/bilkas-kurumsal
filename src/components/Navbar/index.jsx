@@ -7,6 +7,7 @@ import { KURUMSAL_INSTAGRAM, KURUMSAL_LINKEDIN, KURUMSAL_TIKTOK, NAV_MENU_ITEMS 
 import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import Logo from '../Logo';
+import { BiSolidOffer } from 'react-icons/bi';
 
 const Navbar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -72,7 +73,7 @@ const Navbar = () => {
 							<IoMailOutline className='mr-2' />
 							<span>info@zedtech.net</span>
 						</div>
-						<div className='flex items-center space-x-4 select-none'>
+						<div className='flex items-center space-x-4'>
 							<a target='_blank' href={KURUMSAL_INSTAGRAM} aria-label='Instagram'>
 								<FaInstagram size={16} />
 							</a>
@@ -103,8 +104,9 @@ const Navbar = () => {
 								</a>
 							))}
 						</div>
-						<a href='#' className='ml-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium'>
-							Teklif Al
+						<a href='#' className='ml-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center'>
+							<div>Teklif Al</div>
+							<BiSolidOffer className='text-white font-bold' size={16} />
 						</a>
 					</div>
 					<div className='flex md:hidden'>

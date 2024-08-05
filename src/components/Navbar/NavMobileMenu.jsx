@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { NAV_MENU_ITEMS } from '../../constants';
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
+import { BiSolidOffer } from 'react-icons/bi';
 
 const variants = {
 	open: {
@@ -51,7 +52,7 @@ const NavMobileMenu = ({ isOpen, onClose }) => {
 					</a>
 				))}
 				<a href='#' className='bg-white text-primary px-6 py-3 rounded-full text-2xl font-medium' onClick={onClose}>
-					Teklif Al
+					Teklif Al <BiSolidOffer />
 				</a>
 			</div>
 		</motion.div>
