@@ -6,7 +6,7 @@ import { plans } from '../../constants';
 const fadeIn = {
 	hidden: { opacity: 0, y: 50 },
 	visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-	hover: { scale: 1.1, rotate: 5, transition: { duration: 0.3 } }
+	hover: { scale: 1.05, transition: { duration: 0.3 } }
 };
 
 const PricingCard = ({ plan }) => {

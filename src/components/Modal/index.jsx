@@ -20,7 +20,6 @@ const Modal = ({ header, visible, onHide, children }) => {
 	);
 };
 
-// PropTypes tanımlamalarını ekliyoruz
 Modal.propTypes = {
 	header: PropTypes.string.isRequired,
 	visible: PropTypes.bool.isRequired,

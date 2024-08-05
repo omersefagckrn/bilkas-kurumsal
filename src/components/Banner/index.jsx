@@ -2,10 +2,22 @@ import { motion } from 'framer-motion';
 import BannerImg from '../assets/slide.png';
 
 const Banner = () => {
+	const fadeInLeft = {
+		initial: { opacity: 0, x: -50 },
+		animate: { opacity: 1, x: 0 },
+		transition: { duration: 0.5 }
+	};
+
+	const fadeInRight = {
+		initial: { opacity: 0, x: 50 },
+		animate: { opacity: 1, x: 0 },
+		transition: { duration: 0.5 }
+	};
+
 	return (
 		<div id='banner' className='container mx-auto w-full'>
 			<section className='flex flex-col md:flex-row items-center justify-between pt-24 pb-16 bg-white'>
-				<motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className='flex-1 mb-8 md:mb-0'>
+				<motion.div {...fadeInLeft} className='flex-1 mb-8 md:mb-0'>
 					<h2 className='text-primary font-semibold text-xl md:text-2xl mb-2'>Dijital Pazarlama&rsquo;nın Gücü ile</h2>
 					<h1 className='text-4xl md:text-6xl font-bold text-black leading-tight mb-4'>
 						Potansiyel müşterilerinize <span className='text-primary'>ulaşın!</span>
@@ -17,7 +29,7 @@ const Banner = () => {
 						Bize Ulaşın →
 					</a>
 				</motion.div>
-				<motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className='flex-1'>
+				<motion.div {...fadeInRight} className='flex-1'>
 					<img src={BannerImg} alt='Dijital Pazarlama' className='w-full h-auto' />
 				</motion.div>
 			</section>

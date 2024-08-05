@@ -9,7 +9,7 @@ import Banner from './components/Banner';
 
 const App = () => {
 	return (
-		<main className='flex flex-col min-h-screen select-none'>
+		<div className='flex flex-col min-h-screen select-none'>
 			<Navbar />
 			<div className='flex-grow pt-24'>
 				<Banner />
@@ -20,7 +20,7 @@ const App = () => {
 			</div>
 			<Footer />
 			<FixedIcons />
-		</main>
+		</div>
 	);
 };
 

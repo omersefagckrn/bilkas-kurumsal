@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import PropTypes from 'prop-types'; // prop-types'ı ekleyin
+import PropTypes from 'prop-types';
 import { FiCamera, FiPenTool, FiShare2 } from 'react-icons/fi';
 import { GiMagnifyingGlass } from 'react-icons/gi';
 import { LuCode2 } from 'react-icons/lu';
