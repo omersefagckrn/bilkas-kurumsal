@@ -51,8 +51,9 @@ const NavMobileMenu = ({ isOpen, onClose }) => {
 						{item.title}
 					</a>
 				))}
-				<a href='#' className='bg-white text-primary px-6 py-3 rounded-full text-2xl font-medium' onClick={onClose}>
-					Teklif Al <BiSolidOffer />
+				<a href='#' className='bg-white text-primary px-6 py-3 rounded-full text-2xl font-medium flex space-x-2 items-center' onClick={onClose}>
+					<span>Teklif Al</span>
+					<BiSolidOffer />
 				</a>
 			</div>
 		</motion.div>
