@@ -105,9 +105,18 @@ const Navbar = () => {
 						<Logo />
 					</Link>
 					{anotherPage ? (
-						<Link to='/' className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium hidden lg:block'>
-							Ana Sayfa
-						</Link>
+						<>
+							<Link to='/' className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium hidden lg:block'>
+								Ana Sayfa
+							</Link>
+							<a
+								href='#'
+								className='bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 hidden lg:flex items-center shadow-primary shadow-md'
+							>
+								<div>Teklif Al</div>
+								<BiSolidOffer className='text-white font-bold' size={16} />
+							</a>
+						</>
 					) : (
 						<div className='hidden lg:flex items-center'>
 							<div className='ml-10 flex items-baseline space-x-4'>

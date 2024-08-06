@@ -48,9 +48,18 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 			</button>
 			<div className='flex flex-col space-y-6'>
 				{anotherPage ? (
-					<Link to='/' className='text-white hover:text-appgray text-2xl' onClick={onClose}>
-						Ana Sayfa
-					</Link>
+					<>
+						<Link to='/' className='text-white hover:text-appgray text-2xl' onClick={onClose}>
+							Ana Sayfa
+						</Link>
+						<a
+							href='#'
+							className='bg-white text-primary px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center shadow-primary shadow-md'
+						>
+							<div>Teklif Al</div>
+							<BiSolidOffer className='text-primary font-bold' size={16} />
+						</a>
+					</>
 				) : (
 					<>
 						{NAV_MENU_ITEMS.map((item) => (
@@ -58,12 +67,15 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 								{item.title}
 							</a>
 						))}
+						<a
+							href='#'
+							className='bg-white text-primary px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center justify-center text-center shadow-primary shadow-md'
+						>
+							<div>Teklif Al</div>
+							<BiSolidOffer className='text-primary font-bold' size={16} />
+						</a>
 					</>
 				)}
-				<a href='#' className='bg-white text-primary px-6 py-3 rounded-full text-2xl font-medium flex space-x-2 items-center' onClick={onClose}>
-					<span>Teklif Al</span>
-					<BiSolidOffer />
-				</a>
 			</div>
 		</motion.div>
 	);
