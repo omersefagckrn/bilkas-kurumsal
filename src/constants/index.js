@@ -1,10 +1,10 @@
 export const NAV_MENU_ITEMS = [
 	{ href: '#banner', title: 'Ana Sayfa' },
-	{ href: '#evaluation', title: 'Hizmetlerimiz' },
+	{ href: '#evaluation', title: 'Hakkımızda' },
 	{ href: '#pricing', title: 'Ücretlendirme' },
-	{ href: '#solutions', title: 'Çalışmalarımız' },
-	{ href: '#services', title: 'Servislerimiz' },
-	{ href: '#contact', title: 'İletişim' }
+	{ href: '#solutions', title: 'Blog' },
+	{ href: '#services', title: 'Hizmetlerimiz' },
+	{ href: '#contact', title: 'Bize Ulaş' }
 ];
 
 export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';

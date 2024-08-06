@@ -1,4 +1,4 @@
-import AppLogo from '../assets/logo.svg';
+import AppLogo from '../../assets/logo.svg';
 
 const Logo = () => {
 	return (

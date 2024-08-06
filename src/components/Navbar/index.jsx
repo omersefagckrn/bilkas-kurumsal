@@ -106,7 +106,10 @@ const Navbar = () => {
 								</a>
 							))}
 						</div>
-						<a href='#' className='ml-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center'>
+						<a
+							href='#'
+							className='ml-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center shadow-primary shadow-md'
+						>
 							<div>Teklif Al</div>
 							<BiSolidOffer className='text-white font-bold' size={16} />
 						</a>

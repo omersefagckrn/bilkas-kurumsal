@@ -29,7 +29,7 @@ const FixedIcons = () => {
 	return (
 		<div className='fixed bottom-4 right-4 flex flex-col items-center space-y-2'>
 			{isVisible && (
-				<button onClick={scrollToTop} className='p-3 bg-primary text-white rounded-full shadow-md hover:bg-primary-dark focus:outline-none'>
+				<button onClick={scrollToTop} className='p-3 bg-black text-white rounded-full shadow-md hover:bg-primary-dark focus:outline-none'>
 					<FaArrowUp size={24} />
 				</button>
 			)}

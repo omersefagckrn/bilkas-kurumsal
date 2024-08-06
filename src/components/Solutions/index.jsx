@@ -18,7 +18,7 @@ const bounceVariant = {
 const WorkCard = ({ work, index }) => {
 	return (
 		<motion.div
-			className='bg-white p-4 rounded-xl flex flex-col justify-between cursor-pointer shadow-md'
+			className='bg-white p-5 rounded-xl flex flex-col justify-between shadow-md'
 			variants={bounceVariant}
 			initial='hidden'
 			animate='visible'
@@ -26,9 +26,19 @@ const WorkCard = ({ work, index }) => {
 			whileHover='hover'
 			custom={index}
 		>
-			<img src={work.image} alt={work.title} className='rounded-lg mb-2 object-contain' />
-			<h3 className='text-lg font-semibold mb-2'>{work.title}</h3>
-			<p className='text-gray-600 text-sm'>{work.description}</p>
+			<img src={work.image} alt={work.title} className='rounded-md mb-2 object-cover w-[500px] h-[200px]' />
+			<div className='flex flex-col items-start justify-start pt-[20px] pr-[40px] pb-[40px]'>
+				<h3 className='text-lg font-semibold mb-2 text-[#333]'>{work.title}</h3>
+				<p className='text-[#333] text-sm font-normal mb-2.5'>{work.description}</p>
+				<div
+					onClick={() => {
+						console.log('Devamını oku tıklandı');
+					}}
+					className='flex items-start cursor-pointer'
+				>
+					<div className='bg-primary text-white px-4 py-2 rounded-md text-sm font-medium space-x-2 text-center'>Devamını Oku</div>
+				</div>
+			</div>
 		</motion.div>
 	);
 };
@@ -49,11 +59,11 @@ const Solutions = () => {
 	const filteredWorks = selectedCategory === 'Tümü' ? works : works.filter((work) => work.category === selectedCategory);
 
 	return (
-		<section id='solutions' className='py-12 bg-gray-50'>
+		<section id='solutions' className='py-12 bg-[#F2F5F9]'>
 			<motion.div className='container mx-auto px-4' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
 				<div className='text-center mb-12'>
-					<h2 className='text-3xl font-semibold mb-2'>Çalışmalarımız</h2>
-					<p className='text-primary text-lg'>Beklentinizi Yeniden Yükseltin!</p>
+					<h2 className='text-3xl font-semibold mb-2'>Blog</h2>
+					<p className='text-primary text-lg'>Araştırın ve Öğrenin!</p>
 				</div>
 
 				<div className='flex justify-start items-center space-x-4 lg:justify-center mb-8 overflow-x-auto pb-4'>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import BannerImg from '../assets/slide.png';
+import BannerImg from '../../assets/slide.png';
 
 const Banner = () => {
 	const fadeInLeft = {
@@ -16,7 +16,7 @@ const Banner = () => {
 
 	return (
 		<div id='banner' className='container mx-auto w-full'>
-			<section className='flex flex-col md:flex-row items-center justify-between pt-24 pb-16 bg-white'>
+			<section className='flex flex-col md:flex-row items-center justify-between py-40 bg-white'>
 				<motion.div {...fadeInLeft} className='flex-1 mb-8 md:mb-0'>
 					<h2 className='text-primary font-semibold text-xl md:text-2xl mb-2'>Dijital Pazarlama&rsquo;nın Gücü ile</h2>
 					<h1 className='text-4xl md:text-6xl font-bold text-black leading-tight mb-4'>

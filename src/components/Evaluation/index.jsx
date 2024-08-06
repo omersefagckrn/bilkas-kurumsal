@@ -69,7 +69,7 @@ const Evaluation = () => {
 	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	return (
-		<section id='evaluation' className='bg-gray-50 py-12'>
+		<section id='evaluation' className='bg-[#F2F5F9] py-12'>
 			<div className='w-full container mx-auto px-4'>
 				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
 					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>
