@@ -1,26 +1,17 @@
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Evaluation from './components/Evaluation';
-import Pricing from './components/Pricing';
-import FixedIcons from './components/FixedIcons';
-import Services from './components/Services';
-import Solutions from './components/Solutions';
-import Banner from './components/Banner';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import BlogDetail from './components/Solutions/SolutionsDetail';
 
 const App = () => {
 	return (
-		<div className='flex flex-col min-h-screen select-none'>
-			<Navbar />
-			<div className='flex-grow pt-24'>
-				<Banner />
-				<Evaluation />
-				<Pricing />
-				<Solutions />
-				<Services />
-			</div>
-			<Footer />
-			<FixedIcons />
-		</div>
+		<>
+			<Router>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/blog/:title' element={<BlogDetail />} />
+				</Routes>
+			</Router>
+		</>
 	);
 };
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: black;
+}
+
 * {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -9,4 +13,28 @@
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #ff7518 #f1f1f1;
+}
+
+@layer utilities {
+    .category-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .category-list li {
+        position: relative;
+        padding-left: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .category-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.4em;
+        width: 0.5em;
+        height: 0.5em;
+        background-color: #ff7518;
+        border-radius: 50%;
+    }
 }

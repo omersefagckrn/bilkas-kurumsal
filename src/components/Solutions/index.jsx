@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { categories, works } from '../../constants';
+import { useNavigate } from 'react-router-dom';
+import { toKebabCase } from '../../helpers/utils';
 
 const bounceVariant = {
 	hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -15,29 +17,37 @@ const bounceVariant = {
 	hover: { scale: 1.05, transition: { duration: 0.3 } }
 };
 
+const truncateText = (text, wordLimit) => {
+	const words = text.split(' ');
+	if (words.length > wordLimit) {
+		return words.slice(0, wordLimit).join(' ') + '...';
+	}
+	return text;
+};
+
 const WorkCard = ({ work, index }) => {
+	const navigate = useNavigate();
+
+	const handleCardClick = () => {
+		navigate(`/blog/${toKebabCase(work.title)}`);
+	};
+
 	return (
 		<motion.div
-			className='bg-white p-5 rounded-xl flex flex-col justify-between shadow-md'
+			className='bg-white p-5 rounded-xl flex flex-col shadow-md cursor-pointer'
 			variants={bounceVariant}
 			initial='hidden'
 			animate='visible'
 			exit='exit'
 			whileHover='hover'
 			custom={index}
+			onClick={handleCardClick}
 		>
-			<img src={work.image} alt={work.title} className='rounded-md mb-2 object-cover w-[500px] h-[200px]' />
+			<img src={work.image} alt={work.title} className='rounded-md object-cover w-[500px] h-[200px]' />
 			<div className='flex flex-col items-start justify-start pt-[20px] pr-[40px] pb-[40px]'>
 				<h3 className='text-lg font-semibold mb-2 text-[#333]'>{work.title}</h3>
-				<p className='text-[#333] text-sm font-normal mb-2.5'>{work.description}</p>
-				<div
-					onClick={() => {
-						console.log('Devamını oku tıklandı');
-					}}
-					className='flex items-start cursor-pointer'
-				>
-					<div className='bg-primary text-white px-4 py-2 rounded-md text-sm font-medium space-x-2 text-center'>Devamını Oku</div>
-				</div>
+				<p className='text-[#333] text-sm font-normal mb-2.5'>{truncateText(work.description, 12)}</p>
+				<div className='bg-primary text-white px-4 py-2 rounded-md text-sm font-medium space-x-2 text-center'>Devamını Oku</div>
 			</div>
 		</motion.div>
 	);
@@ -71,8 +81,8 @@ const Solutions = () => {
 						<button
 							key={category}
 							onClick={() => setSelectedCategory(category)}
-							className={`py-2  px-4 rounded-lg whitespace-nowrap ${
-								selectedCategory === category ? 'bg-primary text-white' : 'bg-gray-200 text-appgray'
+							className={`py-2 px-4 rounded-lg whitespace-nowrap ${
+								selectedCategory === category ? 'bg-primary text-white' : 'bg-gray-200 text-black'
 							}`}
 						>
 							{category}

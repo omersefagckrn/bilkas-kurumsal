@@ -3,14 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS APP -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- FONTS APP -->
+
+    <!-- FAVICON -->
     <link rel="icon" href="/logo.svg" type="image/x-icon" />
-    <title>Bilkas</title>
+    <!-- FAVICON -->
+
+    <meta name="description" content="Bilkas Dijital Reklam Ajansı: Yaratıcı çözümlerle markanızı zirveye taşıyoruz! Dijital pazarlama, sosyal medya yönetimi ve reklam çözümleri ile potansiyel müşterilerinize ulaşın.">
+    <meta name="keywords" content="Bilkas, dijital reklam ajansı, dijital pazarlama, sosyal medya yönetimi, TikTok, Facebook, Instagram, LinkedIn, SEO">
+    <meta name="author" content="Bilkas Dijital Reklam Ajansı">
+
+    <meta property="og:title" content="Bilkas Dijital Reklam Ajansı">
+    <meta property="og:description" content="Bilkas Dijital Reklam Ajansı: Yaratıcı çözümlerle markanızı zirveye taşıyoruz! Dijital pazarlama, sosyal medya yönetimi ve reklam çözümleri ile potansiyel müşterilerinize ulaşın.">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bilkas Dijital Reklam Ajansı">
+    <meta name="twitter:description" content="Bilkas Dijital Reklam Ajansı: Yaratıcı çözümlerle markanızı zirveye taşıyoruz! Dijital pazarlama, sosyal medya yönetimi ve reklam çözümleri ile potansiyel müşterilerinize ulaşın.">
+    
+    <title>Bilkas Dijital Reklam Ajansı: Yaratıcı çözümlerle markanızı zirveye taşıyoruz!</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const title = "Bilkas Dijital Reklam Ajansı: Yaratıcı çözümlerle markanızı zirveye taşıyoruz!";
+      let scrollPos = 0;
+      
+      const scrollTitle = () => {
+        document.title = title.substring(scrollPos) + " " + title.substring(0, scrollPos);
+        scrollPos = (scrollPos + 1) % title.length;
+      }
+      
+      setInterval(scrollTitle, 150);
+    </script>
   </body>
 </html>

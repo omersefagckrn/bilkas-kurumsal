@@ -4,6 +4,7 @@ import { NAV_MENU_ITEMS } from '../../constants';
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import { BiSolidOffer } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const variants = {
 	open: {
@@ -22,7 +23,7 @@ const variants = {
 	}
 };
 
-const NavMobileMenu = ({ isOpen, onClose }) => {
+const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 	useEffect(() => {
 		if (isOpen) {
 			document.body.style.overflow = 'hidden';
@@ -46,11 +47,19 @@ const NavMobileMenu = ({ isOpen, onClose }) => {
 				<FiX />
 			</button>
 			<div className='flex flex-col space-y-6'>
-				{NAV_MENU_ITEMS.map((item) => (
-					<a key={item.title} href={item.href} className='text-white hover:text-appgray text-2xl' onClick={onClose}>
-						{item.title}
-					</a>
-				))}
+				{anotherPage ? (
+					<Link to='/' className='text-white hover:text-appgray text-2xl' onClick={onClose}>
+						Ana Sayfa
+					</Link>
+				) : (
+					<>
+						{NAV_MENU_ITEMS.map((item) => (
+							<a key={item.title} href={item.href} className='text-white hover:text-appgray text-2xl' onClick={onClose}>
+								{item.title}
+							</a>
+						))}
+					</>
+				)}
 				<a href='#' className='bg-white text-primary px-6 py-3 rounded-full text-2xl font-medium flex space-x-2 items-center' onClick={onClose}>
 					<span>Teklif Al</span>
 					<BiSolidOffer />
@@ -62,7 +71,8 @@ const NavMobileMenu = ({ isOpen, onClose }) => {
 
 NavMobileMenu.propTypes = {
 	isOpen: PropTypes.bool.isRequired,
-	onClose: PropTypes.func.isRequired
+	onClose: PropTypes.func.isRequired,
+	anotherPage: PropTypes.bool.isRequired
 };
 
 export default NavMobileMenu;
