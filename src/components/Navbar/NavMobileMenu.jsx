@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { NAV_MENU_ITEMS } from '../../constants';
+import { KURUMSAL_NUMARA, NAV_MENU_ITEMS } from '../../constants';
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import { BiSolidOffer } from 'react-icons/bi';
@@ -53,8 +53,8 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 							Ana Sayfa
 						</Link>
 						<a
-							href='#'
-							className='bg-white text-primary px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center shadow-primary shadow-md'
+							href={`tel:${KURUMSAL_NUMARA}`}
+							className='bg-white text-primary px-4 py-2 rounded-full text-base font-medium space-x-2 flex items-center shadow-primary shadow-md'
 						>
 							<div>Teklif Al</div>
 							<BiSolidOffer className='text-primary font-bold' size={16} />
@@ -68,8 +68,8 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 							</a>
 						))}
 						<a
-							href='#'
-							className='bg-white text-primary px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center justify-center text-center shadow-primary shadow-md'
+							href={`tel:${KURUMSAL_NUMARA}`}
+							className='bg-white text-primary px-4 py-2 rounded-full text-base font-medium space-x-2 flex items-center justify-center text-center shadow-primary shadow-md'
 						>
 							<div>Teklif Al</div>
 							<BiSolidOffer className='text-primary font-bold' size={16} />

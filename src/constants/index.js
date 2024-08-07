@@ -4,7 +4,35 @@ export const NAV_MENU_ITEMS = [
 	{ href: '#pricing', title: 'Ücretlendirme' },
 	{ href: '#solutions', title: 'Blog' },
 	{ href: '#services', title: 'Hizmetlerimiz' },
+	{ href: '#teams', title: 'Ekibimiz' },
 	{ href: '#contact', title: 'Bize Ulaş' }
+];
+
+export const teams = [
+	{
+		id: 1,
+		name: 'Ahmet Yılmaz',
+		position: 'CEO',
+		image: 'https://randomuser.me/api/portraits/men/1.jpg'
+	},
+	{
+		id: 2,
+		name: 'Ayşe Kaya',
+		position: 'CTO',
+		image: 'https://randomuser.me/api/portraits/women/2.jpg'
+	},
+	{
+		id: 3,
+		name: 'Mehmet Öz',
+		position: 'Lead Developer',
+		image: 'https://randomuser.me/api/portraits/men/3.jpg'
+	},
+	{
+		id: 4,
+		name: 'Elif Demir',
+		position: 'Marketing Manager',
+		image: 'https://randomuser.me/api/portraits/women/4.jpg'
+	}
 ];
 
 export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';
@@ -129,7 +157,7 @@ export const services = [
 
 export const plans = [
 	{
-		name: 'Free',
+		name: 'Premium',
 		price: '$0',
 		period: 'per user/month',
 		description: 'The basics for individuals and organizations',

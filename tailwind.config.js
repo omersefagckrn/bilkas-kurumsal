@@ -5,7 +5,8 @@ export default {
 		extend: {
 			colors: {
 				primary: '#ff7518',
-				appgray: '#7A7A7A'
+				appgray: '#7A7A7A',
+				appbggray: '#F2F5F9'
 			},
 			container: {
 				center: true,

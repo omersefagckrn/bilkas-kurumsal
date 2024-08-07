@@ -5,8 +5,10 @@ import { FiCamera, FiPenTool, FiShare2 } from 'react-icons/fi';
 import { GiMagnifyingGlass } from 'react-icons/gi';
 import { LuCode2 } from 'react-icons/lu';
 import { MdCampaign } from 'react-icons/md';
+import { toKebabCase } from '../../helpers/utils';
+import { useNavigate } from 'react-router-dom';
 
-const EvaluationData = [
+export const EvaluationData = [
 	{
 		title: 'SEO',
 		description: 'SEO hizmeti ile hedef kitlenizin Google üzerinde yaptığı ürün ya da hizmet araştırmalarında, organik olarak rakiplerinizin önünde ya da üst sıralarda yer alırsınız. LEVELUP bu hizmeti verirken, web sitenizi geliştirir ve sitenize daha fazla trafik çekmek için çözüm önerilerinde bulunur.',
@@ -47,9 +49,22 @@ const fadeIn = {
 
 const ServiceCard = ({ service }) => {
 	const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+	const navigate = useNavigate();
+
+	const handleCardClick = () => {
+		navigate(`/evaluation/${toKebabCase(service.title)}`);
+	};
 
 	return (
-		<motion.div ref={ref} className='text-left p-2' initial='hidden' animate={inView ? 'visible' : 'hidden'} whileHover='hover' variants={fadeIn}>
+		<motion.div
+			onClick={handleCardClick}
+			ref={ref}
+			className='text-left p-2 cursor-pointer'
+			initial='hidden'
+			animate={inView ? 'visible' : 'hidden'}
+			whileHover='hover'
+			variants={fadeIn}
+		>
 			<div className='mb-4'>{service.icon}</div>
 			<h3 className='text-[18px] font-semibold mb-2'>{service.title}</h3>
 			<p className='text-appgray text-base'>{service.description}</p>
@@ -69,7 +84,7 @@ const Evaluation = () => {
 	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	return (
-		<section id='evaluation' className='bg-[#F2F5F9] py-12'>
+		<section id='evaluation' className=' py-12'>
 			<div className='w-full container mx-auto px-4'>
 				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
 					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>

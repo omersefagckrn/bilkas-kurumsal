@@ -4,7 +4,7 @@ import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLocation, Link } from 'react-router-dom';
 import NavMobileMenu from './NavMobileMenu';
-import { KURUMSAL_EMAIL, KURUMSAL_INSTAGRAM, KURUMSAL_LINKEDIN, KURUMSAL_TIKTOK, NAV_MENU_ITEMS } from '../../constants';
+import { KURUMSAL_EMAIL, KURUMSAL_INSTAGRAM, KURUMSAL_LINKEDIN, KURUMSAL_NUMARA, KURUMSAL_TIKTOK, NAV_MENU_ITEMS } from '../../constants';
 import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import Logo from '../Logo';
@@ -109,13 +109,6 @@ const Navbar = () => {
 							<Link to='/' className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium hidden lg:block'>
 								Ana Sayfa
 							</Link>
-							<a
-								href='#'
-								className='bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 hidden lg:flex items-center shadow-primary shadow-md'
-							>
-								<div>Teklif Al</div>
-								<BiSolidOffer className='text-white font-bold' size={16} />
-							</a>
 						</>
 					) : (
 						<div className='hidden lg:flex items-center'>
@@ -124,21 +117,22 @@ const Navbar = () => {
 									<a
 										key={item.title}
 										href={item.href}
-										className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium'
+										className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium'
 									>
 										{item.title}
 									</a>
 								))}
 							</div>
-							<a
-								href='#'
-								className='ml-4 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 flex items-center shadow-primary shadow-md'
-							>
-								<div>Teklif Al</div>
-								<BiSolidOffer className='text-white font-bold' size={16} />
-							</a>
 						</div>
 					)}
+
+					<a
+						href={`tel:${KURUMSAL_NUMARA}`}
+						className='bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 hidden lg:flex items-center shadow-primary shadow-md'
+					>
+						<div>Teklif Al</div>
+						<BiSolidOffer className='text-white font-bold' size={16} />
+					</a>
 					<div className='flex lg:hidden'>
 						<button onClick={() => setIsMobileMenuOpen(true)} className='text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600'>
 							<FiMenu className='h-6 w-6' />

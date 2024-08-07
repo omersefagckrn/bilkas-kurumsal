@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import BannerImg from '../../assets/slide.png';
+import { KURUMSAL_NUMARA } from '../../constants';
 
 const Banner = () => {
 	const fadeInLeft = {
@@ -25,7 +26,7 @@ const Banner = () => {
 					<p className='text-gray-700 mb-6'>
 						Veri ve dönüşüme dayalı etkili dijital pazarlama taktikleri ile hedef kitlenize ulaşın ve firmanızın dijital dünyada varlığını büyütün.
 					</p>
-					<a href='#more-info' className='inline-block bg-primary text-white py-3 px-6 rounded-full shadow-lg hover:bg-primary-dark transition duration-300'>
+					<a href={`tel:${KURUMSAL_NUMARA}`} className='bg-primary text-white py-3 px-6 rounded-full shadow-lg hover:bg-primary-dark transition duration-300'>
 						Bize Ulaşın →
 					</a>
 				</motion.div>

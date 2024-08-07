@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './components/Home';
 import BlogDetail from './components/Solutions/SolutionsDetail';
+import EvaluationDetail from './components/Evaluation/EvaluationDetail';
 
 import './index.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
 	{
 		path: '/blog/:title',
 		element: <BlogDetail />
+	},
+	{
+		path: '/evaluation/:title',
+		element: <EvaluationDetail />
 	}
 ]);
 

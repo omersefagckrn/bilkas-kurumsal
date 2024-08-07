@@ -6,6 +6,7 @@ import FixedIcons from '../FixedIcons';
 import Services from '../Services';
 import Solutions from '../Solutions';
 import Banner from '../Banner';
+import Teams from '../Teams';
 
 const Home = () => {
 	return (
@@ -16,6 +17,7 @@ const Home = () => {
 					<Banner />
 					<Evaluation />
 					<Pricing />
+					<Teams />
 					<Solutions />
 					<Services />
 				</div>
