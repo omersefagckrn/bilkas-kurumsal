@@ -1,3 +1,8 @@
+import { FiCamera, FiPenTool, FiShare2 } from 'react-icons/fi';
+import { GiMagnifyingGlass } from 'react-icons/gi';
+import { LuCode2 } from 'react-icons/lu';
+import { MdCampaign } from 'react-icons/md';
+
 export const NAV_MENU_ITEMS = [
 	{ href: '#banner', title: 'Ana Sayfa' },
 	{ href: '#evaluation', title: 'Hakkımızda' },
@@ -6,6 +11,39 @@ export const NAV_MENU_ITEMS = [
 	{ href: '#services', title: 'Hizmetlerimiz' },
 	{ href: '#teams', title: 'Ekibimiz' },
 	{ href: '#contact', title: 'Bize Ulaş' }
+];
+
+export const EvaluationData = [
+	{
+		title: 'SEO',
+		description: 'SEO hizmeti ile hedef kitlenizin Google üzerinde yaptığı ürün ya da hizmet araştırmalarında, organik olarak rakiplerinizin önünde ya da üst sıralarda yer alırsınız. LEVELUP bu hizmeti verirken, web sitenizi geliştirir ve sitenize daha fazla trafik çekmek için çözüm önerilerinde bulunur.',
+		icon: <GiMagnifyingGlass size={30} className='text-primary' />
+	},
+	{
+		title: 'Dijital Pazarlama',
+		description: 'Markanızın dijital mecralarda stratejik şekilde tanıtımının yapılmasını, ürün ya da hizmetlerinizin satın almaya yönlendirilmesini ve ihtiyaç anında ilk akla gelmesini hedefleyen pazarlama yöntemidir.',
+		icon: <MdCampaign size={30} className='text-primary' />
+	},
+	{
+		title: 'Kreatif Tasarım',
+		description: 'Estetik bir yaklaşım ile hedef kitlenin dikkatini çekerken, işlevselliği ile markanın mesajını vurgulayan ve etkileşimi yüksek tasarımlar oluşturmayı amaçlayan sanatsal bir süreçtir.',
+		icon: <FiPenTool size={30} className='text-primary' />
+	},
+	{
+		title: 'Yazılım Çözümleri',
+		description: 'Web sitelerinin kullanıcı dostu görünümünün, etkin fonksiyonelliğinin ve ölçümlemeyi mümkün kılan tasarımının oluşturulma sürecidir.',
+		icon: <LuCode2 size={30} className='text-primary' />
+	},
+	{
+		title: 'Sosyal Medya Yönetimi',
+		description: 'İşletmelerin sosyal medya hesaplarının etkili şekilde yürütülmesi, etkinlik ve aktivitelerinin etkileşim bazlı planlaması ve gelişim odaklı optimize etmek üzere izlenmesi yaklaşımıyla yönetilmesidir.',
+		icon: <FiShare2 size={30} className='text-primary' />
+	},
+	{
+		title: 'Fotoğraf & Video Çekimi',
+		description: 'Şirketlerin ürün ya da hizmetlerinin talep alacak şekilde tanıtılması ve istenilen mecralarda kullanılmak üzere optimize edilmesi üzerine gelişen bir hizmet sürecidir.',
+		icon: <FiCamera size={30} className='text-primary' />
+	}
 ];
 
 export const teams = [
@@ -37,13 +75,52 @@ export const teams = [
 
 export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
-export const KURUMSAL_NUMARA = '+90 212 345 6789';
+export const KURUMSAL_NUMARA = '+90 531 297 1288';
 
 export const KURUMSAL_INSTAGRAM = 'https://www.instagram.com';
 export const KURUMSAL_TIKTOK = 'https://www.tiktok.com';
 export const KURUMSAL_LINKEDIN = 'https://www.linkedin.com';
 
 export const categories = ['Tümü', 'Dijital Pazarlama', 'Sosyal Medya', 'Yazılım ve Tasarım'];
+
+export const logos = [
+	{
+		id: 1,
+		src: 'https://www.tanyildizisigorta.com/wp-content/uploads/tanyildizi_logo.svg',
+		alt: 'Tanyıldızı Sigorta',
+		isWhite: false
+	},
+	{
+		id: 2,
+		src: 'https://kutaspack.com.tr/wp-content/uploads/2023/08/kutas-logo-beyaz-new.svg',
+		alt: 'Kutaş Pack',
+		isWhite: true
+	},
+	{
+		id: 3,
+		src: 'https://static.ticimax.cloud/55900//uploads/editoruploads/logo-new.png',
+		alt: 'Ticimax',
+		isWhite: false
+	},
+	{
+		id: 4,
+		src: 'https://www.petekplastik.com/assets/site/images/logo.webp',
+		alt: 'Petek Plastik',
+		isWhite: true
+	},
+	{
+		id: 5,
+		src: 'https://www.kuveytturk.com.tr/_assets/svg/logo.svg',
+		alt: 'Kuveyt Türk',
+		isWhite: false
+	},
+	{
+		id: 6,
+		src: 'https://www.temkurye.com/assets/svg/app-logo.svg',
+		alt: 'Tem Kurye',
+		isWhite: true
+	}
+];
 
 export const works = [
 	{

@@ -7,6 +7,7 @@ import Services from '../Services';
 import Solutions from '../Solutions';
 import Banner from '../Banner';
 import Teams from '../Teams';
+import OurSupports from '../OurSupports';
 
 const Home = () => {
 	return (
@@ -15,6 +16,7 @@ const Home = () => {
 				<Navbar />
 				<div className='flex-grow pt-24'>
 					<Banner />
+					<OurSupports />
 					<Evaluation />
 					<Pricing />
 					<Teams />

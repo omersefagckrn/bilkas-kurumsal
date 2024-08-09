@@ -15,7 +15,7 @@ export default {
 					sm: '100%',
 					md: '100%',
 					lg: '800px',
-					xl: '1200px'
+					xl: '1250px'
 				}
 			}
 		}

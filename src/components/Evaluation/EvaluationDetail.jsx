@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import Navbar from '../Navbar';
 import { fromKebabCase, toKebabCase } from '../../helpers/utils';
 import { useEffect } from 'react';
-import { EvaluationData } from '.';
+import { EvaluationData } from '../../constants';
 
 const EvaluationDetail = () => {
 	const { title } = useParams();

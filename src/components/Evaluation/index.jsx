@@ -1,45 +1,10 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
-import { FiCamera, FiPenTool, FiShare2 } from 'react-icons/fi';
-import { GiMagnifyingGlass } from 'react-icons/gi';
-import { LuCode2 } from 'react-icons/lu';
-import { MdCampaign } from 'react-icons/md';
+
 import { toKebabCase } from '../../helpers/utils';
 import { useNavigate } from 'react-router-dom';
-
-export const EvaluationData = [
-	{
-		title: 'SEO',
-		description: 'SEO hizmeti ile hedef kitlenizin Google üzerinde yaptığı ürün ya da hizmet araştırmalarında, organik olarak rakiplerinizin önünde ya da üst sıralarda yer alırsınız. LEVELUP bu hizmeti verirken, web sitenizi geliştirir ve sitenize daha fazla trafik çekmek için çözüm önerilerinde bulunur.',
-		icon: <GiMagnifyingGlass size={30} className='text-primary' />
-	},
-	{
-		title: 'Dijital Pazarlama',
-		description: 'Markanızın dijital mecralarda stratejik şekilde tanıtımının yapılmasını, ürün ya da hizmetlerinizin satın almaya yönlendirilmesini ve ihtiyaç anında ilk akla gelmesini hedefleyen pazarlama yöntemidir.',
-		icon: <MdCampaign size={30} className='text-primary' />
-	},
-	{
-		title: 'Kreatif Tasarım',
-		description: 'Estetik bir yaklaşım ile hedef kitlenin dikkatini çekerken, işlevselliği ile markanın mesajını vurgulayan ve etkileşimi yüksek tasarımlar oluşturmayı amaçlayan sanatsal bir süreçtir.',
-		icon: <FiPenTool size={30} className='text-primary' />
-	},
-	{
-		title: 'Yazılım Çözümleri',
-		description: 'Web sitelerinin kullanıcı dostu görünümünün, etkin fonksiyonelliğinin ve ölçümlemeyi mümkün kılan tasarımının oluşturulma sürecidir.',
-		icon: <LuCode2 size={30} className='text-primary' />
-	},
-	{
-		title: 'Sosyal Medya Yönetimi',
-		description: 'İşletmelerin sosyal medya hesaplarının etkili şekilde yürütülmesi, etkinlik ve aktivitelerinin etkileşim bazlı planlaması ve gelişim odaklı optimize etmek üzere izlenmesi yaklaşımıyla yönetilmesidir.',
-		icon: <FiShare2 size={30} className='text-primary' />
-	},
-	{
-		title: 'Fotoğraf & Video Çekimi',
-		description: 'Şirketlerin ürün ya da hizmetlerinin talep alacak şekilde tanıtılması ve istenilen mecralarda kullanılmak üzere optimize edilmesi üzerine gelişen bir hizmet sürecidir.',
-		icon: <FiCamera size={30} className='text-primary' />
-	}
-];
+import { EvaluationData } from '../../constants';
 
 const fadeIn = {
 	hidden: { opacity: 0, y: 50 },
