@@ -24,7 +24,7 @@ const ServiceCard = ({ service }) => {
 		<motion.div
 			onClick={handleCardClick}
 			ref={ref}
-			className='text-left p-2 cursor-pointer'
+			className='p-2 text-left cursor-pointer'
 			initial='hidden'
 			animate={inView ? 'visible' : 'hidden'}
 			whileHover='hover'
@@ -32,7 +32,7 @@ const ServiceCard = ({ service }) => {
 		>
 			<div className='mb-4'>{service.icon}</div>
 			<h3 className='text-[18px] font-semibold mb-2'>{service.title}</h3>
-			<p className='text-appgray text-base'>{service.description}</p>
+			<p className='text-base text-appgray'>{service.description}</p>
 		</motion.div>
 	);
 };
@@ -49,18 +49,18 @@ const Evaluation = () => {
 	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	return (
-		<section id='evaluation' className=' py-12'>
-			<div className='w-full container mx-auto px-4'>
+		<section id='evaluation' className='py-12 '>
+			<div className='container w-full px-4 mx-auto'>
 				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
 					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>
 						Değişen pazarlama ve medya anlayışında yanınızdayız! Dijitali satış kanalı olarak değerlendirmek isterseniz burada olacağız.
 					</h2>
-					<p className='mb-12 text-appgray text-base'>
+					<p className='mb-12 text-base text-appgray'>
 						LEVELUP, ürün ve hizmetinize özel; satışlarınızı destekleyici dijital stratejiler, mecra ve etkileşim odaklı fikirler, fonksiyonel
 						yazılımlar üreten bir dijital pazarlama ajansıdır.
 					</p>
 				</motion.div>
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
+				<div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
 					{EvaluationData.map((service, index) => (
 						<ServiceCard key={index} service={service} />
 					))}

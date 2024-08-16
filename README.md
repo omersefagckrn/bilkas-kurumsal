@@ -1,103 +1,59 @@
-# 🚀 React + Vite Boilerplate
+<p align="center">
+  <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+    <img width="180" src="https://vitejs.dev/logo.svg" alt="Vite logo">
+  </a>
+</p>
+<br/>
+<p align="center">
+  <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a>
+  <a href="https://nodejs.org/en/about/previous-releases"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a>
+  <a href="https://github.com/vitejs/vite/actions/workflows/ci.yml"><img src="https://github.com/vitejs/vite/actions/workflows/ci.yml/badge.svg?branch=main" alt="build status"></a>
+  <a href="https://pr.new/vitejs/vite"><img src="https://developer.stackblitz.com/img/start_pr_dark_small.svg" alt="Start new PR in StackBlitz Codeflow"></a>
+  <a href="https://chat.vitejs.dev"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a>
+</p>
+<br/>
 
-Welcome to the ultimate React + Vite boilerplate! This setup provides a blazing fast development environment with Hot Module Replacement (HMR) and a robust set of ESLint rules to keep your code clean and error-free.
+# Vite ⚡
 
-## 📦 What's Inside?
+> Next Generation Frontend Tooling
 
-This boilerplate includes:
+- 💡 Instant Server Start
+- ⚡️ Lightning Fast HMR
+- 🛠️ Rich Features
+- 📦 Optimized Build
+- 🔩 Universal Plugin Interface
+- 🔑 Fully Typed APIs
 
-- **Vite**: Lightning-fast build tool for modern web projects.
-- **React**: A JavaScript library for building user interfaces.
-- **ESLint**: Linting utility for JavaScript and JSX.
-- **Prettier**: Code formatter to maintain consistent style.
-- **Husky**: Git hooks for pre-commit linting.
-- **lint-staged**: Run linters on git-staged files.
-- **@vitejs/plugin-react**: Official Vite plugin using Babel for Fast Refresh.
-- **@vitejs/plugin-react-swc**: Official Vite plugin using SWC for Fast Refresh (optional).
+Vite (French word for "quick", pronounced [`/vit/`](https://cdn.jsdelivr.net/gh/vitejs/vite@main/docs/public/vite.mp3), like "veet") is a new breed of frontend build tooling that significantly improves the frontend development experience. It consists of two major parts:
 
-## 🚀 Quick Start
+- A dev server that serves your source files over [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), with [rich built-in features](https://vitejs.dev/guide/features.html) and astonishingly fast [Hot Module Replacement (HMR)](https://vitejs.dev/guide/features.html#hot-module-replacement).
 
-Get up and running with these simple steps:
+- A [build command](https://vitejs.dev/guide/build.html) that bundles your code with [Rollup](https://rollupjs.org), pre-configured to output highly optimized static assets for production.
 
-1. **Clone the repository:**
+In addition, Vite is highly extensible via its [Plugin API](https://vitejs.dev/guide/api-plugin.html) and [JavaScript API](https://vitejs.dev/guide/api-javascript.html) with full typing support.
 
-      ```sh
-      git clone https://github.com/your-username/react-vite-boilerplate.git
-      cd react-vite-boilerplate
-      ```
+[Read the Docs to Learn More](https://vitejs.dev).
 
-2. **Install dependencies:**
+## Packages
 
-      ```sh
-      npm install
-      # or
-      yarn install
-      ```
+| Package                                         | Version (click for changelogs)                                                                                                    |
+| ----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| [vite](packages/vite)                           | [![vite version](https://img.shields.io/npm/v/vite.svg?label=%20)](packages/vite/CHANGELOG.md)                                    |
+| [@vitejs/plugin-legacy](packages/plugin-legacy) | [![plugin-legacy version](https://img.shields.io/npm/v/@vitejs/plugin-legacy.svg?label=%20)](packages/plugin-legacy/CHANGELOG.md) |
+| [create-vite](packages/create-vite)             | [![create-vite version](https://img.shields.io/npm/v/create-vite.svg?label=%20)](packages/create-vite/CHANGELOG.md)               |
 
-3. **Start the development server:**
+## Contribution
 
-      ```sh
-      npm run dev
-      # or
-      yarn dev
-      ```
+See [Contributing Guide](CONTRIBUTING.md).
 
-      Your app should now be running on [http://localhost:3000](http://localhost:3000)!
+## License
 
-## 📂 Project Structure
+[MIT](LICENSE).
 
-Here's a quick look at the project structure:
+## Sponsors
 
-```sh
-.
-├── public              # Static assets
-├── src
-│   ├── assets          # Images, fonts, etc.
-│   ├── components      # Reusable UI components
-│   ├── pages           # Page components
-│   ├── App.jsx         # Main application component
-│   ├── index.jsx       # Entry point for React
-├── .eslintrc.js        # ESLint configuration
-├── .prettierrc         # Prettier configuration
-├── vite.config.js      # Vite configuration
-├── package.json        # Project metadata and dependencies
-└── README.md           # This file!
-```
-
-## 🛠️ Available Scripts
-
-In the project directory, you can run:
-
-### `npm run dev`
-
-Starts the development server with HMR.
-
-### `npm run build`
-
-Builds the app for production.
-
-### `npm run preview`
-
-Locally preview the production build.
-
-### `npm run lint`
-
-Runs ESLint to analyze the code.
-
-### `npm run format`
-
-Formats the code using Prettier.
-
-## 🌟 Features
-
-- **Fast Development**: With Vite's HMR, see your changes instantly!
-- **Clean Code**: ESLint and Prettier ensure your code stays clean and consistent.
-- **Git Hooks**: Husky and lint-staged help prevent bad commits.
-- **Flexible Configuration**: Easily switch between Babel and SWC for Fast Refresh.
-
-## 📚 Learn More
-
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Documentation](https://reactjs.org/)
-- [ESLint Documentation](https://eslint.org/)
-- [Prettier Documentation](https://prettier.io/)
+<p align="center">
+  <a target="_blank" href="https://github.com/sponsors/yyx990803">
+    <img alt="sponsors" src="https://sponsors.vuejs.org/vite.svg?v2">
+  </a>
+</p>

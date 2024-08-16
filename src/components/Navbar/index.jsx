@@ -78,8 +78,8 @@ const Navbar = () => {
 			animate={isScrollingUp ? 'visible' : 'hidden'}
 			variants={slideVariants}
 		>
-			<header className='bg-primary text-white py-3'>
-				<div className='container mx-auto px-4'>
+			<header className='py-3 text-white bg-primary'>
+				<div className='container px-4 mx-auto'>
 					<div className='flex items-center justify-between space-x-2'>
 						<a href={`mailto:${KURUMSAL_EMAIL}`} className='flex items-center'>
 							<IoMailOutline className='mr-2' />
@@ -99,25 +99,25 @@ const Navbar = () => {
 					</div>
 				</div>
 			</header>
-			<div className='container mx-auto px-4'>
+			<div className='container px-4 mx-auto'>
 				<div ref={ref} className='flex items-center justify-between h-20'>
 					<Link to='/' className='flex-shrink-0'>
 						<Logo />
 					</Link>
 					{anotherPage ? (
 						<>
-							<Link to='/' className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-sm font-medium hidden lg:block'>
+							<Link to='/' className='hidden px-3 py-2 text-sm font-medium text-gray-800 rounded-md hover:text-gray-600 lg:block'>
 								Ana Sayfa
 							</Link>
 						</>
 					) : (
-						<div className='hidden lg:flex items-center'>
-							<div className='ml-10 flex items-baseline space-x-4'>
+						<div className='items-center hidden lg:flex'>
+							<div className='flex items-baseline ml-10 space-x-4'>
 								{NAV_MENU_ITEMS.map((item) => (
 									<a
 										key={item.title}
 										href={item.href}
-										className='text-gray-800 hover:text-gray-600 px-3 py-2 rounded-md text-base font-medium'
+										className='px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-gray-600'
 									>
 										{item.title}
 									</a>
@@ -128,14 +128,14 @@ const Navbar = () => {
 
 					<a
 						href={`tel:${KURUMSAL_NUMARA}`}
-						className='bg-primary text-white px-4 py-2 rounded-full text-sm font-medium space-x-2 hidden lg:flex items-center shadow-primary shadow-md'
+						className='items-center hidden px-4 py-2 space-x-2 text-sm font-medium text-white rounded-full shadow-md bg-primary lg:flex shadow-primary'
 					>
 						<div>Teklif Al</div>
-						<BiSolidOffer className='text-white font-bold' size={16} />
+						<BiSolidOffer className='font-bold text-white' size={16} />
 					</a>
 					<div className='flex lg:hidden'>
 						<button onClick={() => setIsMobileMenuOpen(true)} className='text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600'>
-							<FiMenu className='h-6 w-6' />
+							<FiMenu className='w-6 h-6' />
 						</button>
 					</div>
 				</div>

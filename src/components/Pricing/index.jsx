@@ -21,9 +21,9 @@ const PricingCard = ({ plan }) => {
 			whileHover='hover'
 			variants={fadeIn}
 		>
-			{plan.recommended && <div className='absolute top-0 left-0 w-full text-center bg-primary text-white rounded-sm py-2 text-lg font-semibold'>Önerilen</div>}
-			<div className='text-center mt-8'>
-				<h2 className='text-2xl font-bold mb-4'>{plan.name}</h2>
+			{plan.recommended && <div className='absolute top-0 left-0 w-full py-2 text-lg font-semibold text-center text-white rounded-sm bg-primary'>Önerilen</div>}
+			<div className='mt-8 text-center'>
+				<h2 className='mb-4 text-2xl font-bold'>{plan.name}</h2>
 				<p className='text-xl font-semibold'>
 					{plan.price} <span className='text-sm font-normal'>{plan.period}</span>
 				</p>
@@ -56,12 +56,12 @@ PricingCard.propTypes = {
 const Pricing = () => {
 	return (
 		<section id='pricing' className='py-12'>
-			<div className='container mx-auto px-4'>
-				<div className='text-center mb-12'>
-					<h2 className='text-3xl font-semibold mb-2'>Ücretlendirme</h2>
-					<p className='text-primary text-lg'>Neler Sunuyoruz?</p>
+			<div className='container px-4 mx-auto'>
+				<div className='mb-12 text-center'>
+					<h2 className='mb-2 text-3xl font-semibold'>Ücretlendirme</h2>
+					<p className='text-lg text-primary'>Neler Sunuyoruz?</p>
 				</div>
-				<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+				<div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
 					{plans.map((plan) => (
 						<PricingCard key={plan.name} plan={plan} />
 					))}

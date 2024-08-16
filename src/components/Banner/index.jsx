@@ -16,17 +16,17 @@ const Banner = () => {
 	};
 
 	return (
-		<div id='banner' className='container mx-auto w-full'>
-			<section className='flex flex-col md:flex-row items-center justify-between py-40 bg-white'>
+		<div id='banner' className='container w-full mx-auto'>
+			<section className='flex flex-col items-center justify-between py-40 bg-white md:flex-row'>
 				<motion.div {...fadeInLeft} className='flex-1 mb-8 md:mb-0'>
-					<h2 className='text-primary font-semibold text-xl md:text-2xl mb-2'>Dijital Pazarlama&rsquo;nın Gücü ile</h2>
-					<h1 className='text-4xl md:text-6xl font-bold text-black leading-tight mb-4'>
+					<h2 className='mb-2 text-xl font-semibold text-primary md:text-2xl'>Dijital Pazarlama&rsquo;nın Gücü ile</h2>
+					<h1 className='mb-4 text-4xl font-bold leading-tight text-black md:text-6xl'>
 						Potansiyel müşterilerinize <span className='text-primary'>ulaşın!</span>
 					</h1>
-					<p className='text-gray-700 mb-6'>
+					<p className='mb-6 text-gray-700'>
 						Veri ve dönüşüme dayalı etkili dijital pazarlama taktikleri ile hedef kitlenize ulaşın ve firmanızın dijital dünyada varlığını büyütün.
 					</p>
-					<a href={`tel:${KURUMSAL_NUMARA}`} className='bg-primary text-white py-3 px-6 rounded-full shadow-lg hover:bg-primary-dark transition duration-300'>
+					<a href={`tel:${KURUMSAL_NUMARA}`} className='px-6 py-3 text-white transition duration-300 rounded-full shadow-lg bg-primary hover:bg-primary-dark'>
 						Bize Ulaşın →
 					</a>
 				</motion.div>

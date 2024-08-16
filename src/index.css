@@ -15,11 +15,11 @@
     .category-list {
         list-style: none;
         padding: 0;
-    }
+    } 
     
     .category-list li {
         position: relative;
-        padding-left: 1.5em;
+        padding-left: 1.5em; 
         margin-bottom: 0.5em;
     }
     

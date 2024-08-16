@@ -28,19 +28,19 @@ const FixedIcons = () => {
 	const handleCloseModal = () => setIsModalOpen(false);
 
 	return (
-		<div className='fixed bottom-4 right-4 flex flex-col items-center space-y-2'>
+		<div className='fixed flex flex-col items-center space-y-2 bottom-4 right-4'>
 			{isVisible && (
-				<button onClick={scrollToTop} className='p-3 bg-black text-white rounded-full shadow-md'>
+				<button onClick={scrollToTop} className='p-3 text-white bg-black rounded-full shadow-md'>
 					<FaArrowUp size={24} />
 				</button>
 			)}
-			<a href='https://wa.me/YOUR_PHONE_NUMBER' className='p-3 text-white rounded-full shadow-md bg-green-600' target='_blank' rel='noopener noreferrer'>
+			<a href='https://wa.me/YOUR_PHONE_NUMBER' className='p-3 text-white bg-green-600 rounded-full shadow-md' target='_blank' rel='noopener noreferrer'>
 				<FaWhatsapp className='text-white' size={24} />
 			</a>
-			<a href={`tel:${KURUMSAL_NUMARA}`} className='p-3 bg-green-600 text-white rounded-full shadow-md phone-icon'>
+			<a href={`tel:${KURUMSAL_NUMARA}`} className='p-3 text-white bg-green-600 rounded-full shadow-md phone-icon'>
 				<FaPhone className='text-white' size={24} />
 			</a>
-			<div className='p-3 bg-primary text-white rounded-full cursor-pointer flex items-center justify-center' onClick={handleOpenModal}>
+			<div className='flex items-center justify-center p-3 text-white rounded-full cursor-pointer bg-primary' onClick={handleOpenModal}>
 				<FaCookieBite size={24} />
 			</div>
 			<Modal header='Çerez Politikası' visible={isModalOpen} onHide={handleCloseModal}>

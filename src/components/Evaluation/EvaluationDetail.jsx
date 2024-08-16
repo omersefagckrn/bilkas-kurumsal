@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import FixedIcons from '../FixedIcons';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
@@ -16,18 +16,18 @@ const EvaluationDetail = () => {
 	}, []);
 
 	if (!evaluation) {
-		return <div className='flex justify-center items-center h-screen text-gray-700 text-xl'>Hizmet bulunamadı.</div>;
+		return <div className='flex items-center justify-center h-screen text-xl text-gray-700'>Hizmet bulunamadı.</div>;
 	}
 
 	return (
 		<>
-			<main className='flex flex-col min-h-screen select-none pt-32'>
+			<main className='flex flex-col min-h-screen pt-32 select-none'>
 				<Navbar />
 				<div className='flex-grow'>
-					<div className='container mx-auto px-4 py-12 flex flex-col lg:flex-row'>
+					<div className='container flex flex-col px-4 py-12 mx-auto lg:flex-row'>
 						<div className='w-full'>
-							<h1 className='text-4xl font-semibold mb-4 text-gray-800 leading-tight'>{evaluation.title}</h1>
-							<p className='text-lg text-gray-700 leading-relaxed text-justify'>{evaluation.description}</p>
+							<h1 className='mb-4 text-4xl font-semibold leading-tight text-gray-800'>{evaluation.title}</h1>
+							<p className='text-lg leading-relaxed text-justify text-gray-700'>{evaluation.description}</p>
 						</div>
 					</div>
 				</div>

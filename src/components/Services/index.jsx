@@ -16,7 +16,7 @@ const ServiceCard = ({ service, index, expandedIndex, toggleDescription }) => {
 			whileHover={{ scale: 1.05 }}
 			transition={{ duration: 0.5 }}
 		>
-			<div className='flex justify-between items-center'>
+			<div className='flex items-center justify-between'>
 				<h3 className='text-2xl font-semibold'>{service.title}</h3>
 				<button className='text-primary'>{expandedIndex === index ? <FiMinus size={24} /> : <FiPlus size={24} />}</button>
 			</div>
@@ -51,13 +51,13 @@ const Services = () => {
 
 	return (
 		<section id='services' className='py-12'>
-			<motion.div className='container mx-auto px-4' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-				<div className='text-center mb-12'>
-					<h2 className='text-3xl font-semibold mb-2'>Hizmetlerimiz</h2>
-					<p className='text-primary text-lg'>Neler Yapıyoruz?</p>
+			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+				<div className='mb-12 text-center'>
+					<h2 className='mb-2 text-3xl font-semibold'>Hizmetlerimiz</h2>
+					<p className='text-lg text-primary'>Neler Yapıyoruz?</p>
 				</div>
 
-				<div className='flex justify-between items-center mb-12'>
+				<div className='flex items-center justify-between mb-12'>
 					<div className='text-center'>
 						<h3 className='text-5xl font-bold'>5+</h3>
 						<p className='text-lg'>Çözümlerimiz</p>

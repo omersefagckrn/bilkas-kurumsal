@@ -38,41 +38,41 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 
 	return (
 		<motion.div
-			className='fixed inset-0 z-50 bg-primary flex flex-col justify-center items-center md:hidden overflow-hidden text-center'
+			className='fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden text-center bg-primary md:hidden'
 			initial='closed'
 			animate={isOpen ? 'open' : 'closed'}
 			variants={variants}
 		>
-			<button onClick={onClose} className='absolute top-4 right-4 text-white text-3xl'>
+			<button onClick={onClose} className='absolute text-3xl text-white top-4 right-4'>
 				<FiX />
 			</button>
 			<div className='flex flex-col space-y-6'>
 				{anotherPage ? (
 					<>
-						<Link to='/' className='text-white hover:text-appgray text-2xl' onClick={onClose}>
+						<Link to='/' className='text-2xl text-white hover:text-appgray' onClick={onClose}>
 							Ana Sayfa
 						</Link>
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}
-							className='bg-white text-primary px-4 py-2 rounded-full text-base font-medium space-x-2 flex items-center shadow-primary shadow-md'
+							className='flex items-center px-4 py-2 space-x-2 text-base font-medium bg-white rounded-full shadow-md text-primary shadow-primary'
 						>
 							<div>Teklif Al</div>
-							<BiSolidOffer className='text-primary font-bold' size={16} />
+							<BiSolidOffer className='font-bold text-primary' size={16} />
 						</a>
 					</>
 				) : (
 					<>
 						{NAV_MENU_ITEMS.map((item) => (
-							<a key={item.title} href={item.href} className='text-white hover:text-appgray text-2xl' onClick={onClose}>
+							<a key={item.title} href={item.href} className='text-2xl text-white hover:text-appgray' onClick={onClose}>
 								{item.title}
 							</a>
 						))}
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}
-							className='bg-white text-primary px-4 py-2 rounded-full text-base font-medium space-x-2 flex items-center justify-center text-center shadow-primary shadow-md'
+							className='flex items-center justify-center px-4 py-2 space-x-2 text-base font-medium text-center bg-white rounded-full shadow-md text-primary shadow-primary'
 						>
 							<div>Teklif Al</div>
-							<BiSolidOffer className='text-primary font-bold' size={16} />
+							<BiSolidOffer className='font-bold text-primary' size={16} />
 						</a>
 					</>
 				)}

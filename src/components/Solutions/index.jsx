@@ -34,7 +34,7 @@ const WorkCard = ({ work, index }) => {
 
 	return (
 		<motion.div
-			className='bg-white p-5 rounded-xl flex flex-col shadow-md cursor-pointer'
+			className='flex flex-col p-5 bg-white shadow-md cursor-pointer rounded-xl'
 			variants={bounceVariant}
 			initial='hidden'
 			animate='visible'
@@ -47,7 +47,7 @@ const WorkCard = ({ work, index }) => {
 			<div className='flex flex-col items-start justify-start pt-[20px] pr-[40px] pb-[40px]'>
 				<h3 className='text-lg font-semibold mb-2 text-[#333]'>{work.title}</h3>
 				<p className='text-[#333] text-sm font-normal mb-2.5'>{truncateText(work.description, 12)}</p>
-				<div className='bg-primary text-white px-4 py-2 rounded-md text-sm font-medium space-x-2 text-center'>Devamını Oku</div>
+				<div className='px-4 py-2 space-x-2 text-sm font-medium text-center text-white rounded-md bg-primary'>Devamını Oku</div>
 			</div>
 		</motion.div>
 	);
@@ -70,13 +70,13 @@ const Solutions = () => {
 
 	return (
 		<section id='solutions' className='py-12'>
-			<motion.div className='container mx-auto px-4' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
-				<div className='text-center mb-12'>
-					<h2 className='text-3xl font-semibold mb-2'>Blog</h2>
-					<p className='text-primary text-lg'>Araştırın ve Öğrenin!</p>
+			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
+				<div className='mb-12 text-center'>
+					<h2 className='mb-2 text-3xl font-semibold'>Blog</h2>
+					<p className='text-lg text-primary'>Araştırın ve Öğrenin!</p>
 				</div>
 
-				<div className='flex justify-start items-center space-x-4 lg:justify-center mb-8 overflow-x-auto pb-4'>
+				<div className='flex items-center justify-start pb-4 mb-8 space-x-4 overflow-x-auto lg:justify-center'>
 					{categories.map((category) => (
 						<button
 							key={category}
@@ -90,7 +90,7 @@ const Solutions = () => {
 					))}
 				</div>
 
-				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+				<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
 					<AnimatePresence>
 						{filteredWorks.map((work, index) => (
 							<WorkCard key={work.id} work={work} index={index} />

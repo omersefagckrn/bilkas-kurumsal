@@ -103,12 +103,6 @@ export const logos = [
 		isWhite: false
 	},
 	{
-		id: 4,
-		src: 'https://www.petekplastik.com/assets/site/images/logo.webp',
-		alt: 'Petek Plastik',
-		isWhite: true
-	},
-	{
 		id: 5,
 		src: 'https://www.kuveytturk.com.tr/_assets/svg/logo.svg',
 		alt: 'Kuveyt Türk',

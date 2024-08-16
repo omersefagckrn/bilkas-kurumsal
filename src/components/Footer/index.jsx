@@ -25,12 +25,12 @@ const Footer = () => {
 
 	return (
 		<>
-			<footer id='contact' className='text-black  py-12'>
-				<div className='container mx-auto w-full'>
-					<div className='grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-0'>
+			<footer id='contact' className='py-12 text-black'>
+				<div className='container w-full mx-auto'>
+					<div className='grid grid-cols-1 gap-6 px-4 md:grid-cols-3 md:px-0'>
 						<motion.div
 							ref={ref}
-							className='flex items-start justify-between flex-col'
+							className='flex flex-col items-start justify-between'
 							initial='hidden'
 							animate={controls}
 							variants={fadeInUp}
@@ -46,7 +46,7 @@ const Footer = () => {
 									dünyadaki varlığını güçlendirmek ve hedef kitlenizle etkili bir iletişim kurmanızı sağlamak için çalışıyoruz.
 								</div>
 							</div>
-							<div className='pt-10 lg:mt-0 hidden lg:block'>
+							<div className='hidden pt-10 lg:mt-0 lg:block'>
 								<Logo />
 							</div>
 						</motion.div>
@@ -83,7 +83,7 @@ const Footer = () => {
 							></iframe>
 						</motion.div>
 					</div>
-					<div className='text-center mt-8 lg:mt-0 text-black/50 text-sm'>
+					<div className='mt-8 text-sm text-center lg:mt-0 text-black/50'>
 						<div>
 							&copy; 2024 Bilkas Dijital Reklam Ajansı. Tüm hakları saklıdır.{' '}
 							<a href={`tel:05078455183`} alt='Ömer Sefa Güçkıran' className='font-bold underline'>
