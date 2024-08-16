@@ -1,5 +1,4 @@
-import { FiCamera, FiPenTool, FiShare2 } from 'react-icons/fi';
-import { GiMagnifyingGlass } from 'react-icons/gi';
+import { FiDollarSign, FiPenTool, FiShare2 } from 'react-icons/fi';
 import { LuCode2 } from 'react-icons/lu';
 import { MdCampaign } from 'react-icons/md';
 
@@ -15,34 +14,34 @@ export const NAV_MENU_ITEMS = [
 
 export const EvaluationData = [
 	{
-		title: 'SEO',
-		description: 'SEO hizmeti ile hedef kitlenizin Google üzerinde yaptığı ürün ya da hizmet araştırmalarında, organik olarak rakiplerinizin önünde ya da üst sıralarda yer alırsınız. LEVELUP bu hizmeti verirken, web sitenizi geliştirir ve sitenize daha fazla trafik çekmek için çözüm önerilerinde bulunur.',
-		icon: <GiMagnifyingGlass size={30} className='text-primary' />
+		title: 'Mali Müşavirlik Danışmanlığı',
+		description: 'Şirketinizi kurarken bizlerden alacağınız bilgi ve yönlendirme desteği ile sizlerde sorunsuz bir iş hayatına başlayın. Bu hizmetlerimizle sizlerin en başta karşılaşacağı sorunları çözüme ulaştırıyoruz.',
+		detail: 'anan',
+		icon: <FiDollarSign size={30} className='text-primary' />
 	},
 	{
-		title: 'Dijital Pazarlama',
-		description: 'Markanızın dijital mecralarda stratejik şekilde tanıtımının yapılmasını, ürün ya da hizmetlerinizin satın almaya yönlendirilmesini ve ihtiyaç anında ilk akla gelmesini hedefleyen pazarlama yöntemidir.',
-		icon: <MdCampaign size={30} className='text-primary' />
-	},
-	{
-		title: 'Kreatif Tasarım',
-		description: 'Estetik bir yaklaşım ile hedef kitlenin dikkatini çekerken, işlevselliği ile markanın mesajını vurgulayan ve etkileşimi yüksek tasarımlar oluşturmayı amaçlayan sanatsal bir süreçtir.',
-		icon: <FiPenTool size={30} className='text-primary' />
-	},
-	{
-		title: 'Yazılım Çözümleri',
-		description: 'Web sitelerinin kullanıcı dostu görünümünün, etkin fonksiyonelliğinin ve ölçümlemeyi mümkün kılan tasarımının oluşturulma sürecidir.',
+		title: 'Özel Yazılım Çözümleri',
+		description: 'İşletmenizin ihtiyaçlarına ve bütçenize uygun, mobil uyumlu, çoklu dil destekli ve interaktif özelliklerle donatılmış, tamamen animasyonlu bir web sitesi tasarımı sunuyoruz. Hedeflerinize en iyi şekilde ulaşmanızı sağlayacak çözümler üretiyoruz.',
+		detail: 'anan',
 		icon: <LuCode2 size={30} className='text-primary' />
 	},
 	{
 		title: 'Sosyal Medya Yönetimi',
-		description: 'İşletmelerin sosyal medya hesaplarının etkili şekilde yürütülmesi, etkinlik ve aktivitelerinin etkileşim bazlı planlaması ve gelişim odaklı optimize etmek üzere izlenmesi yaklaşımıyla yönetilmesidir.',
+		description: 'Markanızı dijital dünyada güçlendirin. Sosyal medya hesaplarınızın profesyonel yönetimi ile hedef kitlenizle etkileşim kurun ve marka bilinirliğinizi artırın.',
+		detail: 'anan',
 		icon: <FiShare2 size={30} className='text-primary' />
 	},
 	{
-		title: 'Fotoğraf & Video Çekimi',
-		description: 'Şirketlerin ürün ya da hizmetlerinin talep alacak şekilde tanıtılması ve istenilen mecralarda kullanılmak üzere optimize edilmesi üzerine gelişen bir hizmet sürecidir.',
-		icon: <FiCamera size={30} className='text-primary' />
+		title: 'Tasarım',
+		description: 'Estetik ve işlevsel tasarımlar ile markanızı görsel olarak öne çıkarıyoruz. Logo tasarımından, kurumsal içerik tasarımlarına, web arayüzlerine kadar her alanda yaratıcı çözümler sunuyoruz.',
+		detail: 'anan',
+		icon: <FiPenTool size={30} className='text-primary' />
+	},
+	{
+		title: 'Dijital Pazarlama',
+		description: 'Ürün ve hizmetlerinizi dijital dünyada etkin bir şekilde tanıtıyoruz. SEO, SEM ve hedefli dijital reklam kampanyaları ile satışlarınızı artırın ve markanızı büyütün.',
+		detail: 'anan',
+		icon: <MdCampaign size={30} className='text-primary' />
 	}
 ];
 
@@ -77,9 +76,10 @@ export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İsta
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
 export const KURUMSAL_NUMARA = '+90 531 297 1288';
 
-export const KURUMSAL_INSTAGRAM = 'https://www.instagram.com';
-export const KURUMSAL_TIKTOK = 'https://www.tiktok.com';
+export const KURUMSAL_INSTAGRAM = 'https://www.instagram.com/bilkasdijital?igsh=NHZwMGM5a251ODF4&utm_source=qr';
+export const KURUMSAL_TIKTOK = 'https://www.tiktok.com/@bilkasdijital?_t=8ovUHHMqals&_r=1';
 export const KURUMSAL_LINKEDIN = 'https://www.linkedin.com';
+export const KURUMSAL_FACEBOOK = 'https://www.facebook.com';
 
 export const categories = ['Tümü', 'Dijital Pazarlama', 'Sosyal Medya', 'Yazılım ve Tasarım'];
 
@@ -103,13 +103,13 @@ export const logos = [
 		isWhite: false
 	},
 	{
-		id: 5,
+		id: 4,
 		src: 'https://www.kuveytturk.com.tr/_assets/svg/logo.svg',
 		alt: 'Kuveyt Türk',
 		isWhite: false
 	},
 	{
-		id: 6,
+		id: 5,
 		src: 'https://www.temkurye.com/assets/svg/app-logo.svg',
 		alt: 'Tem Kurye',
 		isWhite: true
@@ -205,24 +205,24 @@ export const works = [
 
 export const services = [
 	{
-		title: 'Dijital Pazarlama',
-		description: 'Dijital pazarlama, ürün veya hizmetlerin dijital kanallar aracılığıyla tanıtımını ve pazarlamasını yapmak için kullanılan bir dizi strateji ve taktikleri kapsayan bir pazarlama türüdür. Dijital pazarlama, internet, mobil cihazlar, dijital ekranlar ve diğer dijital teknolojiler gibi dijital ortamlarda gerçekleştirilir.'
+		title: 'Mali Müşavirlik Danışmanlığı',
+		description: 'Şirketinizi kurarken sunduğumuz kapsamlı danışmanlık ve rehberlik hizmetleriyle, iş hayatınıza sorunsuz bir başlangıç yapmanızı sağlıyoruz. Vergi, yasal süreçler, finansal planlama ve operasyonel yapılandırma gibi konularda uzman ekibimizle yanınızdayız. Bu hizmetlerimizle, karşılaşabileceğiniz potansiyel sorunları önceden tespit ederek, çözüm odaklı stratejiler geliştiriyoruz ve işinizi güçlü bir temelle kurmanıza yardımcı oluyoruz.'
+	},
+	{
+		title: 'Özel Yazılım Çözümleri',
+		description: 'İşletmenizin büyüme yolculuğunu hızlandırmak ve dijital dönüşümünü desteklemek için, size özel yazılım çözümleri geliştiriyoruz. Operasyonel süreçlerinizi optimize eden, verimliliği artıran ve tamamen işinize özgü olarak tasarlanmış yenilikçi yazılımlar sunarak, rekabette öne çıkmanızı sağlıyoruz.'
 	},
 	{
 		title: 'Sosyal Medya Yönetimi',
-		description: 'İşletmelerin sosyal medya hesaplarının etkili şekilde yürütülmesi, etkinlik ve aktivitelerinin etkileşim bazlı planlaması ve gelişim odaklı optimize etmek üzere izlenmesi yaklaşımıyla yönetilmesidir.'
+		description: 'Markanızın sosyal medya platformlarında etkili bir şekilde temsil edilmesini sağlıyor, içerik yönetimi, etkileşim arttırma ve büyüme odaklı stratejiler geliştiriyoruz. Hedef kitlenizle güçlü bir bağ kurmanıza yardımcı oluyoruz.'
 	},
 	{
-		title: 'Web Tasarım',
-		description: 'Web sitelerinin kullanıcı dostu görünümünün, etkin fonksiyonelliğinin ve ölçümlemeyi mümkün kılan tasarımının oluşturulma sürecidir.'
+		title: 'Tasarım',
+		description: 'Markanızı en iyi şekilde temsil eden, estetik ve kullanımı kolay tasarımlar sunuyoruz. Web tasarımından grafik tasarıma kadar, markanızın her alanda güçlü bir izlenim bırakmasını sağlayacak yaratıcı çözümler sunmaktayız.'
 	},
 	{
-		title: 'Kreatif Tasarım',
-		description: 'Estetik bir yaklaşım ile hedef kitlenin dikkatini çekerken, işlevselliği ile markanın mesajını vurgulayan ve etkileşimi yüksek tasarımlar oluşturmayı amaçlayan sanatsal bir süreçtir.'
-	},
-	{
-		title: 'Fotoğraf ve Video Çekimi',
-		description: 'Şirketlerin ürün ya da hizmetlerinin talep alacak şekilde tanıtılması ve istenilen mecralarda kullanılmak üzere optimize edilmesi üzerine gelişen bir hizmet sürecidir.'
+		title: 'Dijital Pazarlama',
+		description: 'SEO, SEM ve hedefe yönelik reklam stratejileriyle, ürün ve hizmetlerinizin dijital dünyada daha geniş kitlelere ulaşmasını sağlıyoruz. Dijital platformlarda markanızı güçlendirmek ve etkili reklam kampanyaları ile satışlarınızı artırmak için kapsamlı dijital pazarlama çözümleri sunuyoruz.'
 	}
 ];
 

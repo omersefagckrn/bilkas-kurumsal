@@ -34,7 +34,12 @@ const FixedIcons = () => {
 					<FaArrowUp size={24} />
 				</button>
 			)}
-			<a href='https://wa.me/YOUR_PHONE_NUMBER' className='p-3 text-white bg-green-600 rounded-full shadow-md' target='_blank' rel='noopener noreferrer'>
+			<a
+				href='https://api.whatsapp.com/send?phone=905312971288&text=Merhaba.%20Ajansınızdan%20hizmetleriniz%20hakkında%20bilgi%20ve%20fiyat%20teklifi%20alabilir%20miyim?'
+				target='_blank'
+				className='p-3 text-white bg-green-600 rounded-full shadow-md'
+				rel='noopener noreferrer'
+			>
 				<FaWhatsapp className='text-white' size={24} />
 			</a>
 			<a href={`tel:${KURUMSAL_NUMARA}`} className='p-3 text-white bg-green-600 rounded-full shadow-md phone-icon'>

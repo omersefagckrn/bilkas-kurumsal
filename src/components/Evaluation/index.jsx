@@ -49,15 +49,15 @@ const Evaluation = () => {
 	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	return (
-		<section id='evaluation' className='py-12 '>
+		<section id='evaluation' className='py-12 bg-appbggray'>
 			<div className='container w-full px-4 mx-auto'>
 				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
-					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>
-						Değişen pazarlama ve medya anlayışında yanınızdayız! Dijitali satış kanalı olarak değerlendirmek isterseniz burada olacağız.
-					</h2>
+					<h2 className='text-[25px] md:text-[40px] font-semibold text-black tracking-[-0.2px]'>İşinizi kurun veya geliştirin.</h2>
+					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>Biz sizin her zaman yanınızdayız.</h2>
+
 					<p className='mb-12 text-base text-appgray'>
-						LEVELUP, ürün ve hizmetinize özel; satışlarınızı destekleyici dijital stratejiler, mecra ve etkileşim odaklı fikirler, fonksiyonel
-						yazılımlar üreten bir dijital pazarlama ajansıdır.
+						İşinizi kurma ve büyütme sürecinde, ihtiyaç duyduğunuz her alanda yanınızdayız. Mali danışmanlık, özel yazılım çözümleri, sosyal medya
+						yönetimi, tasarım ve dijital reklamcılıktan oluşan geniş hizmet yelpazemizle, uzman ekibimiz tüm bu süreçleri sizin için yönetiyor.
 					</p>
 				</motion.div>
 				<div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>

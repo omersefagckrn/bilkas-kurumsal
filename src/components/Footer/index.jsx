@@ -25,7 +25,7 @@ const Footer = () => {
 
 	return (
 		<>
-			<footer id='contact' className='py-12 text-black'>
+			<footer id='contact' className='py-12 text-black bg-appbggray'>
 				<div className='container w-full mx-auto'>
 					<div className='grid grid-cols-1 gap-6 px-4 md:grid-cols-3 md:px-0'>
 						<motion.div
@@ -38,12 +38,13 @@ const Footer = () => {
 						>
 							<div className='text-[14px] space-y-2'>
 								<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>Hakkımızda</div>
-								<div className='text-justify'>
-									Bilkas Dijital Reklam Ajansı olarak, dijital pazarlama dünyasında yaratıcı çözümlerle markanızı zirveye
-									taşımayı hedefliyoruz. Yenilikçi yaklaşımımız ve deneyimli ekibimizle, müşterilerimizin beklentilerini aşan
-									projeler geliştiriyoruz. Sunduğumuz hizmetler arasında sosyal medya yönetimi, içerik üretimi, arama motoru
-									optimizasyonu (SEO), dijital reklam kampanyaları ve web tasarımı bulunmaktadır. Her adımda, markanızın dijital
-									dünyadaki varlığını güçlendirmek ve hedef kitlenizle etkili bir iletişim kurmanızı sağlamak için çalışıyoruz.
+								<div className='text-left'>
+									Bilkas Dijital Reklam Ajansı olarak, markanızı dijital dünyada zirveye taşımak için yaratıcı çözümler
+									sunuyoruz. Yenilikçi bakış açımız ve alanında uzman ekibimizle, beklentilerinizi aşan projeler geliştiriyoruz.
+									Sosyal medya yönetiminden içerik üretimine, arama motoru optimizasyonundan (SEO) dijital reklam kampanyalarına
+									ve web tasarımına kadar geniş bir hizmet yelpazesi sunuyoruz. Amacımız, markanızın dijital varlığını
+									güçlendirmek ve hedef kitlenizle etkili bir iletişim kurmanızı sağlamaktır. Şimdi, markanızı bir adım öteye
+									taşımak için bize katılın.
 								</div>
 							</div>
 							<div className='hidden pt-10 lg:mt-0 lg:block'>
@@ -85,7 +86,7 @@ const Footer = () => {
 					</div>
 					<div className='mt-8 text-sm text-center lg:mt-0 text-black/50'>
 						<div>
-							&copy; 2024 Bilkas Dijital Reklam Ajansı. Tüm hakları saklıdır.{' '}
+							&copy; 2023 Bilkas Dijital Reklam Ajansı. Tüm hakları saklıdır.{' '}
 							<a href={`tel:05078455183`} alt='Ömer Sefa Güçkıran' className='font-bold underline'>
 								Geliştirici
 							</a>

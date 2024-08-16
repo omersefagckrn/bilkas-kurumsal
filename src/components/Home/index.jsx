@@ -16,10 +16,10 @@ const Home = () => {
 				<Navbar />
 				<div className='flex-grow pt-24'>
 					<Banner />
-					<OurSupports />
 					<Evaluation />
 					<Pricing />
 					<Teams />
+					<OurSupports />
 					<Solutions />
 					<Services />
 				</div>

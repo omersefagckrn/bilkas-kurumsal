@@ -20,7 +20,7 @@ const OurSupports = () => {
 				</div>
 
 				<div className='flex flex-wrap items-center justify-center'>
-					{logos.slice(0, 4).map((logo) => (
+					{logos.slice(0, 3).map((logo) => (
 						<motion.div
 							key={logo.id}
 							className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${
@@ -37,7 +37,7 @@ const OurSupports = () => {
 				</div>
 
 				<div className='flex flex-wrap items-center justify-center mt-6'>
-					{logos.slice(4, 6).map((logo) => (
+					{logos.slice(3, 6).map((logo) => (
 						<motion.div
 							key={logo.id}
 							className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${

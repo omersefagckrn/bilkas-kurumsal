@@ -27,7 +27,8 @@ const EvaluationDetail = () => {
 					<div className='container flex flex-col px-4 py-12 mx-auto lg:flex-row'>
 						<div className='w-full'>
 							<h1 className='mb-4 text-4xl font-semibold leading-tight text-gray-800'>{evaluation.title}</h1>
-							<p className='text-lg leading-relaxed text-justify text-gray-700'>{evaluation.description}</p>
+							<p className='leading-relaxed text-justify text-gray-700 text-[14px]'>{evaluation.description}</p>
+							<p className='text-xs text-[20px] mt-4 font-semibold'>{evaluation.detail}</p>
 						</div>
 					</div>
 				</div>

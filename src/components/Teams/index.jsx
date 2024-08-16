@@ -13,7 +13,7 @@ const hoverEffect = {
 
 const Teams = () => {
 	return (
-		<section id='teams' className='py-12'>
+		<section id='teams' className='py-12 bg-appbggray'>
 			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
 				<div className='mb-12 text-center'>
 					<h2 className='mb-2 text-3xl font-semibold'>Ekibimiz</h2>
@@ -31,8 +31,7 @@ const Teams = () => {
 							variants={hoverEffect}
 						>
 							<img src={member.image} alt={member.name} className='w-24 h-24 mb-4 rounded-full shadow-lg' />
-							<h3 className='mb-2 text-xl font-semibold'>{member.name}</h3>
-							<p className='text-gray-600'>{member.position}</p>
+							<p className='font-bold text-appgray'>{member.position}</p>
 						</motion.div>
 					))}
 				</div>

@@ -69,7 +69,7 @@ const Solutions = () => {
 	const filteredWorks = selectedCategory === 'Tümü' ? works : works.filter((work) => work.category === selectedCategory);
 
 	return (
-		<section id='solutions' className='py-12'>
+		<section id='solutions' className='py-12 bg-appbggray'>
 			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
 				<div className='mb-12 text-center'>
 					<h2 className='mb-2 text-3xl font-semibold'>Blog</h2>

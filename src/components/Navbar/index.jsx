@@ -4,8 +4,8 @@ import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useLocation, Link } from 'react-router-dom';
 import NavMobileMenu from './NavMobileMenu';
-import { KURUMSAL_EMAIL, KURUMSAL_INSTAGRAM, KURUMSAL_LINKEDIN, KURUMSAL_NUMARA, KURUMSAL_TIKTOK, NAV_MENU_ITEMS } from '../../constants';
-import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
+import { KURUMSAL_EMAIL, KURUMSAL_INSTAGRAM, KURUMSAL_LINKEDIN, KURUMSAL_NUMARA, KURUMSAL_TIKTOK, NAV_MENU_ITEMS, KURUMSAL_FACEBOOK } from '../../constants';
+import { FaInstagram, FaTiktok, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
 import Logo from '../Logo';
 import { BiSolidOffer } from 'react-icons/bi';
@@ -86,6 +86,9 @@ const Navbar = () => {
 							<div className='cursor-pointer'>{KURUMSAL_EMAIL}</div>
 						</a>
 						<div className='flex items-center space-x-4'>
+							<a target='_blank' href={KURUMSAL_FACEBOOK} aria-label='Facebook'>
+								<FaFacebook size={16} />
+							</a>
 							<a target='_blank' href={KURUMSAL_INSTAGRAM} aria-label='Instagram'>
 								<FaInstagram size={16} />
 							</a>
