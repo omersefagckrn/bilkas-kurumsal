@@ -29,7 +29,7 @@ const EvaluationDetail = () => {
 						<div className='w-full'>
 							<h1 className='mb-4 text-4xl font-semibold leading-tight text-gray-800'>{evaluation.title}</h1>
 							<p className='leading-relaxed text-justify text-gray-700 text-[14px]'>{evaluation.description}</p>
-							<p className='text-xs text-[20px] mt-4 font-semibold'>{evaluation.detail}</p>
+							<p className='text-xs text-[20px] mt-4 font-semibold'>{evaluation.details}</p>
 						</div>
 					</div>
 				</div>

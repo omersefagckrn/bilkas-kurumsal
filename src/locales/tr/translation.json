@@ -11,20 +11,35 @@
 	},
 	"services": {
 		"title_1": "Mali Müşavirlik Danışmanlığı",
-		"description_1": "Şirketinizi kurarken sunduğumuz kapsamlı danışmanlık ve rehberlik hizmetleriyle, iş hayatınıza sorunsuz bir başlangıç yapmanızı sağlıyoruz.",
+		"description_1": "Şirketinizi kurarken sunduğumuz kapsamlı danışmanlık ve rehberlik hizmetleriyle, iş hayatınıza sorunsuz bir başlangıç yapmanızı sağlıyoruz. Vergi, yasal süreçler, finansal planlama ve operasyonel yapılandırma gibi konularda uzman ekibimizle yanınızdayız. Bu hizmetlerimizle, karşılaşabileceğiniz potansiyel sorunları önceden tespit ederek, çözüm odaklı stratejiler geliştiriyoruz ve işinizi güçlü bir temelle kurmanıza yardımcı oluyoruz.",
 		"title_2": "Özel Yazılım Çözümleri",
-		"description_2": "İşletmenizin büyüme yolculuğunu hızlandırmak ve dijital dönüşümünü desteklemek için, size özel yazılım çözümleri geliştiriyoruz.",
+		"description_2": "İşletmenizin büyüme yolculuğunu hızlandırmak ve dijital dönüşümünü desteklemek için, size özel yazılım çözümleri geliştiriyoruz. Operasyonel süreçlerinizi optimize eden, verimliliği artıran ve tamamen işinize özgü olarak tasarlanmış yenilikçi yazılımlar sunarak, rekabette öne çıkmanızı sağlıyoruz.",
 		"title_3": "Sosyal Medya Yönetimi",
-		"description_3": "Markanızın sosyal medya platformlarında etkili bir şekilde temsil edilmesini sağlıyoruz.",
+		"description_3": "Markanızın sosyal medya platformlarında etkili bir şekilde temsil edilmesini sağlıyor, içerik yönetimi, etkileşim arttırma ve büyüme odaklı stratejiler geliştiriyoruz. Hedef kitlenizle güçlü bir bağ kurmanıza yardımcı oluyoruz.",
 		"title_4": "Tasarım",
-		"description_4": "Markanızı en iyi şekilde temsil eden, estetik ve kullanımı kolay tasarımlar sunuyoruz.",
+		"description_4": "Markanızı en iyi şekilde temsil eden, estetik ve kullanımı kolay tasarımlar sunuyoruz. Web tasarımından grafik tasarıma kadar, markanızın her alanda güçlü bir izlenim bırakmasını sağlayacak yaratıcı çözümler sunmaktayız.",
 		"title_5": "Dijital Pazarlama",
-		"description_5": "SEO, SEM ve hedefe yönelik reklam stratejileriyle, ürün ve hizmetlerinizin dijital dünyada daha geniş kitlelere ulaşmasını sağlıyoruz."
+		"description_5": "SEO, SEM ve hedefe yönelik reklam stratejileriyle, ürün ve hizmetlerinizin dijital dünyada daha geniş kitlelere ulaşmasını sağlıyoruz. Dijital platformlarda markanızı güçlendirmek ve etkili reklam kampanyaları ile satışlarınızı artırmak için kapsamlı dijital pazarlama çözümleri sunuyoruz."
 	},
 	"evaluation": {
 		"heading_1": "İşinizi kurun veya geliştirin.",
 		"heading_2": "Biz sizin her zaman yanınızdayız.",
-		"paragraph": "İşinizi kurma ve büyütme sürecinde, ihtiyaç duyduğunuz her alanda yanınızdayız. Mali danışmanlık, özel yazılım çözümleri, sosyal medya yönetimi, tasarım ve dijital reklamcılıktan oluşan geniş hizmet yelpazemizle, uzman ekibimiz tüm bu süreçleri sizin için yönetiyor."
+		"paragraph": "İşinizi kurma ve büyütme sürecinde, ihtiyaç duyduğunuz her alanda yanınızdayız. Mali danışmanlık, özel yazılım çözümleri, sosyal medya yönetimi, tasarım ve dijital reklamcılıktan oluşan geniş hizmet yelpazemizle, uzman ekibimiz tüm bu süreçleri sizin için yönetiyor.",
+		"title_1": "Mali Müşavirlik Danışmanlığı",
+		"description_1": "Şirketinizi kurarken bizlerden alacağınız bilgi ve yönlendirme desteği ile sizlerde sorunsuz bir iş hayatına başlayın. Bu hizmetlerimizle sizlerin en başta karşılaşacağı sorunları çözüme ulaştırıyoruz.",
+		"details_1": "Detaylar 1",
+		"title_2": "Özel Yazılım Çözümleri",
+		"description_2": "İşletmenizin ihtiyaçlarına ve bütçenize uygun, mobil uyumlu, çoklu dil destekli ve interaktif özelliklerle donatılmış, tamamen animasyonlu bir web sitesi tasarımı sunuyoruz. Hedeflerinize en iyi şekilde ulaşmanızı sağlayacak çözümler üretiyoruz.",
+		"details_2": "Detaylar 2",
+		"title_3": "Sosyal Medya Yönetimi",
+		"description_3": "Markanızı dijital dünyada güçlendirin. Sosyal medya hesaplarınızın profesyonel yönetimi ile hedef kitlenizle etkileşim kurun ve marka bilinirliğinizi artırın.",
+		"details_3": "Detaylar 3",
+		"title_4": "Tasarım",
+		"description_4": "Estetik ve işlevsel tasarımlar ile markanızı görsel olarak öne çıkarıyoruz. Logo tasarımından, kurumsal içerik tasarımlarına, web arayüzlerine kadar her alanda yaratıcı çözümler sunuyoruz.",
+		"details_4": "Detaylar 4",
+		"title_5": "Dijital Pazarlama",
+		"description_5": "Ürün ve hizmetlerinizi dijital dünyada etkin bir şekilde tanıtıyoruz. SEO, SEM ve hedefli dijital reklam kampanyaları ile satışlarınızı artırın ve markanızı büyütün.",
+		"details_5": "Detaylar 5"
 	},
 	"banner": {
 		"subtitle": "İş Dünyasında Zirveye",

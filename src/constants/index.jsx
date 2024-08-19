@@ -25,28 +25,33 @@ export const NAV_MENU_ITEMS = (t) => {
 
 export const EVALUATION_DATA = (t) => [
 	{
-		title: t('services.title_1'),
-		description: t('services.description_1'),
+		title: t('evaluation.title_1'),
+		description: t('evaluation.description_1'),
+		details: t('evaluation.details_1'),
 		icon: <FiDollarSign size={30} className='text-primary' />
 	},
 	{
-		title: t('services.title_2'),
-		description: t('services.description_2'),
+		title: t('evaluation.title_2'),
+		description: t('evaluation.description_2'),
+		details: t('evaluation.details_2'),
 		icon: <LuCode2 size={30} className='text-primary' />
 	},
 	{
-		title: t('services.title_3'),
-		description: t('services.description_3'),
+		title: t('evaluation.title_3'),
+		description: t('evaluation.description_3'),
+		details: t('evaluation.details_3'),
 		icon: <FiShare2 size={30} className='text-primary' />
 	},
 	{
-		title: t('services.title_4'),
-		description: t('services.description_4'),
+		title: t('evaluation.title_4'),
+		description: t('evaluation.description_4'),
+		details: t('evaluation.details_4'),
 		icon: <FiPenTool size={30} className='text-primary' />
 	},
 	{
-		title: t('services.title_5'),
-		description: t('services.description_5'),
+		title: t('evaluation.title_5'),
+		description: t('evaluation.description_5'),
+		details: t('evaluation.details_5'),
 		icon: <MdCampaign size={30} className='text-primary' />
 	}
 ];

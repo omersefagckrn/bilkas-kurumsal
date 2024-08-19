@@ -11,20 +11,35 @@
 	},
 	"services": {
 		"title_1": "Financial Consulting",
-		"description_1": "We provide comprehensive consulting and guidance services to help you start your business smoothly.",
+		"description_1": "With the comprehensive consultancy and guidance services we provide when establishing your company, we ensure that you have a smooth start to your business life. We are with you with our expert team on issues such as tax, legal processes, financial planning and operational structuring. With these services, we identify potential problems you may encounter in advance, develop solution-oriented strategies and help you establish your business with a strong foundation.",
 		"title_2": "Custom Software Solutions",
-		"description_2": "We develop custom software solutions to accelerate your business growth and support your digital transformation.",
+		"description_2": "We develop software solutions specifically for you to accelerate your business's growth journey and support its digital transformation. We provide innovative software that optimizes your operational processes, increases efficiency and is designed specifically for your business, allowing you to stand out from the competition.",
 		"title_3": "Social Media Management",
-		"description_3": "We ensure effective representation of your brand on social media platforms.",
+		"description_3": "We ensure that your brand is effectively represented on social media platforms, manage content, increase interaction and develop growth-oriented strategies. We help you establish a strong connection with your target audience.",
 		"title_4": "Design",
-		"description_4": "We offer aesthetic and user-friendly designs that best represent your brand.",
+		"description_4": "We offer aesthetic and user-friendly designs that best represent your brand. From web design to graphic design, we offer creative solutions that will ensure your brand makes a strong impression in every area.",
 		"title_5": "Digital Marketing",
-		"description_5": "We offer comprehensive digital marketing solutions to help your products and services reach a wider audience."
+		"description_5": "With SEO, SEM and targeted advertising strategies, we ensure that your products and services reach wider audiences in the digital world. We offer comprehensive digital marketing solutions to strengthen your brand in digital platforms and increase your sales with effective advertising campaigns."
 	},
 	"evaluation": {
 		"heading_1": "Start or Grow Your Business.",
 		"heading_2": "We Are Always By Your Side.",
-		"paragraph": "We are here for you in every aspect of starting and growing your business. From financial consulting to custom software solutions, social media management, design, and digital marketing, our expert team manages all these processes for you."
+		"paragraph": "We are here for you in every aspect of starting and growing your business. From financial consulting to custom software solutions, social media management, design, and digital marketing, our expert team manages all these processes for you.",
+		"title_1": "Financial Consulting",
+		"description_1": "Start your business with the information and guidance support you will receive from us. With these services, we solve the problems you will encounter at the beginning.",
+		"details_1": "Details 1",
+		"title_2": "Custom Software Solutions",
+		"description_2": "We offer a completely animated website design that is compatible with your business needs and budget, multilingual, and equipped with interactive features. We produce solutions that will help you reach your goals.",
+		"details_2": "Details 2",
+		"title_3": "Social Media Management",
+		"description_3": "Strengthen your brand in the digital world. Interact with your target audience professionally on your social media accounts and increase brand awareness.",
+		"details_3": "Details 3",
+		"title_4": "Design",
+		"description_4": "We highlight your brand visually with aesthetic and functional designs. We offer creative solutions in every area from logo design to corporate content designs, web interfaces.",
+		"details_4": "Details 4",
+		"title_5": "Digital Marketing",
+		"description_5": "We effectively promote your products and services in the digital world. Increase your sales and grow your brand with SEO, SEM, and targeted digital advertising campaigns.",
+		"details_5": "Details 5"
 	},
 	"banner": {
 		"subtitle": "Reach the Top in Business",
