@@ -20,20 +20,10 @@ const LanguageSwitcher = () => {
 
 			<OverlayPanel ref={op} className='w-full lg:w-[250px] p-overlaypanel-arrow'>
 				<div className='flex flex-col p-1'>
-					<button
-						onClick={() => changeLanguage('tr')}
-						className={`w-full py-2 mb-2 text-lg font-semibold text-white rounded-lg ${
-							i18n.language === 'tr' ? 'bg-primary' : 'bg-gray-200'
-						} focus:outline-none`}
-					>
+					<button onClick={() => changeLanguage('tr')} className='w-full py-2 mb-2 text-lg font-semibold text-white rounded-lg bg-primary focus:outline-none'>
 						Türkçe
 					</button>
-					<button
-						onClick={() => changeLanguage('en')}
-						className={`w-full py-2 text-lg font-semibold text-white rounded-lg ${
-							i18n.language === 'en' ? 'bg-primary' : 'bg-gray-200'
-						} focus:outline-none`}
-					>
+					<button onClick={() => changeLanguage('en')} className='w-full py-2 text-lg font-semibold text-white rounded-lg bg-primary focus:outline-none'>
 						English
 					</button>
 				</div>
