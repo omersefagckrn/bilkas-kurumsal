@@ -10,12 +10,6 @@ export default {
 			},
 			container: {
 				center: true,
-				padding: {
-					DEFAULT: '1rem', // Tüm ekran boyutlarında 1rem padding
-					sm: '2rem', // Küçük ekranlarda 2rem padding
-					lg: '4rem', // Büyük ekranlarda 4rem padding
-					xl: '5rem' // Çok büyük ekranlarda 5rem padding
-				},
 				screens: {
 					sm: '100%', // Küçük ekranlarda %100 genişlik
 					md: '100%', // Orta ekranlarda %100 genişlik

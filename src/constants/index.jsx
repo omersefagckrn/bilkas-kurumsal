@@ -117,7 +117,7 @@ export const teams = [
 		id: '1',
 		name: 'Bahar Karaman',
 		position: 'Founder & CEO',
-		image: 'src/assets/teams/unknown_person.jpg'
+		image: 'src/assets/teams/unknown_person.jpeg'
 	},
 	{
 		id: 2,
@@ -129,7 +129,7 @@ export const teams = [
 		id: 3,
 		name: 'Ömer Sefa Güçkıran',
 		position: 'Software Developer',
-		image: 'src/assets/teams/omer.jpg'
+		image: 'src/assets/teams/omer.jpeg'
 	},
 	{
 		id: 4,

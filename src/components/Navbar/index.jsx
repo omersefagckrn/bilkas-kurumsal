@@ -84,7 +84,7 @@ const Navbar = () => {
 			variants={slideVariants}
 		>
 			<header className='py-3 text-white bg-primary'>
-				<div className='container flex items-center justify-between w-full px-4 mx-auto'>
+				<div className='container flex items-center justify-between w-full px-4 mx-auto lg:px-0'>
 					<a href={`mailto:${KURUMSAL_EMAIL}`} className='flex items-center'>
 						<IoMailOutline className='mr-2' />
 						<span className='cursor-pointer'>{KURUMSAL_EMAIL}</span>
