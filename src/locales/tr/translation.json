@@ -1,0 +1,75 @@
+{
+	"nav": {
+		"home": "Ana Sayfa",
+		"about": "Hakkımızda",
+		"pricing": "Ücretlendirme",
+		"blog": "Blog",
+		"services": "Hizmetlerimiz",
+		"team": "Ekibimiz",
+		"contact": "Bize Ulaş",
+		"offer": "Teklif Al"
+	},
+	"services": {
+		"title_1": "Mali Müşavirlik Danışmanlığı",
+		"description_1": "Şirketinizi kurarken sunduğumuz kapsamlı danışmanlık ve rehberlik hizmetleriyle, iş hayatınıza sorunsuz bir başlangıç yapmanızı sağlıyoruz.",
+		"title_2": "Özel Yazılım Çözümleri",
+		"description_2": "İşletmenizin büyüme yolculuğunu hızlandırmak ve dijital dönüşümünü desteklemek için, size özel yazılım çözümleri geliştiriyoruz.",
+		"title_3": "Sosyal Medya Yönetimi",
+		"description_3": "Markanızın sosyal medya platformlarında etkili bir şekilde temsil edilmesini sağlıyoruz.",
+		"title_4": "Tasarım",
+		"description_4": "Markanızı en iyi şekilde temsil eden, estetik ve kullanımı kolay tasarımlar sunuyoruz.",
+		"title_5": "Dijital Pazarlama",
+		"description_5": "SEO, SEM ve hedefe yönelik reklam stratejileriyle, ürün ve hizmetlerinizin dijital dünyada daha geniş kitlelere ulaşmasını sağlıyoruz."
+	},
+	"evaluation": {
+		"heading_1": "İşinizi kurun veya geliştirin.",
+		"heading_2": "Biz sizin her zaman yanınızdayız.",
+		"paragraph": "İşinizi kurma ve büyütme sürecinde, ihtiyaç duyduğunuz her alanda yanınızdayız. Mali danışmanlık, özel yazılım çözümleri, sosyal medya yönetimi, tasarım ve dijital reklamcılıktan oluşan geniş hizmet yelpazemizle, uzman ekibimiz tüm bu süreçleri sizin için yönetiyor."
+	},
+	"banner": {
+		"subtitle": "İş Dünyasında Zirveye",
+		"title_1": "İşinizi",
+		"highlight_1": "kurun",
+		"or": "veya",
+		"highlight_2": "geliştirin",
+		"line_1": "Tek bir çatı altında",
+		"line_2": "sunduğumuz profesyonel çözümlerle işinizi kurarken ve geliştirirken her adımda yanınızdayız. Mali danışmanlıktan özel yazılım çözümlerine, sosyal medya yönetiminden tasarım ve dijital pazarlamaya kadar dijital dünyada tüm süreçleri uzman kadromuzla",
+		"line_3": "sizin için yönetiyoruz.",
+		"button_text": "Bize Ulaş",
+		"image_alt": "İşinizi Kurun ve Yükseltin"
+	},
+	"team": {
+		"title": "Ekibimiz",
+		"subtitle": "Sizlere hizmet veren profesyoneller"
+	},
+	"trusted": {
+		"title": "Bize Güvenenler",
+		"subtitle": "İş birliği yaptığımız değerli markalar"
+	},
+	"blog": {
+		"title": "Blog",
+		"subtitle": "Araştırın ve Öğrenin!"
+	},
+	"servicesSection": {
+		"title": "Hizmetlerimiz",
+		"subtitle": "Neler Yapıyoruz?",
+		"solutions": "Çözümlerimiz",
+		"happyClients": "Mutlu Müşteri"
+	},
+	"footer": {
+		"about": "Hakkımızda",
+		"aboutDescription": "Bilkas Dijital Reklam Ajansı olarak, markanızı dijital dünyada zirveye taşımak için yaratıcı çözümler sunuyoruz. Yenilikçi bakış açımız ve alanında uzman ekibimizle, beklentilerinizi aşan projeler geliştiriyoruz. Sosyal medya yönetiminden içerik üretimine, arama motoru optimizasyonundan (SEO) dijital reklam kampanyalarına ve web tasarımına kadar geniş bir hizmet yelpazesi sunuyoruz. Amacımız, markanızın dijital varlığını güçlendirmek ve hedef kitlenizle etkili bir iletişim kurmanızı sağlamaktır. Şimdi, markanızı bir adım öteye taşımak için bize katılın.",
+		"contact": "İletişim",
+		"rightsReserved": "Tüm hakları saklıdır.",
+		"developer": "Geliştirici"
+	},
+	"pricingSection": {
+		"title": "Ücretlendirme",
+		"subtitle": "Neler Sunuyoruz?"
+	},
+	"changeLanguage": "Dili Değiştir",
+	"cookiePolicy": {
+		"message": "Sitemizdeki deneyiminizi iyileştirmek için çerezler kullanıyoruz. Çerezler, belirli özelliklerin (sepetinizi kaydetme gibi), sosyal paylaşım işlevselliğinin (Facebook, Instagram vb. için) keyfini çıkarmanızı ve mesajları ve reklamları ilgi alanlarınıza göre uyarlamanızı (sitemizde ve diğerlerinde) sağlar. Ayrıca sitemizin nasıl kullanıldığını anlamamıza yardımcı olurlar. Sitemizi kullanmaya devam ederek çerez kullanımımızı kabul etmiş olursunuz.",
+		"button": "Kabul Et"
+	}
+}

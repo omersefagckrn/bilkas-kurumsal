@@ -23,7 +23,7 @@ const BlogDetail = () => {
 		<>
 			<Navbar />
 			<main className='flex flex-col min-h-screen pt-32 select-none bg-gray-50'>
-				<div className='container flex flex-col px-4 py-12 mx-auto lg:flex-row'>
+				<div className='container flex flex-col w-full px-4 py-12 mx-auto lg:flex-row'>
 					<div className='w-full lg:w-3/4 lg:pr-8'>
 						<img src={work.image} alt={work.title} className='rounded-sm mb-8 shadow-lg w-full h-[400px]' />
 						<h1 className='mb-4 text-4xl font-semibold leading-tight text-gray-800'>{work.title}</h1>

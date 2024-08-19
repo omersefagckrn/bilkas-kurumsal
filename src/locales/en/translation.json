@@ -1,0 +1,75 @@
+{
+	"nav": {
+		"home": "Home",
+		"about": "About Us",
+		"pricing": "Pricing",
+		"blog": "Blog",
+		"services": "Our Services",
+		"team": "Our Team",
+		"contact": "Contact Us",
+		"offer": "Get an Offer"
+	},
+	"services": {
+		"title_1": "Financial Consulting",
+		"description_1": "We provide comprehensive consulting and guidance services to help you start your business smoothly.",
+		"title_2": "Custom Software Solutions",
+		"description_2": "We develop custom software solutions to accelerate your business growth and support your digital transformation.",
+		"title_3": "Social Media Management",
+		"description_3": "We ensure effective representation of your brand on social media platforms.",
+		"title_4": "Design",
+		"description_4": "We offer aesthetic and user-friendly designs that best represent your brand.",
+		"title_5": "Digital Marketing",
+		"description_5": "We offer comprehensive digital marketing solutions to help your products and services reach a wider audience."
+	},
+	"evaluation": {
+		"heading_1": "Start or Grow Your Business.",
+		"heading_2": "We Are Always By Your Side.",
+		"paragraph": "We are here for you in every aspect of starting and growing your business. From financial consulting to custom software solutions, social media management, design, and digital marketing, our expert team manages all these processes for you."
+	},
+	"banner": {
+		"subtitle": "Reach the Top in Business",
+		"title_1": "Establish",
+		"highlight_1": "your business",
+		"or": "or",
+		"highlight_2": "develop it",
+		"line_1": "Under one roof,",
+		"line_2": "we offer professional solutions and stand by your side at every step as you establish and grow your business. From financial consulting to custom software solutions, social media management, design, and digital marketing, we manage all processes in the digital world",
+		"line_3": " for you with our expert team.",
+		"button_text": "Contact Us",
+		"image_alt": "Establish and Elevate Your Business"
+	},
+	"team": {
+		"title": "Our Team",
+		"subtitle": "Professionals Serving You"
+	},
+	"trusted": {
+		"title": "Trusted By",
+		"subtitle": "Valued Brands We Work With"
+	},
+	"blog": {
+		"title": "Blog",
+		"subtitle": "Explore and Learn!"
+	},
+	"servicesSection": {
+		"title": "Our Services",
+		"subtitle": "What We Do?",
+		"solutions": "Our Solutions",
+		"happyClients": "Happy Clients"
+	},
+	"footer": {
+		"about": "About Us",
+		"aboutDescription": "As Bilkas Digital Advertising Agency, we offer creative solutions to elevate your brand in the digital world. With our innovative perspective and expert team, we develop projects that exceed your expectations. We offer a wide range of services from social media management to content production, search engine optimization (SEO) to digital advertising campaigns, and web design. Our goal is to strengthen your brand's digital presence and ensure effective communication with your target audience. Join us now to take your brand to the next level.",
+		"contact": "Contact",
+		"rightsReserved": "All rights reserved.",
+		"developer": "Developer"
+	},
+	"pricingSection": {
+		"title": "Pricing",
+		"subtitle": "What Do We Offer?"
+	},
+	"changeLanguage": "Change Language",
+	"cookiePolicy": {
+		"message": "Cookies options to customize your experience on our site. Cookies allow you to enjoy certain features (like saving your cart), social sharing (for Facebook, Instagram, etc.), and tailor messages and ads to your interests (on our site and others). They also help us understand how our site fits together. By continuing to use our site, you agree to our use of cookies.",
+		"button": "Got It!"
+	}
+}

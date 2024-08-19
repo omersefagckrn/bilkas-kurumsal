@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
 import { plans } from '../../constants';
+import { useTranslation } from 'react-i18next';
 
 const fadeIn = {
 	hidden: { opacity: 0, y: 50 },
@@ -54,12 +55,13 @@ PricingCard.propTypes = {
 };
 
 const Pricing = () => {
+	const { t } = useTranslation();
 	return (
 		<section id='pricing' className='py-12'>
-			<div className='container px-4 mx-auto'>
+			<div className='container w-full px-6 lg:px-0 mx-auto'>
 				<div className='mb-12 text-center'>
-					<h2 className='mb-2 text-3xl font-semibold'>Ücretlendirme</h2>
-					<p className='text-lg text-primary'>Neler Sunuyoruz?</p>
+					<h2 className='mb-2 text-3xl font-semibold'>{t('pricingSection.title')}</h2>
+					<p className='text-lg text-primary'>{t('pricingSection.subtitle')}</p>
 				</div>
 				<div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
 					{plans.map((plan) => (

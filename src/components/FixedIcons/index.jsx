@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { FaArrowUp, FaWhatsapp, FaCookieBite, FaPhone } from 'react-icons/fa';
 import Modal from '../Modal';
 import { KURUMSAL_NUMARA } from '../../constants';
+import { useTranslation } from 'react-i18next';
 
 const FixedIcons = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [isVisible, setIsVisible] = useState(false);
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		const toggleVisibility = () => {
@@ -48,13 +50,8 @@ const FixedIcons = () => {
 			<div className='flex items-center justify-center p-3 text-white rounded-full cursor-pointer bg-primary' onClick={handleOpenModal}>
 				<FaCookieBite size={24} />
 			</div>
-			<Modal header='Çerez Politikası' visible={isModalOpen} onHide={handleCloseModal}>
-				<div className='mt-4 text-justify'>
-					Sitemizdeki deneyiminizi iyileştirmek için çerezler kullanıyoruz. Çerezler, belirli özelliklerin (sepetinizi kaydetme gibi), sosyal paylaşım
-					işlevselliğinin (Facebook, Instagram vb. için) keyfini çıkarmanızı ve mesajları ve reklamları ilgi alanlarınıza göre uyarlamanızı (sitemizde ve
-					diğerlerinde) sağlar. Ayrıca sitemizin nasıl kullanıldığını anlamamıza yardımcı olurlar. Sitemizi kullanmaya devam ederek çerez kullanımımızı kabul
-					etmiş olursunuz.
-				</div>
+			<Modal header={t('cookiePolicy.button')} visible={isModalOpen} onHide={handleCloseModal}>
+				<div className='mt-4 text-justify'>{t('cookiePolicy.message')}</div>
 			</Modal>
 		</div>
 	);

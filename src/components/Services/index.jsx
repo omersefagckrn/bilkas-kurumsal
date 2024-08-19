@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import { AiFillStar } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import PropTypes from 'prop-types';
-import { services } from '../../constants';
+import { useTranslation } from 'react-i18next';
+import { useServices } from '../../hooks/useServices';
+import { useInView } from 'react-intersection-observer';
 
 const ServiceCard = ({ service, index, expandedIndex, toggleDescription }) => {
 	return (
@@ -44,23 +46,59 @@ ServiceCard.propTypes = {
 
 const Services = () => {
 	const [expandedIndex, setExpandedIndex] = useState(null);
-
+	const { t } = useTranslation();
+	const services = useServices();
+	const controls = useAnimation();
 	const toggleDescription = (index) => {
 		setExpandedIndex(expandedIndex === index ? null : index);
 	};
 
+	const { ref: sectionRef, inView: sectionInView } = useInView({
+		triggerOnce: true,
+		threshold: 0.1
+	});
+
+	const { ref: statsRef, inView: statsInView } = useInView({
+		triggerOnce: true,
+		threshold: 0.1
+	});
+
+	useEffect(() => {
+		if (sectionInView) {
+			controls.start('visible');
+		}
+	}, [sectionInView]);
+
+	useEffect(() => {
+		if (statsInView) {
+			controls.start('visible');
+		}
+	}, [statsInView]);
+
 	return (
 		<section id='services' className='py-12'>
-			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+			<motion.div
+				ref={sectionRef}
+				className='container w-full px-6 mx-auto lg:px-0'
+				initial={{ opacity: 0, y: 50 }}
+				animate={sectionInView ? { opacity: 1, y: 0 } : {}}
+				transition={{ duration: 0.5 }}
+			>
 				<div className='mb-12 text-center'>
-					<h2 className='mb-2 text-3xl font-semibold'>Hizmetlerimiz</h2>
-					<p className='text-lg text-primary'>Neler Yapıyoruz?</p>
+					<h2 className='mb-2 text-3xl font-semibold'>{t('servicesSection.title')}</h2>
+					<p className='text-lg text-primary'>{t('servicesSection.subtitle')}</p>
 				</div>
 
-				<div className='flex items-center justify-between mb-12'>
+				<motion.div
+					ref={statsRef}
+					initial={{ opacity: 0, y: 50 }}
+					animate={statsInView ? { opacity: 1, y: 0 } : {}}
+					transition={{ duration: 0.5 }}
+					className='flex items-center justify-between mb-12'
+				>
 					<div className='text-center'>
 						<h3 className='text-5xl font-bold'>5+</h3>
-						<p className='text-lg'>Çözümlerimiz</p>
+						<p className='text-lg'>{t('servicesSection.solutions')}</p>
 						<div className='flex justify-center mt-2'>
 							{[...Array(5)].map((_, i) => (
 								<AiFillStar key={i} className='text-yellow-500' />
@@ -68,10 +106,11 @@ const Services = () => {
 						</div>
 					</div>
 					<div className='text-center'>
-						<h3 className='text-5xl font-bold'>150+</h3>
-						<p className='text-lg'>Mutlu Müşteri</p>
+						<h3 className='text-5xl font-bold'>12+</h3>
+						<p className='text-lg'>{t('servicesSection.happyClients')}</p>
 					</div>
-				</div>
+				</motion.div>
+
 				<div className='grid gap-8'>
 					{services.map((service, index) => (
 						<ServiceCard key={index} service={service} index={index} expandedIndex={expandedIndex} toggleDescription={toggleDescription} />

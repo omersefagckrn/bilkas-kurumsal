@@ -2,76 +2,6 @@ import { FiDollarSign, FiPenTool, FiShare2 } from 'react-icons/fi';
 import { LuCode2 } from 'react-icons/lu';
 import { MdCampaign } from 'react-icons/md';
 
-export const NAV_MENU_ITEMS = [
-	{ href: '#banner', title: 'Ana Sayfa' },
-	{ href: '#evaluation', title: 'Hakkımızda' },
-	{ href: '#pricing', title: 'Ücretlendirme' },
-	{ href: '#solutions', title: 'Blog' },
-	{ href: '#services', title: 'Hizmetlerimiz' },
-	{ href: '#teams', title: 'Ekibimiz' },
-	{ href: '#contact', title: 'Bize Ulaş' }
-];
-
-export const EvaluationData = [
-	{
-		title: 'Mali Müşavirlik Danışmanlığı',
-		description: 'Şirketinizi kurarken bizlerden alacağınız bilgi ve yönlendirme desteği ile sizlerde sorunsuz bir iş hayatına başlayın. Bu hizmetlerimizle sizlerin en başta karşılaşacağı sorunları çözüme ulaştırıyoruz.',
-		detail: 'anan',
-		icon: <FiDollarSign size={30} className='text-primary' />
-	},
-	{
-		title: 'Özel Yazılım Çözümleri',
-		description: 'İşletmenizin ihtiyaçlarına ve bütçenize uygun, mobil uyumlu, çoklu dil destekli ve interaktif özelliklerle donatılmış, tamamen animasyonlu bir web sitesi tasarımı sunuyoruz. Hedeflerinize en iyi şekilde ulaşmanızı sağlayacak çözümler üretiyoruz.',
-		detail: 'anan',
-		icon: <LuCode2 size={30} className='text-primary' />
-	},
-	{
-		title: 'Sosyal Medya Yönetimi',
-		description: 'Markanızı dijital dünyada güçlendirin. Sosyal medya hesaplarınızın profesyonel yönetimi ile hedef kitlenizle etkileşim kurun ve marka bilinirliğinizi artırın.',
-		detail: 'anan',
-		icon: <FiShare2 size={30} className='text-primary' />
-	},
-	{
-		title: 'Tasarım',
-		description: 'Estetik ve işlevsel tasarımlar ile markanızı görsel olarak öne çıkarıyoruz. Logo tasarımından, kurumsal içerik tasarımlarına, web arayüzlerine kadar her alanda yaratıcı çözümler sunuyoruz.',
-		detail: 'anan',
-		icon: <FiPenTool size={30} className='text-primary' />
-	},
-	{
-		title: 'Dijital Pazarlama',
-		description: 'Ürün ve hizmetlerinizi dijital dünyada etkin bir şekilde tanıtıyoruz. SEO, SEM ve hedefli dijital reklam kampanyaları ile satışlarınızı artırın ve markanızı büyütün.',
-		detail: 'anan',
-		icon: <MdCampaign size={30} className='text-primary' />
-	}
-];
-
-export const teams = [
-	{
-		id: 1,
-		name: 'Ahmet Yılmaz',
-		position: 'CEO',
-		image: 'https://randomuser.me/api/portraits/men/1.jpg'
-	},
-	{
-		id: 2,
-		name: 'Ayşe Kaya',
-		position: 'CTO',
-		image: 'https://randomuser.me/api/portraits/women/2.jpg'
-	},
-	{
-		id: 3,
-		name: 'Mehmet Öz',
-		position: 'Lead Developer',
-		image: 'https://randomuser.me/api/portraits/men/3.jpg'
-	},
-	{
-		id: 4,
-		name: 'Elif Demir',
-		position: 'Marketing Manager',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg'
-	}
-];
-
 export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
 export const KURUMSAL_NUMARA = '+90 531 297 1288';
@@ -79,11 +9,72 @@ export const KURUMSAL_NUMARA = '+90 531 297 1288';
 export const KURUMSAL_INSTAGRAM = 'https://www.instagram.com/bilkasdijital?igsh=NHZwMGM5a251ODF4&utm_source=qr';
 export const KURUMSAL_TIKTOK = 'https://www.tiktok.com/@bilkasdijital?_t=8ovUHHMqals&_r=1';
 export const KURUMSAL_LINKEDIN = 'https://www.linkedin.com';
-export const KURUMSAL_FACEBOOK = 'https://www.facebook.com';
+export const KURUMSAL_FACEBOOK = 'https://www.facebook.com/share/dQeX4d2eo4mSP32t/?mibextid=LQQJ4d';
 
-export const categories = ['Tümü', 'Dijital Pazarlama', 'Sosyal Medya', 'Yazılım ve Tasarım'];
+export const NAV_MENU_ITEMS = (t) => {
+	return [
+		{ href: '#banner', title: t('nav.home') },
+		{ href: '#evaluation', title: t('nav.about') },
+		{ href: '#pricing', title: t('nav.pricing') },
+		{ href: '#solutions', title: t('nav.blog') },
+		{ href: '#services', title: t('nav.services') },
+		{ href: '#teams', title: t('nav.team') },
+		{ href: '#contact', title: t('nav.contact') }
+	];
+};
 
-export const logos = [
+export const EVALUATION_DATA = (t) => [
+	{
+		title: t('services.title_1'),
+		description: t('services.description_1'),
+		icon: <FiDollarSign size={30} className='text-primary' />
+	},
+	{
+		title: t('services.title_2'),
+		description: t('services.description_2'),
+		icon: <LuCode2 size={30} className='text-primary' />
+	},
+	{
+		title: t('services.title_3'),
+		description: t('services.description_3'),
+		icon: <FiShare2 size={30} className='text-primary' />
+	},
+	{
+		title: t('services.title_4'),
+		description: t('services.description_4'),
+		icon: <FiPenTool size={30} className='text-primary' />
+	},
+	{
+		title: t('services.title_5'),
+		description: t('services.description_5'),
+		icon: <MdCampaign size={30} className='text-primary' />
+	}
+];
+
+export const SERVICES_DATA = (t) => [
+	{
+		title: t('services.title_1'),
+		description: t('services.description_1')
+	},
+	{
+		title: t('services.title_2'),
+		description: t('services.description_2')
+	},
+	{
+		title: t('services.title_3'),
+		description: t('services.description_3')
+	},
+	{
+		title: t('services.title_4'),
+		description: t('services.description_4')
+	},
+	{
+		title: t('services.title_5'),
+		description: t('services.description_5')
+	}
+];
+
+export const KURUMSAL_LOGO = [
 	{
 		id: 1,
 		src: 'https://www.tanyildizisigorta.com/wp-content/uploads/tanyildizi_logo.svg',
@@ -115,6 +106,35 @@ export const logos = [
 		isWhite: true
 	}
 ];
+
+export const teams = [
+	{
+		id: 1,
+		name: 'Ahmet Yılmaz',
+		position: 'CEO',
+		image: 'https://randomuser.me/api/portraits/men/1.jpg'
+	},
+	{
+		id: 2,
+		name: 'Ayşe Kaya',
+		position: 'CTO',
+		image: 'https://randomuser.me/api/portraits/women/2.jpg'
+	},
+	{
+		id: 3,
+		name: 'Mehmet Öz',
+		position: 'Lead Developer',
+		image: 'https://randomuser.me/api/portraits/men/3.jpg'
+	},
+	{
+		id: 4,
+		name: 'Elif Demir',
+		position: 'Marketing Manager',
+		image: 'https://randomuser.me/api/portraits/women/4.jpg'
+	}
+];
+
+export const categories = ['Tümü', 'Dijital Pazarlama', 'Sosyal Medya', 'Yazılım ve Tasarım'];
 
 export const works = [
 	{
@@ -158,71 +178,6 @@ export const works = [
 		category: 'Dijital Pazarlama',
 		image: 'https://picsum.photos/200/300?random=6',
 		description: 'İçerik pazarlama, hedef kitleyi çekmek ve onlarla etkileşim kurmak amacıyla değerli, alakalı ve tutarlı içerik oluşturma ve dağıtma stratejisidir. Bu strateji, blog yazıları, videolar, infografikler, podcastler ve sosyal medya gönderileri gibi çeşitli içerik türlerini içerir. İçerik pazarlama, marka bilinirliğini artırmak, potansiyel müşterilerle ilişkiler kurmak ve nihayetinde satışları artırmak için kullanılır. Başarılı içerik pazarlama, hedef kitleyi derinlemesine anlamayı ve onların ihtiyaçlarına yönelik çözümler sunmayı gerektirir.'
-	},
-	{
-		id: 7,
-		title: 'Dijital Reklamcılık',
-		category: 'Dijital Pazarlama',
-		image: 'https://picsum.photos/200/300?random=7',
-		description: 'Dijital reklamcılık, çevrimiçi platformlarda reklam kampanyaları oluşturma ve yönetme sürecidir. Bu, Google Ads, Facebook Ads, Instagram Ads ve diğer dijital reklam platformlarını içerir. Dijital reklamcılar, hedef kitleyi belirlemek, reklam bütçesini yönetmek, reklam yaratıcılarını tasarlamak ve kampanya performansını izlemek gibi görevleri üstlenirler. Dijital reklamcılık, doğru mesajı doğru kişilere doğru zamanda ulaştırmak için veri analizi ve hedefleme tekniklerini kullanır. Etkili dijital reklamcılık, marka bilinirliğini artırmanın ve satışları artırmanın güçlü bir yoludur.'
-	},
-	{
-		id: 8,
-		title: 'Video Prodüksiyon',
-		category: 'Yazılım ve Tasarım',
-		image: 'https://picsum.photos/200/300?random=8',
-		description: 'Video prodüksiyon, bir video projesinin konsept aşamasından tamamlanmasına kadar olan tüm süreçleri kapsar. Bu süreç, senaryo yazımı, çekim, kurgu, ses düzenleme ve görsel efektler gibi aşamaları içerir. Video prodüksiyon ekipleri, hedef kitleye etkili bir şekilde ulaşmak için yaratıcı ve teknik becerileri bir araya getirirler. Video prodüksiyon, markaların hikayelerini görsel ve işitsel olarak anlatmalarını sağlar ve pazarlama stratejilerinin önemli bir parçasıdır. Yüksek kaliteli videolar, izleyicinin ilgisini çekmek ve marka mesajını etkili bir şekilde iletmek için güçlü bir araçtır.'
-	},
-	{
-		id: 9,
-		title: 'E-posta Pazarlama',
-		category: 'Dijital Pazarlama',
-		image: 'https://picsum.photos/200/300?random=9',
-		description: 'E-posta pazarlama, mevcut ve potansiyel müşterilere e-posta yoluyla doğrudan iletişim kurma ve onlarla etkileşimde bulunma stratejisidir. Bu strateji, haber bültenleri, promosyon teklifleri, etkinlik davetiyeleri ve kişiselleştirilmiş mesajlar gibi çeşitli e-posta türlerini içerir. E-posta pazarlama, müşteri ilişkilerini güçlendirmek, marka sadakatini artırmak ve satışları teşvik etmek için kullanılır. Başarılı e-posta pazarlama, dikkatlice segmentasyon ve hedefleme yapmayı, etkileyici e-posta tasarımları oluşturmayı ve performansı izlemek için analiz araçlarını kullanmayı gerektirir.'
-	},
-	{
-		id: 10,
-		title: 'Veri Analitiği',
-		category: 'Yazılım ve Tasarım',
-		image: 'https://picsum.photos/200/300?random=10',
-		description: 'Veri analitiği, iş süreçlerini iyileştirmek ve daha iyi kararlar almak için veri toplama, analiz etme ve yorumlama sürecidir. Veri analistleri, çeşitli veri kaynaklarından gelen bilgileri işleyerek, eğilimleri ve kalıpları belirler ve bu bilgileri iş stratejilerine dönüştürürler. Veri analitiği, büyük veri setlerini yönetmek ve analiz etmek için gelişmiş analitik araçlar ve teknikler kullanır. İşletmeler, veri analitiği sayesinde müşteri davranışlarını daha iyi anlayabilir, operasyonel verimliliği artırabilir ve rekabet avantajı elde edebilirler.'
-	},
-	{
-		id: 11,
-		title: 'Marka Yönetimi',
-		category: 'Dijital Pazarlama',
-		image: 'https://picsum.photos/200/300?random=11',
-		description: 'Marka yönetimi, bir markanın pazardaki konumunu oluşturma, sürdürme ve geliştirme sürecidir. Marka yöneticileri, marka kimliğini ve değerlerini tanımlayarak, hedef kitleyle duygusal bağ kuran stratejiler geliştirirler. Bu süreç, marka mesajları, görsel kimlik, müşteri deneyimi ve pazarlama iletişimleri gibi çeşitli unsurları içerir. Etkili marka yönetimi, markanın tutarlılığını sağlamak, müşteri sadakatini artırmak ve rekabet avantajı elde etmek için kritik öneme sahiptir. Marka yönetimi, marka itibarını koruyarak ve marka değerini artırarak uzun vadeli iş başarısına katkıda bulunur.'
-	},
-	{
-		id: 12,
-		title: 'Pazarlama Otomasyonu',
-		category: 'Dijital Pazarlama',
-		image: 'https://picsum.photos/200/300?random=12',
-		description: 'Pazarlama otomasyonu, pazarlama süreçlerini ve kampanyalarını otomatikleştirmek için yazılım kullanma sürecidir. Bu süreç, müşteri segmentasyonu, kişiselleştirilmiş e-posta kampanyaları, sosyal medya yönetimi ve müşteri ilişki yönetimi gibi çeşitli pazarlama faaliyetlerini içerir. Pazarlama otomasyonu, pazarlama ekiplerinin daha verimli çalışmasını sağlar ve müşteri etkileşimlerini artırır. Ayrıca, pazarlama performansını izlemek ve analiz etmek için kapsamlı raporlama ve analitik araçlar sunar. Pazarlama otomasyonu, müşteri yolculuğunu optimize ederek ve potansiyel müşterileri satışa dönüştürerek iş büyümesine katkıda bulunur.'
-	}
-];
-
-export const services = [
-	{
-		title: 'Mali Müşavirlik Danışmanlığı',
-		description: 'Şirketinizi kurarken sunduğumuz kapsamlı danışmanlık ve rehberlik hizmetleriyle, iş hayatınıza sorunsuz bir başlangıç yapmanızı sağlıyoruz. Vergi, yasal süreçler, finansal planlama ve operasyonel yapılandırma gibi konularda uzman ekibimizle yanınızdayız. Bu hizmetlerimizle, karşılaşabileceğiniz potansiyel sorunları önceden tespit ederek, çözüm odaklı stratejiler geliştiriyoruz ve işinizi güçlü bir temelle kurmanıza yardımcı oluyoruz.'
-	},
-	{
-		title: 'Özel Yazılım Çözümleri',
-		description: 'İşletmenizin büyüme yolculuğunu hızlandırmak ve dijital dönüşümünü desteklemek için, size özel yazılım çözümleri geliştiriyoruz. Operasyonel süreçlerinizi optimize eden, verimliliği artıran ve tamamen işinize özgü olarak tasarlanmış yenilikçi yazılımlar sunarak, rekabette öne çıkmanızı sağlıyoruz.'
-	},
-	{
-		title: 'Sosyal Medya Yönetimi',
-		description: 'Markanızın sosyal medya platformlarında etkili bir şekilde temsil edilmesini sağlıyor, içerik yönetimi, etkileşim arttırma ve büyüme odaklı stratejiler geliştiriyoruz. Hedef kitlenizle güçlü bir bağ kurmanıza yardımcı oluyoruz.'
-	},
-	{
-		title: 'Tasarım',
-		description: 'Markanızı en iyi şekilde temsil eden, estetik ve kullanımı kolay tasarımlar sunuyoruz. Web tasarımından grafik tasarıma kadar, markanızın her alanda güçlü bir izlenim bırakmasını sağlayacak yaratıcı çözümler sunmaktayız.'
-	},
-	{
-		title: 'Dijital Pazarlama',
-		description: 'SEO, SEM ve hedefe yönelik reklam stratejileriyle, ürün ve hizmetlerinizin dijital dünyada daha geniş kitlelere ulaşmasını sağlıyoruz. Dijital platformlarda markanızı güçlendirmek ve etkili reklam kampanyaları ile satışlarınızı artırmak için kapsamlı dijital pazarlama çözümleri sunuyoruz.'
 	}
 ];
 

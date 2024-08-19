@@ -4,9 +4,10 @@ import Footer from '../Footer';
 import Navbar from '../Navbar';
 import { fromKebabCase, toKebabCase } from '../../helpers/utils';
 import { useEffect } from 'react';
-import { EvaluationData } from '../../constants';
+import { useEvaluationData } from '../../hooks/useEvaluationData';
 
 const EvaluationDetail = () => {
+	const EvaluationData = useEvaluationData();
 	const { title } = useParams();
 	const decodedTitle = fromKebabCase(decodeURIComponent(title));
 	const evaluation = EvaluationData.find((evaluation) => toKebabCase(evaluation.title) === toKebabCase(decodedTitle));
@@ -32,8 +33,8 @@ const EvaluationDetail = () => {
 						</div>
 					</div>
 				</div>
-				<Footer />
 				<FixedIcons />
+				<Footer />
 			</main>
 		</>
 	);

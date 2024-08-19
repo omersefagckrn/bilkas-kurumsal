@@ -6,8 +6,9 @@ import BlogDetail from './components/Solutions/SolutionsDetail';
 import EvaluationDetail from './components/Evaluation/EvaluationDetail';
 
 import './index.css';
+import './i18n';
+
 import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
 
 const router = createBrowserRouter([
 	{

@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import PropTypes from 'prop-types';
-
+import { useTranslation } from 'react-i18next';
 import { toKebabCase } from '../../helpers/utils';
 import { useNavigate } from 'react-router-dom';
-import { EvaluationData } from '../../constants';
+import { useEvaluationData } from '../../hooks/useEvaluationData';
 
 const fadeIn = {
 	hidden: { opacity: 0, y: 50 },
@@ -37,28 +36,19 @@ const ServiceCard = ({ service }) => {
 	);
 };
 
-ServiceCard.propTypes = {
-	service: PropTypes.shape({
-		icon: PropTypes.element.isRequired,
-		title: PropTypes.string.isRequired,
-		description: PropTypes.string.isRequired
-	}).isRequired
-};
-
 const Evaluation = () => {
 	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+	const { t } = useTranslation();
+	const EvaluationData = useEvaluationData();
 
 	return (
 		<section id='evaluation' className='py-12 bg-appbggray'>
-			<div className='container w-full px-4 mx-auto'>
+			<div className='container w-full px-6 mx-auto lg:px-0'>
 				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
-					<h2 className='text-[25px] md:text-[40px] font-semibold text-black tracking-[-0.2px]'>İşinizi kurun veya geliştirin.</h2>
-					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>Biz sizin her zaman yanınızdayız.</h2>
+					<h2 className='text-[25px] md:text-[40px] font-semibold text-black tracking-[-0.2px]'>{t('evaluation.heading_1')}</h2>
+					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>{t('evaluation.heading_2')}</h2>
 
-					<p className='mb-12 text-base text-appgray'>
-						İşinizi kurma ve büyütme sürecinde, ihtiyaç duyduğunuz her alanda yanınızdayız. Mali danışmanlık, özel yazılım çözümleri, sosyal medya
-						yönetimi, tasarım ve dijital reklamcılıktan oluşan geniş hizmet yelpazemizle, uzman ekibimiz tüm bu süreçleri sizin için yönetiyor.
-					</p>
+					<p className='mb-12 text-base text-appgray'>{t('evaluation.paragraph')}</p>
 				</motion.div>
 				<div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
 					{EvaluationData.map((service, index) => (

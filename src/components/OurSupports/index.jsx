@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
-import { logos } from '../../constants';
+import { KURUMSAL_LOGO } from '../../constants';
+import { useTranslation } from 'react-i18next';
+import { useInView } from 'react-intersection-observer';
 
 const hoverEffect = {
 	hover: {
@@ -10,17 +12,28 @@ const hoverEffect = {
 	}
 };
 
+const fadeInEffect = {
+	hidden: { opacity: 0, y: 50 },
+	visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+};
+
 const OurSupports = () => {
+	const { t } = useTranslation();
+	const { ref, inView } = useInView({
+		threshold: 0.1,
+		triggerOnce: true
+	});
+
 	return (
 		<section className='py-12'>
-			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
+			<motion.div ref={ref} className='container w-full px-6 mx-auto lg:px-0' initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInEffect}>
 				<div className='mb-12 text-center'>
-					<h2 className='mb-2 text-3xl font-semibold'>Bize Güvenenler</h2>
-					<p className='text-lg text-primary'>İş birliği yaptığımız değerli markalar</p>
+					<h2 className='mb-2 text-3xl font-semibold'>{t('trusted.title')}</h2>
+					<p className='text-lg text-primary'>{t('trusted.subtitle')}</p>
 				</div>
 
 				<div className='flex flex-wrap items-center justify-center'>
-					{logos.slice(0, 3).map((logo) => (
+					{KURUMSAL_LOGO.slice(0, 3).map((logo) => (
 						<motion.div
 							key={logo.id}
 							className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${
@@ -37,7 +50,7 @@ const OurSupports = () => {
 				</div>
 
 				<div className='flex flex-wrap items-center justify-center mt-6'>
-					{logos.slice(3, 6).map((logo) => (
+					{KURUMSAL_LOGO.slice(3, 6).map((logo) => (
 						<motion.div
 							key={logo.id}
 							className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${

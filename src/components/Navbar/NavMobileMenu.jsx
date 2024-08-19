@@ -1,10 +1,12 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { KURUMSAL_NUMARA, NAV_MENU_ITEMS } from '../../constants';
+import { KURUMSAL_NUMARA } from '../../constants';
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import { BiSolidOffer } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import { useMenuItems } from '../../hooks/useMenuItems';
+import { useTranslation } from 'react-i18next';
 
 const variants = {
 	open: {
@@ -36,9 +38,12 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 		};
 	}, [isOpen]);
 
+	const menuItems = useMenuItems();
+	const { t } = useTranslation();
+
 	return (
 		<motion.div
-			className='fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden text-center bg-primary md:hidden'
+			className='fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden text-center bg-primary lg:hidden'
 			initial='closed'
 			animate={isOpen ? 'open' : 'closed'}
 			variants={variants}
@@ -50,19 +55,19 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 				{anotherPage ? (
 					<>
 						<Link to='/' className='text-2xl text-white hover:text-appgray' onClick={onClose}>
-							Ana Sayfa
+							{t('nav.home')}
 						</Link>
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}
 							className='flex items-center px-4 py-2 space-x-2 text-base font-medium bg-white rounded-full shadow-md text-primary shadow-primary'
 						>
-							<div>Teklif Al</div>
+							<span>{t('nav.offer')}</span>
 							<BiSolidOffer className='font-bold text-primary' size={16} />
 						</a>
 					</>
 				) : (
 					<>
-						{NAV_MENU_ITEMS.map((item) => (
+						{menuItems.map((item) => (
 							<a key={item.title} href={item.href} className='text-2xl text-white hover:text-appgray' onClick={onClose}>
 								{item.title}
 							</a>
@@ -71,7 +76,7 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 							href={`tel:${KURUMSAL_NUMARA}`}
 							className='flex items-center justify-center px-4 py-2 space-x-2 text-base font-medium text-center bg-white rounded-full shadow-md text-primary shadow-primary'
 						>
-							<div>Teklif Al</div>
+							<span>{t('nav.offer')}</span>
 							<BiSolidOffer className='font-bold text-primary' size={16} />
 						</a>
 					</>

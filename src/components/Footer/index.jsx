@@ -4,6 +4,7 @@ import { KURUMSAL_ADRES, KURUMSAL_EMAIL, KURUMSAL_NUMARA } from '../../constants
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Logo from '../Logo';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
 	const controls = useAnimation();
@@ -11,6 +12,7 @@ const Footer = () => {
 		threshold: 0.1,
 		triggerOnce: true
 	});
+	const { t } = useTranslation();
 
 	useEffect(() => {
 		if (inView) {
@@ -26,8 +28,8 @@ const Footer = () => {
 	return (
 		<>
 			<footer id='contact' className='py-12 text-black bg-appbggray'>
-				<div className='container w-full mx-auto'>
-					<div className='grid grid-cols-1 gap-6 px-4 md:grid-cols-3 md:px-0'>
+				<div className='container mx-auto'>
+					<div className='grid grid-cols-1 gap-6 px-6 lg:px-0 md:grid-cols-3 '>
 						<motion.div
 							ref={ref}
 							className='flex flex-col items-start justify-between'
@@ -37,15 +39,10 @@ const Footer = () => {
 							transition={{ duration: 0.5, delay: 0.1 }}
 						>
 							<div className='text-[14px] space-y-2'>
-								<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>Hakkımızda</div>
-								<div className='text-left'>
-									Bilkas Dijital Reklam Ajansı olarak, markanızı dijital dünyada zirveye taşımak için yaratıcı çözümler
-									sunuyoruz. Yenilikçi bakış açımız ve alanında uzman ekibimizle, beklentilerinizi aşan projeler geliştiriyoruz.
-									Sosyal medya yönetiminden içerik üretimine, arama motoru optimizasyonundan (SEO) dijital reklam kampanyalarına
-									ve web tasarımına kadar geniş bir hizmet yelpazesi sunuyoruz. Amacımız, markanızın dijital varlığını
-									güçlendirmek ve hedef kitlenizle etkili bir iletişim kurmanızı sağlamaktır. Şimdi, markanızı bir adım öteye
-									taşımak için bize katılın.
+								<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>
+									{t('footer.about')}
 								</div>
+								<div className='text-left'>{t('footer.aboutDescription')}</div>
 							</div>
 							<div className='hidden pt-10 lg:mt-0 lg:block'>
 								<Logo />
@@ -60,7 +57,7 @@ const Footer = () => {
 							variants={fadeInUp}
 							transition={{ duration: 0.5, delay: 0.2 }}
 						>
-							<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>İletişim</div>
+							<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>{t('footer.contact')}</div>
 							<div className='flex items-center mb-2'>
 								<FiMapPin className='mr-2' />
 								<div>{KURUMSAL_ADRES}</div>
@@ -86,9 +83,9 @@ const Footer = () => {
 					</div>
 					<div className='mt-8 text-sm text-center lg:mt-0 text-black/50'>
 						<div>
-							&copy; 2023 Bilkas Dijital Reklam Ajansı. Tüm hakları saklıdır.{' '}
+							&copy; 2023 Bilkas Dijital Reklam Ajansı. {t('footer.rightsReserved')}{' '}
 							<a href={`tel:05078455183`} alt='Ömer Sefa Güçkıran' className='font-bold underline'>
-								Geliştirici
+								{t('footer.developer')}
 							</a>
 						</div>
 					</div>

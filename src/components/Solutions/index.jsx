@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { categories, works } from '../../constants';
 import { useNavigate } from 'react-router-dom';
 import { toKebabCase } from '../../helpers/utils';
+import { useTranslation } from 'react-i18next';
 
 const bounceVariant = {
 	hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -67,15 +68,20 @@ WorkCard.propTypes = {
 const Solutions = () => {
 	const [selectedCategory, setSelectedCategory] = useState('Tümü');
 	const filteredWorks = selectedCategory === 'Tümü' ? works : works.filter((work) => work.category === selectedCategory);
+	const { t } = useTranslation();
 
 	return (
 		<section id='solutions' className='py-12 bg-appbggray'>
-			<motion.div className='container px-4 mx-auto' initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeOut' }}>
+			<motion.div
+				className='container w-full px-6 mx-auto lg:px-0'
+				initial={{ opacity: 0, y: 50 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, ease: 'easeOut' }}
+			>
 				<div className='mb-12 text-center'>
-					<h2 className='mb-2 text-3xl font-semibold'>Blog</h2>
-					<p className='text-lg text-primary'>Araştırın ve Öğrenin!</p>
+					<h2 className='mb-2 text-3xl font-semibold'>{t('blog.title')}</h2>
+					<p className='text-lg text-primary'>{t('blog.subtitle')}</p>
 				</div>
-
 				<div className='flex items-center justify-start pb-4 mb-8 space-x-4 overflow-x-auto lg:justify-center'>
 					{categories.map((category) => (
 						<button
