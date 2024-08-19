@@ -9,12 +9,19 @@ export default {
 				appbggray: '#F2F5F9'
 			},
 			container: {
+				center: true,
+				padding: {
+					DEFAULT: '1rem', // Tüm ekran boyutlarında 1rem padding
+					sm: '2rem', // Küçük ekranlarda 2rem padding
+					lg: '4rem', // Büyük ekranlarda 4rem padding
+					xl: '5rem' // Çok büyük ekranlarda 5rem padding
+				},
 				screens: {
-					sm: '100%',
-					md: '100%',
-					lg: '1024px',
-					xl: '1280px',
-					'2xl': '1436px'
+					sm: '100%', // Küçük ekranlarda %100 genişlik
+					md: '100%', // Orta ekranlarda %100 genişlik
+					lg: '800px', // Büyük ekranlarda 800px genişlik
+					xl: '1124px', // Çok büyük ekranlarda 1124px genişlik
+					'2xl': '1124px' // En büyük ekranlarda da 1124px genişlik
 				}
 			}
 		}

@@ -8,7 +8,7 @@ export const KURUMSAL_NUMARA = '+90 531 297 1288';
 
 export const KURUMSAL_INSTAGRAM = 'https://www.instagram.com/bilkasdijital?igsh=NHZwMGM5a251ODF4&utm_source=qr';
 export const KURUMSAL_TIKTOK = 'https://www.tiktok.com/@bilkasdijital?_t=8ovUHHMqals&_r=1';
-export const KURUMSAL_LINKEDIN = 'https://www.linkedin.com';
+export const KURUMSAL_LINKEDIN = 'https://www.linkedin.com/company/bilkas-dijital-reklam-ajans%C4%B1/';
 export const KURUMSAL_FACEBOOK = 'https://www.facebook.com/share/dQeX4d2eo4mSP32t/?mibextid=LQQJ4d';
 
 export const NAV_MENU_ITEMS = (t) => {
@@ -114,73 +114,73 @@ export const KURUMSAL_LOGO = [
 
 export const teams = [
 	{
-		id: 1,
-		name: 'Ahmet Yılmaz',
-		position: 'CEO',
-		image: 'https://randomuser.me/api/portraits/men/1.jpg'
+		id: '1',
+		name: 'Bahar Karaman',
+		position: 'Founder & CEO',
+		image: 'src/assets/teams/unknown_person.jpg'
 	},
 	{
 		id: 2,
-		name: 'Ayşe Kaya',
-		position: 'CTO',
-		image: 'https://randomuser.me/api/portraits/women/2.jpg'
+		name: 'Bilge Kızmaz',
+		position: 'Digital Marketing Manager',
+		image: 'src/assets/teams/bilge.jpeg'
 	},
 	{
 		id: 3,
-		name: 'Mehmet Öz',
-		position: 'Lead Developer',
-		image: 'https://randomuser.me/api/portraits/men/3.jpg'
+		name: 'Ömer Sefa Güçkıran',
+		position: 'Software Developer',
+		image: 'src/assets/teams/omer.jpg'
 	},
 	{
 		id: 4,
-		name: 'Elif Demir',
-		position: 'Marketing Manager',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg'
+		name: 'Serra Ecem Güzey',
+		position: 'Creative Director',
+		image: 'src/assets/teams/ecem.jpeg'
 	}
 ];
 
-export const categories = ['Tümü', 'Dijital Pazarlama', 'Sosyal Medya', 'Yazılım ve Tasarım'];
+export const categories = ['Tümü', 'Mali Müşavirlik Danışmanlığı', 'Özel Yazılım Çözümleri', 'Sosyal Medya Yönetimi', 'Tasarım', 'Dijital Pazarlama'];
 
 export const works = [
 	{
 		id: 1,
 		title: 'Web Tasarımı',
-		category: 'Yazılım ve Tasarım',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=1',
 		description: 'Web tasarımı, bir web sitesinin kullanıcı deneyimini ve kullanıcı ara yüzünü planlama, düzenleme ve kodlama sürecidir. Web tasarımı, grafik tasarım, kullanıcı deneyimi tasarımı, ve ara yüz tasarımı gibi çeşitli disiplinlerin birleşiminden oluşur. Web tasarımcıları, kullanıcıların web sitesiyle etkileşim kurarken olumlu bir deneyim yaşamalarını sağlamak için renk paletleri, yazı tipleri, düzenler ve diğer görsel unsurlar kullanarak estetik ve işlevsel web siteleri yaratırlar. Modern web tasarımı, mobil cihazlar ve masaüstü bilgisayarlar arasında uyumlu çalışacak şekilde responsive (duyarlı) tasarım tekniklerini kullanarak gerçekleştirilir.'
 	},
 	{
 		id: 2,
 		title: 'Sosyal Medya Yönetimi',
-		category: 'Sosyal Medya',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=2',
 		description: 'Sosyal medya yönetimi, bir işletmenin sosyal medya platformlarında varlığını oluşturma, planlama, uygulama ve izleme sürecidir. Bu süreç, sosyal medya hesaplarının günlük yönetimini, içerik oluşturma ve paylaşma, takipçi etkileşimi, marka farkındalığını artırma ve sosyal medya kampanyalarının performansını ölçme gibi çeşitli görevleri içerir. Sosyal medya yöneticileri, marka imajını korurken hedef kitle ile anlamlı ilişkiler kurmak için stratejik içerik planları oluştururlar. Ayrıca, sosyal medya platformlarının algoritmalarını ve en iyi uygulamalarını anlamak, sosyal medya yönetiminin önemli bir parçasıdır.'
 	},
 	{
 		id: 3,
 		title: 'SEO',
-		category: 'Dijital Pazarlama',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=3',
 		description: 'Arama Motoru Optimizasyonu (SEO), bir web sitesinin arama motoru sonuç sayfalarında (SERP) daha üst sıralarda yer almasını sağlamak amacıyla yapılan çalışmalardır. SEO, hem teknik hem de içerik yönlerini kapsayan geniş bir alandır. Teknik SEO, site hızı, mobil uyumluluk, site yapısı ve güvenlik gibi unsurları içerirken, içerik SEO, anahtar kelime araştırması, kaliteli içerik oluşturma ve geri bağlantı (backlink) oluşturma gibi faaliyetleri içerir. SEO çalışmaları, arama motorlarının algoritmalarını anlama ve bu algoritmaların gereksinimlerine uygun olarak web sitesini optimize etme sürecidir.'
 	},
 	{
 		id: 4,
 		title: 'E-Ticaret Yönetimi',
-		category: 'Dijital Pazarlama',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=4',
 		description: 'E-ticaret yönetimi, bir çevrimiçi mağazanın tüm operasyonlarını yönetme sürecidir. Bu, ürün listeleme, stok yönetimi, sipariş işleme, müşteri hizmetleri ve pazarlama stratejileri gibi çeşitli görevleri içerir. E-ticaret yöneticileri, müşteri deneyimini optimize etmek için kullanıcı dostu bir web sitesi ve sorunsuz bir ödeme süreci sağlarlar. Ayrıca, satışları artırmak için çeşitli dijital pazarlama taktiklerini kullanarak müşteri trafiğini ve dönüşüm oranlarını artırırlar. E-ticaret yönetimi, sürekli olarak veri analizi yaparak performansı izlemeyi ve iş stratejilerini buna göre ayarlamayı gerektirir.'
 	},
 	{
 		id: 5,
 		title: 'Mobil Uygulama Geliştirme',
-		category: 'Yazılım ve Tasarım',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=5',
 		description: 'Mobil uygulama geliştirme, iOS ve Android gibi mobil platformlarda çalışan yazılımların tasarlanması ve oluşturulması sürecidir. Bu süreç, kullanıcı ihtiyaçlarını anlamaktan, uygulamanın arayüz tasarımına ve işlevselliğine kadar birçok aşamayı içerir. Mobil uygulama geliştiricileri, kullanıcı dostu ve performanslı uygulamalar oluşturmak için programlama dillerini (Swift, Kotlin, Java) ve mobil geliştirme araçlarını (Xcode, Android Studio) kullanırlar. Ayrıca, uygulamanın App Store ve Google Play Store gibi platformlarda yayınlanması ve kullanıcı geri bildirimlerine göre güncellemeler yapılması da bu sürecin bir parçasıdır.'
 	},
 	{
 		id: 6,
 		title: 'İçerik Pazarlama',
-		category: 'Dijital Pazarlama',
+		category: '',
 		image: 'https://picsum.photos/200/300?random=6',
 		description: 'İçerik pazarlama, hedef kitleyi çekmek ve onlarla etkileşim kurmak amacıyla değerli, alakalı ve tutarlı içerik oluşturma ve dağıtma stratejisidir. Bu strateji, blog yazıları, videolar, infografikler, podcastler ve sosyal medya gönderileri gibi çeşitli içerik türlerini içerir. İçerik pazarlama, marka bilinirliğini artırmak, potansiyel müşterilerle ilişkiler kurmak ve nihayetinde satışları artırmak için kullanılır. Başarılı içerik pazarlama, hedef kitleyi derinlemesine anlamayı ve onların ihtiyaçlarına yönelik çözümler sunmayı gerektirir.'
 	}

@@ -43,7 +43,8 @@ const Teams = () => {
 							whileHover='hover'
 							variants={hoverEffect}
 						>
-							<img src={member.image} alt={member.name} className='w-24 h-24 mb-4 rounded-full shadow-lg' />
+							<img src={member.image} alt={member.name} className='object-cover w-24 h-24 mb-4 rounded-full shadow-lg' />
+							<p className='font-semibold text-appgray'>{member.name}</p>
 							<p className='font-bold text-appgray'>{member.position}</p>
 						</motion.div>
 					))}
