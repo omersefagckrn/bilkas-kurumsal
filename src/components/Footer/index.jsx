@@ -28,8 +28,8 @@ const Footer = () => {
 	return (
 		<>
 			<footer id='contact' className='py-12 text-black bg-appbggray'>
-				<div className='container mx-auto'>
-					<div className='grid grid-cols-1 gap-6 px-6 lg:px-0 md:grid-cols-3 '>
+				<div className='container w-full px-6 mx-auto lg:px-0'>
+					<div className='grid grid-cols-1 gap-6 md:grid-cols-3'>
 						<motion.div
 							ref={ref}
 							className='flex flex-col items-start justify-between'
@@ -58,23 +58,23 @@ const Footer = () => {
 							transition={{ duration: 0.5, delay: 0.2 }}
 						>
 							<div className='font-bold text-lg mb-2 border-b border-b-primary pb-2 text-[17px] text-primary'>{t('footer.contact')}</div>
-							<div className='flex items-center mb-2'>
-								<FiMapPin className='mr-2' />
+							<div className='flex items-center mb-3'>
+								<FiMapPin size={18} className='mr-2' />
 								<div>{KURUMSAL_ADRES}</div>
 							</div>
-							<a href={`tel:${KURUMSAL_NUMARA}`} className='flex items-center mb-2'>
-								<FiPhoneCall className='mr-2' />
+							<a href={`tel:${KURUMSAL_NUMARA}`} className='flex items-center mb-3'>
+								<FiPhoneCall size={18} className='mr-2' />
 								<div>{KURUMSAL_NUMARA}</div>
 							</a>
-							<a href={`mailto:${KURUMSAL_EMAIL}`} className='flex items-center mb-2'>
-								<FiMail className='mr-2' />
+							<a href={`mailto:${KURUMSAL_EMAIL}`} className='flex items-center mb-3'>
+								<FiMail size={18} className='mr-2' />
 								<div>{KURUMSAL_EMAIL}</div>
 							</a>
 						</motion.div>
 
 						<motion.div ref={ref} initial='hidden' animate={controls} variants={fadeInUp} transition={{ duration: 0.5, delay: 0.3 }}>
 							<iframe
-								src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d765.8601996129305!2d29.234819851638967!3d40.883868222051824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcababbfec0d%3A0xb89f33b625ea5766!2sBah%C3%A7elievler%2C%20Adnan%20Menderes%20Blv.%20No%3A23%20D%3Aa%2C%2034893%20Pendik%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1720089632729!5m2!1sen!2str'
+								src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.359728316154!2d29.199280099999996!3d40.907857799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5b2503f514f%3A0x201d85bc7e3203fb!2sDumankaya%20Vizyon!5e0!3m2!1sen!2str!4v1724105058750!5m2!1sen!2str'
 								width='100%'
 								height='300'
 								loading='lazy'

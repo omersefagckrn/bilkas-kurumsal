@@ -5,6 +5,8 @@ import { categories, works } from '../../constants';
 import { useNavigate } from 'react-router-dom';
 import { toKebabCase } from '../../helpers/utils';
 import { useTranslation } from 'react-i18next';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 
 const bounceVariant = {
 	hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -45,9 +47,8 @@ const WorkCard = ({ work, index }) => {
 			onClick={handleCardClick}
 		>
 			<img src={work.image} alt={work.title} className='rounded-md object-cover w-[500px] h-[200px]' />
-			<div className='flex flex-col items-start justify-start pt-[20px] pr-[40px] pb-[40px]'>
+			<div className='flex flex-col items-start justify-start pt-[20px] pr-[40px] pb-[16px]'>
 				<h3 className='text-lg font-semibold mb-2 text-[#333]'>{work.title}</h3>
-				<p className='text-[#333] text-sm font-normal mb-2.5'>{truncateText(work.description, 12)}</p>
 				<div className='px-4 py-2 space-x-2 text-sm font-medium text-center text-white rounded-md bg-primary'>Devamını Oku</div>
 			</div>
 		</motion.div>

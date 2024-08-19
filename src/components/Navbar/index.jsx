@@ -105,32 +105,32 @@ const Navbar = () => {
 					</div>
 				</div>
 			</header>
-			<nav className='container px-4 mx-auto lg:px-0'>
+			<nav className='container w-full px-4 mx-auto lg:px-0 whitespace-nowrap'>
 				<div ref={ref} className='flex items-center justify-between h-20'>
 					<Link to='/' className='flex-shrink-0'>
 						<Logo />
 					</Link>
-
-					<div>
-						{anotherPage ? (
-							<Link to='/' className='hidden px-3 py-2 text-sm font-medium text-gray-800 rounded-md hover:text-gray-600 lg:block'>
-								{t('nav.home')}
-							</Link>
-						) : (
-							<div className='items-center hidden space-x-4 lg:flex'>
-								{menuItems.map((item) => (
-									<a
-										key={item.title}
-										href={item.href}
-										className='px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-gray-600'
-									>
-										{item.title}
-									</a>
-								))}
-							</div>
-						)}
+					<div className='flex items-center justify-center'>
+						<div>
+							{anotherPage ? (
+								<Link to='/' className='hidden px-3 py-2 text-sm font-medium text-gray-800 rounded-md lg:block'>
+									{t('nav.home')}
+								</Link>
+							) : (
+								<div className='items-center hidden text-center lg:space-x-4 lg:flex'>
+									{menuItems.map((item) => (
+										<a
+											key={item.title}
+											href={item.href}
+											className='px-3 py-2 text-base font-medium text-gray-800 rounded-md'
+										>
+											{item.title}
+										</a>
+									))}
+								</div>
+							)}
+						</div>
 					</div>
-
 					<div className='flex items-center space-x-2'>
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}
@@ -153,6 +153,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</nav>
+
 			<AnimatePresence>{isMobileMenuOpen && <NavMobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} anotherPage={anotherPage} />}</AnimatePresence>
 		</motion.nav>
 	);

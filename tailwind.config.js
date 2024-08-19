@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+	plugins: [require('@tailwindcss/typography')],
 	theme: {
 		extend: {
 			colors: {
@@ -9,13 +10,13 @@ export default {
 				appbggray: '#F2F5F9'
 			},
 			container: {
+				padding: '1rem',
 				center: true,
 				screens: {
-					sm: '100%', // Küçük ekranlarda %100 genişlik
-					md: '100%', // Orta ekranlarda %100 genişlik
-					lg: '800px', // Büyük ekranlarda 800px genişlik
-					xl: '1124px', // Çok büyük ekranlarda 1124px genişlik
-					'2xl': '1124px' // En büyük ekranlarda da 1124px genişlik
+					sm: '100%',
+					md: '100%',
+					lg: '800px',
+					xl: '1124px'
 				}
 			}
 		}

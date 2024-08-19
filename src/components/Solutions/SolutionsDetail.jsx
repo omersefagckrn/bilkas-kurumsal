@@ -1,4 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import { works } from '../../constants';
 import FixedIcons from '../FixedIcons';
 import Footer from '../Footer';
@@ -25,9 +27,11 @@ const BlogDetail = () => {
 			<main className='flex flex-col min-h-screen pt-32 select-none bg-gray-50'>
 				<div className='container flex flex-col w-full px-4 py-12 mx-auto lg:flex-row'>
 					<div className='w-full lg:w-3/4 lg:pr-8'>
-						<img src={work.image} alt={work.title} className='rounded-sm mb-8 shadow-lg w-full h-[400px]' />
-						<h1 className='mb-4 text-4xl font-semibold leading-tight text-gray-800'>{work.title}</h1>
-						<p className='text-lg leading-relaxed text-justify text-gray-700'>{work.description}</p>
+						<img src={work.image} alt={work.title} className='rounded-sm mb-8 shadow-lg w-full h-[400px] object-cover' />
+						<h1 className='mb-4 text-4xl font-bold leading-tight text-gray-800'>{work.title}</h1>
+						<ReactMarkdown rehypePlugins={[rehypeRaw]} className='prose prose-lg text-justify prose-headings:text-black prose-p:text-gray-700'>
+							{work.description}
+						</ReactMarkdown>
 					</div>
 					<div className='w-full lg:w-1/4'>
 						<div className='bg-white px-4 py-6 lg:px-[30px] lg:py-[40px] rounded-lg shadow-md mb-8 mt-10 lg:mt-0'>

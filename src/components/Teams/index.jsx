@@ -44,8 +44,8 @@ const Teams = () => {
 							variants={hoverEffect}
 						>
 							<img src={member.image} alt={member.name} className='object-cover w-24 h-24 mb-4 rounded-full shadow-lg' />
-							<p className='font-semibold text-appgray'>{member.name}</p>
-							<p className='font-bold text-appgray'>{member.position}</p>
+							<p className='font-bold text-black'>{member.name}</p>
+							<p className='text-[12px] font-semibold text-appgray'>{member.position}</p>
 						</motion.div>
 					))}
 				</div>

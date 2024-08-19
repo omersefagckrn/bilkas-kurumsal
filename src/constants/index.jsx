@@ -7,7 +7,7 @@ import BilgeImage from '../assets/teams/bilge.jpeg';
 import EcemImage from '../assets/teams/ecem.jpeg';
 import BaharImage from '../assets/teams/unknown_person.jpeg';
 
-export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';
+export const KURUMSAL_ADRES = 'Dumankaya Esentepe, S2, Milangaz Cd. No:75, 34870 Kartal/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
 export const KURUMSAL_NUMARA = '+90 531 297 1288';
 
@@ -149,45 +149,43 @@ export const categories = ['Tümü', 'Mali Müşavirlik Danışmanlığı', 'Öz
 export const works = [
 	{
 		id: 1,
-		title: 'Web Tasarımı',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=1',
-		description: 'Web tasarımı, bir web sitesinin kullanıcı deneyimini ve kullanıcı ara yüzünü planlama, düzenleme ve kodlama sürecidir. Web tasarımı, grafik tasarım, kullanıcı deneyimi tasarımı, ve ara yüz tasarımı gibi çeşitli disiplinlerin birleşiminden oluşur. Web tasarımcıları, kullanıcıların web sitesiyle etkileşim kurarken olumlu bir deneyim yaşamalarını sağlamak için renk paletleri, yazı tipleri, düzenler ve diğer görsel unsurlar kullanarak estetik ve işlevsel web siteleri yaratırlar. Modern web tasarımı, mobil cihazlar ve masaüstü bilgisayarlar arasında uyumlu çalışacak şekilde responsive (duyarlı) tasarım tekniklerini kullanarak gerçekleştirilir.'
-	},
-	{
-		id: 2,
-		title: 'Sosyal Medya Yönetimi',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=2',
-		description: 'Sosyal medya yönetimi, bir işletmenin sosyal medya platformlarında varlığını oluşturma, planlama, uygulama ve izleme sürecidir. Bu süreç, sosyal medya hesaplarının günlük yönetimini, içerik oluşturma ve paylaşma, takipçi etkileşimi, marka farkındalığını artırma ve sosyal medya kampanyalarının performansını ölçme gibi çeşitli görevleri içerir. Sosyal medya yöneticileri, marka imajını korurken hedef kitle ile anlamlı ilişkiler kurmak için stratejik içerik planları oluştururlar. Ayrıca, sosyal medya platformlarının algoritmalarını ve en iyi uygulamalarını anlamak, sosyal medya yönetiminin önemli bir parçasıdır.'
-	},
-	{
-		id: 3,
-		title: 'SEO',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=3',
-		description: 'Arama Motoru Optimizasyonu (SEO), bir web sitesinin arama motoru sonuç sayfalarında (SERP) daha üst sıralarda yer almasını sağlamak amacıyla yapılan çalışmalardır. SEO, hem teknik hem de içerik yönlerini kapsayan geniş bir alandır. Teknik SEO, site hızı, mobil uyumluluk, site yapısı ve güvenlik gibi unsurları içerirken, içerik SEO, anahtar kelime araştırması, kaliteli içerik oluşturma ve geri bağlantı (backlink) oluşturma gibi faaliyetleri içerir. SEO çalışmaları, arama motorlarının algoritmalarını anlama ve bu algoritmaların gereksinimlerine uygun olarak web sitesini optimize etme sürecidir.'
-	},
-	{
-		id: 4,
-		title: 'E-Ticaret Yönetimi',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=4',
-		description: 'E-ticaret yönetimi, bir çevrimiçi mağazanın tüm operasyonlarını yönetme sürecidir. Bu, ürün listeleme, stok yönetimi, sipariş işleme, müşteri hizmetleri ve pazarlama stratejileri gibi çeşitli görevleri içerir. E-ticaret yöneticileri, müşteri deneyimini optimize etmek için kullanıcı dostu bir web sitesi ve sorunsuz bir ödeme süreci sağlarlar. Ayrıca, satışları artırmak için çeşitli dijital pazarlama taktiklerini kullanarak müşteri trafiğini ve dönüşüm oranlarını artırırlar. E-ticaret yönetimi, sürekli olarak veri analizi yaparak performansı izlemeyi ve iş stratejilerini buna göre ayarlamayı gerektirir.'
-	},
-	{
-		id: 5,
-		title: 'Mobil Uygulama Geliştirme',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=5',
-		description: 'Mobil uygulama geliştirme, iOS ve Android gibi mobil platformlarda çalışan yazılımların tasarlanması ve oluşturulması sürecidir. Bu süreç, kullanıcı ihtiyaçlarını anlamaktan, uygulamanın arayüz tasarımına ve işlevselliğine kadar birçok aşamayı içerir. Mobil uygulama geliştiricileri, kullanıcı dostu ve performanslı uygulamalar oluşturmak için programlama dillerini (Swift, Kotlin, Java) ve mobil geliştirme araçlarını (Xcode, Android Studio) kullanırlar. Ayrıca, uygulamanın App Store ve Google Play Store gibi platformlarda yayınlanması ve kullanıcı geri bildirimlerine göre güncellemeler yapılması da bu sürecin bir parçasıdır.'
-	},
-	{
-		id: 6,
-		title: 'İçerik Pazarlama',
-		category: '',
-		image: 'https://picsum.photos/200/300?random=6',
-		description: 'İçerik pazarlama, hedef kitleyi çekmek ve onlarla etkileşim kurmak amacıyla değerli, alakalı ve tutarlı içerik oluşturma ve dağıtma stratejisidir. Bu strateji, blog yazıları, videolar, infografikler, podcastler ve sosyal medya gönderileri gibi çeşitli içerik türlerini içerir. İçerik pazarlama, marka bilinirliğini artırmak, potansiyel müşterilerle ilişkiler kurmak ve nihayetinde satışları artırmak için kullanılır. Başarılı içerik pazarlama, hedef kitleyi derinlemesine anlamayı ve onların ihtiyaçlarına yönelik çözümler sunmayı gerektirir.'
+		title: 'Kurumsal Web Sitesinde Olması Gerekenler',
+		category: 'Özel Yazılım Çözümleri',
+		image: 'https://img.freepik.com/free-photo/caucasian-businessman-office-shoot_53876-23471.jpg?t=st=1724106043~exp=1724109643~hmac=40ed9e4444c1c82e33c2a874afee90a4450579862b2e15d2eb46040c93e7f8cc&w=2000',
+		description: `
+### Mobil Uyumlu Tasarım
+
+Mobil uyumluluk, bir kurumsal web sitesi için artık bir seçenek değil, zorunluluk haline geldi. Mobil kullanıcıların sayısı hızla artarken, bu kitleyi göz ardı etmek, marka bilinirliği ve kullanıcı deneyimi açısından büyük riskler doğurabilir. Mobil cihazlarda kullanımı zor veya imkânsız olan bir web sitesi, potansiyel müşterilerinizi kaybetmenize ve kurumsal imajınıza zarar vermenize neden olabilir. Bizimle çalışarak tamamen mobil uyumlu ve kullanıcı dostu bir web sitesine sahip olabilirsiniz; böylece müşterilerinizin her platformda size kolayca ulaşmasını sağlarsınız.
+
+### Özgün ve Sektörel İçerikler
+
+Web sitenizin, sektörünüzle alakalı ve özgün içeriklerle dolu olması, Google'ın SEO kriterlerine göre arama motorlarında üst sıralarda yer almanızı sağlar. Kaliteli ve kullanıcı odaklı içerikler, hem ziyaretçi trafiğinizi artırır hem de şirketinizin prestijini ve popülerliğini pekiştirir. Markanızın kimliğini ve hedef kitlenizin beklentilerini dikkate alarak, size özel içerik stratejileri oluşturuyoruz. Blog sayfalarından hakkımızda ve iletişim bölümlerine kadar tüm içeriklerinizi optimize ediyoruz.
+
+### Görsel, Video ve Medya Kullanımı
+
+Web sitenizde kullanacağınız görsel, video ve diğer medya içerikleri, kurumsal kimliğinizi yansıtmalı ve özgün olmalıdır. Görseller, kullanıcıların dikkatini çeken ilk unsurlardan biridir ve web sitesinde kalma süresini doğrudan etkileyebilir. Doğru ve etkili görsel seçimleriyle, markanıza artı puan kazandıracak bir web sitesine sahip olabilirsiniz. Sosyal medya platformlarıyla entegre çalışan bir web sitesi için etkili görsel optimizasyonları sunuyoruz.
+
+### Kurumsal Web Sitesinin Avantajları
+
+Kurumsal bir web sitesi, şirketinizin dijital dünyada nasıl algılandığını doğrudan etkiler. İyi tasarlanmış bir web sitesi, şirketinizin hizmetlerini ve kurumsal imajını en iyi şekilde yansıtarak, müşterilerinizle aranızda güçlü bağlar kurmanıza yardımcı olur. Size özel çözümlerle kurumsal web sitenizi en yüksek standartlarda tasarlıyor ve optimize ediyoruz. SEO ile desteklenen bir web sitesi, arama motorlarında üst sıralara çıkarak, ziyaretçi sayınızı artırır ve rakiplerinizin önüne geçmenizi sağlar.
+
+### Kurumsal Web Sitesi Nasıl Oluşturulur?
+
+Kurumsal bir web sitesi oluşturmak, temel web tasarım, programlama, ara yüz kodlama ve veri girişi gibi adımları içerir. Bu süreçlerin profesyonel ellerde yapılması, markanızın dijital dünyada doğru bir şekilde temsil edilmesini sağlar. Web sitenizin sorunsuz çalışabilmesi için düzenli bakım ve onarım hizmetleri sunuyoruz. Web tasarım ve geliştirme sürecinde sizinle iş birliği yaparak, markanızın ihtiyaçlarına en uygun çözümleri sunuyoruz.
+
+### Kurumsal Web Sitesi Fiyatları
+
+Kurumsal web sitesi fiyatları, şirketin ihtiyaçlarına ve sektörüne göre değişiklik gösterir. Şirketinize özel web sitesi çözümleri sunuyor ve ihtiyaçlarınıza en uygun fiyatlandırmayı yapıyoruz. Hazır tasarımlar yerine, tamamen size özel bir web sitesi tasarımı ile markanızı en iyi şekilde temsil etmenizi sağlıyoruz.
+
+### Web Sitesi Kurma Araçları
+
+Web sitesi kurmak, temel bilgisayar becerilerinden, HTML, CSS ve JavaScript gibi web teknolojilerine kadar birçok unsuru içerir. Alan adı seçiminden barındırma hizmetine, içerik yönetim sistemi (CMS) kurulumundan görsel optimizasyonuna kadar tüm süreçleri sizin için yönetiyoruz. Profesyonel ekibimiz, web sitenizin en güncel teknolojilerle donatılmasını sağlıyor.
+
+### Yayın Sonrası Web Sitesi Bakımı
+
+Web sitesinin yayınlanması, sürecin sonu değil, başlangıcıdır. Düzenli bakım, web sitenizin sorunsuz çalışmasını sağlar. Web sitenizin düzenli bakımını üstleniyor, yıllık, 3 aylık, aylık ve haftalık periyotlarla gerekli kontrolleri yapıyoruz. Kullanıcı testi, güvenlik güncellemeleri ve broken link düzenlemeleri gibi işlemlerle web sitenizin performansını her zaman en üst seviyede tutuyoruz. Bilkas Dijital Reklam Ajansı olarak, web sitenizin yayın sonrası bakım süreçlerinde de size tam destek sağlıyoruz; böylece dijital dünyada her zaman bir adım önde olabilirsiniz.
+
+`
 	}
 ];
 
@@ -222,10 +220,7 @@ export const plans = [
 			'Code owners',
 			'Required reviewers',
 			'Pages and Wikis',
-			'Environment deployment branches and secrets',
-			'3,000 CI/CD minutes/month Free for public repositories',
-			'2GB of Packages storage Free for public repositories',
-			'Web-based support'
+			'Environment deployment branches and secrets'
 		],
 		buttonText: 'Continue with Team',
 		buttonLink: '#',
