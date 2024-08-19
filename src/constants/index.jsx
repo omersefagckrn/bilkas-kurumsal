@@ -2,6 +2,11 @@ import { FiDollarSign, FiPenTool, FiShare2 } from 'react-icons/fi';
 import { LuCode2 } from 'react-icons/lu';
 import { MdCampaign } from 'react-icons/md';
 
+import OmerImage from '../assets/teams/omer.jpeg';
+import BilgeImage from '../assets/teams/bilge.jpeg';
+import EcemImage from '../assets/teams/ecem.jpeg';
+import BaharImage from '../assets/teams/unknown_person.jpeg';
+
 export const KURUMSAL_ADRES = 'Adnan Menderes Blv. No:23 D:a, 34893 Pendik/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
 export const KURUMSAL_NUMARA = '+90 531 297 1288';
@@ -117,25 +122,25 @@ export const teams = [
 		id: '1',
 		name: 'Bahar Karaman',
 		position: 'Founder & CEO',
-		image: 'src/assets/teams/unknown_person.jpeg'
+		image: BaharImage
 	},
 	{
 		id: 2,
 		name: 'Bilge Kızmaz',
 		position: 'Digital Marketing Manager',
-		image: 'src/assets/teams/bilge.jpeg'
+		image: BilgeImage
 	},
 	{
 		id: 3,
 		name: 'Ömer Sefa Güçkıran',
 		position: 'Software Developer',
-		image: 'src/assets/teams/omer.jpeg'
+		image: OmerImage
 	},
 	{
 		id: 4,
 		name: 'Serra Ecem Güzey',
 		position: 'Creative Director',
-		image: 'src/assets/teams/ecem.jpeg'
+		image: EcemImage
 	}
 ];
 
