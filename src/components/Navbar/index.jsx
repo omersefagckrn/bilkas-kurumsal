@@ -73,7 +73,7 @@ const Navbar = () => {
 
 	const slideVariants = {
 		hidden: { y: '-100%' },
-		visible: { y: 0 }
+		visible: { y: 0, duration: 0.1 }
 	};
 
 	return (
@@ -107,13 +107,13 @@ const Navbar = () => {
 			</header>
 			<nav className='container w-full px-4 mx-auto lg:px-0 whitespace-nowrap'>
 				<div ref={ref} className='flex items-center justify-between h-20'>
-					<Link to='/' className='flex-shrink-0'>
+					<div className='flex-shrink-0'>
 						<Logo />
-					</Link>
+					</div>
 					<div className='flex items-center justify-center'>
 						<div>
 							{anotherPage ? (
-								<Link to='/' className='hidden px-3 py-2 text-sm font-medium text-gray-800 rounded-md lg:block'>
+								<Link to='/' className='hidden px-3 py-2 text-base font-medium text-black rounded-md lg:block'>
 									{t('nav.home')}
 								</Link>
 							) : (
@@ -122,7 +122,7 @@ const Navbar = () => {
 										<a
 											key={item.title}
 											href={item.href}
-											className='px-3 py-2 text-base font-medium text-gray-800 rounded-md'
+											className='px-3 py-2 text-base font-medium text-black rounded-md'
 										>
 											{item.title}
 										</a>

@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { useTranslation } from 'react-i18next';
 import { FiGlobe } from 'react-icons/fi';
 
 const LanguageSwitcher = () => {
-	const { i18n, t } = useTranslation();
+	const { i18n } = useTranslation();
 	const op = useRef(null);
 
 	const changeLanguage = (lng) => {

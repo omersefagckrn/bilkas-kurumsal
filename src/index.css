@@ -6,10 +6,11 @@
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #ff7518 #f1f1f1;
+    user-select: none !important;
 }
+
 
 @layer utilities {
     .category-list {

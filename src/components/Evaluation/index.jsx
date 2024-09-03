@@ -12,8 +12,8 @@ const fadeIn = {
 };
 
 const ServiceCard = ({ service }) => {
-	const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 	const navigate = useNavigate();
+	const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	const handleCardClick = () => {
 		navigate(`/evaluation/${toKebabCase(service.title)}`);
@@ -23,34 +23,33 @@ const ServiceCard = ({ service }) => {
 		<motion.div
 			onClick={handleCardClick}
 			ref={ref}
-			className='p-2 text-left cursor-pointer'
 			initial='hidden'
 			animate={inView ? 'visible' : 'hidden'}
 			whileHover='hover'
 			variants={fadeIn}
+			className='p-4 text-left transition-shadow bg-white rounded-lg shadow-md cursor-pointer hover:shadow-lg'
 		>
-			<div className='mb-4'>{service.icon}</div>
-			<h3 className='text-[18px] font-semibold mb-2'>{service.title}</h3>
-			<p className='text-base text-appgray'>{service.description}</p>
+			<div className='mb-4 text-primary'>{service.icon}</div>
+			<h3 className='mb-2 text-lg font-semibold'>{service.title}</h3>
+			<p className='text-sm text-appgray'>{service.description}</p>
 		</motion.div>
 	);
 };
 
 const Evaluation = () => {
-	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 	const { t } = useTranslation();
 	const EvaluationData = useEvaluationData();
+	const { ref: headerRef, inView: headerInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
 	return (
 		<section id='evaluation' className='py-12 bg-appbggray'>
-			<div className='container w-full px-6 mx-auto lg:px-0'>
-				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='max-w-[690px] text-left'>
-					<h2 className='text-[25px] md:text-[40px] font-semibold text-black tracking-[-0.2px]'>{t('evaluation.heading_1')}</h2>
-					<h2 className='text-[25px] md:text-[40px] font-semibold mb-[0.7em] text-black tracking-[-0.2px]'>{t('evaluation.heading_2')}</h2>
-
-					<p className='mb-12 text-base text-appgray'>{t('evaluation.paragraph')}</p>
+			<div className='container mx-auto'>
+				<motion.div ref={headerRef} initial='hidden' animate={headerInView ? 'visible' : 'hidden'} variants={fadeIn} className='mx-auto mb-12 text-left'>
+					<h2 className='mb-0 text-2xl font-semibold tracking-tight lg:mb-4 text-primary md:text-4xl'>{t('evaluation.heading_1')}</h2>
+					<h2 className='mb-4 text-2xl font-semibold tracking-tight text-black md:text-4xl'>{t('evaluation.heading_2')}</h2>
+					<p className='text-base text-appgray'>{t('evaluation.paragraph')}</p>
 				</motion.div>
-				<div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
+				<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
 					{EvaluationData.map((service, index) => (
 						<ServiceCard key={index} service={service} />
 					))}

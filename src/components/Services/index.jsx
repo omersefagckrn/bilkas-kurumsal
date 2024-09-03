@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import { AiFillStar } from 'react-icons/ai';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useServices } from '../../hooks/useServices';
@@ -48,7 +48,7 @@ const Services = () => {
 	const [expandedIndex, setExpandedIndex] = useState(null);
 	const { t } = useTranslation();
 	const services = useServices();
-	const controls = useAnimation();
+
 	const toggleDescription = (index) => {
 		setExpandedIndex(expandedIndex === index ? null : index);
 	};
@@ -63,23 +63,11 @@ const Services = () => {
 		threshold: 0.1
 	});
 
-	useEffect(() => {
-		if (sectionInView) {
-			controls.start('visible');
-		}
-	}, [sectionInView]);
-
-	useEffect(() => {
-		if (statsInView) {
-			controls.start('visible');
-		}
-	}, [statsInView]);
-
 	return (
 		<section id='services' className='py-12'>
 			<motion.div
 				ref={sectionRef}
-				className='container w-full px-6 mx-auto lg:px-0'
+				className='container w-full mx-auto'
 				initial={{ opacity: 0, y: 50 }}
 				animate={sectionInView ? { opacity: 1, y: 0 } : {}}
 				transition={{ duration: 0.5 }}

@@ -13,28 +13,24 @@ const variants = {
 		opacity: 1,
 		height: '100vh',
 		transition: {
-			duration: 0.3
+			duration: 0.25
 		}
 	},
 	closed: {
 		opacity: 0,
 		height: 0,
 		transition: {
-			duration: 0.3
+			duration: 0.25
 		}
 	}
 };
 
 const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 	useEffect(() => {
-		if (isOpen) {
-			document.body.style.overflow = 'hidden';
-		} else {
-			document.body.style.overflow = 'auto';
-		}
-
+		const originalOverflow = document.body.style.overflow;
+		document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 		return () => {
-			document.body.style.overflow = 'auto';
+			document.body.style.overflow = originalOverflow;
 		};
 	}, [isOpen]);
 

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link id="theme-link" rel="stylesheet" href="/themes/lara-light-blue/theme.css" />
-		<!-- FONTS APP -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
-		<!-- FONTS APP -->
-		<!-- FAVICON -->
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
 		<link rel="icon" href="/logo.svg" type="image/x-icon" />
-		<!-- FAVICON -->
 
 		<meta
 			name="description"
@@ -30,7 +25,6 @@
 		/>
 		<meta property="og:type" content="website" />
 
-		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Bilkas Dijital Reklam Ajansı" />
 		<meta
 			name="twitter:description"
@@ -47,11 +41,11 @@
 			let scrollPos = 0;
 
 			const scrollTitle = () => {
-				document.title = title.substring(scrollPos) + ' ' + title.substring(0, scrollPos);
+				document.title = title.slice(scrollPos) + ' ' + title.slice(0, scrollPos);
 				scrollPos = (scrollPos + 1) % title.length;
 			};
 
-			setInterval(scrollTitle, 150);
+			setInterval(scrollTitle, 200);
 		</script>
 	</body>
 </html>

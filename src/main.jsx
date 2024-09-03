@@ -2,26 +2,64 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './components/Home';
-import BlogDetail from './components/Solutions/SolutionsDetail';
+import BlogDetail from './components/Blog/BlogDetail';
 import EvaluationDetail from './components/Evaluation/EvaluationDetail';
+import Layout from './components/Layout';
+import About from './components/About';
 
 import './index.css';
 import './i18n';
-import 'primereact/resources/themes/saga-blue/theme.css';
+import '../node_modules/primereact/resources/themes/saga-blue/theme.css';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Home />
+		element: (
+			<Layout>
+				<Home />
+			</Layout>
+		)
 	},
 	{
 		path: '/blog/:title',
-		element: <BlogDetail />
+		element: (
+			<Layout>
+				<BlogDetail />
+			</Layout>
+		)
 	},
 	{
 		path: '/evaluation/:title',
-		element: <EvaluationDetail />
+		element: (
+			<Layout>
+				<EvaluationDetail />
+			</Layout>
+		)
+	},
+	{
+		path: '/about',
+		element: (
+			<Layout>
+				<About />
+			</Layout>
+		)
 	}
+	/* {
+		path: '/checkout',
+		element: (
+			<Layout>
+				<Checkout />
+			</Layout>
+		)
+	},
+	{
+		path: '/success',
+		element: (
+			<Layout>
+				<PaymentSuccessPage />
+			</Layout>
+		)
+	} */
 ]);
 
 createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);

@@ -6,24 +6,12 @@ import { KURUMSAL_NUMARA } from '../../constants';
 const Banner = () => {
 	const { t } = useTranslation();
 
-	const fadeInLeft = {
-		initial: { opacity: 0, x: -50 },
-		animate: { opacity: 1, x: 0 },
-		transition: { duration: 0.5 }
-	};
-
-	const fadeInRight = {
-		initial: { opacity: 0, x: 50 },
-		animate: { opacity: 1, x: 0 },
-		transition: { duration: 0.5 }
-	};
-
 	return (
-		<div id='banner' className='container w-full px-6 mx-auto lg:px-0'>
-			<section className='flex flex-col items-center justify-between gap-20 py-20 bg-white lg:py-24 md:flex-row'>
-				<motion.div {...fadeInLeft} className='w-full mb-8 md:mb-0'>
+		<div id='banner' className='container w-full py-12 mx-auto'>
+			<section className='flex flex-col items-center justify-between gap-20 md:flex-row'>
+				<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, ease: 'easeOut' }} className='w-full'>
 					<h2 className='mb-2 text-xl font-semibold text-primary md:text-2xl'>{t('banner.subtitle')}</h2>
-					<h1 className='mb-4 text-4xl font-bold leading-tight text-black md:text-6xl'>
+					<h1 className='mb-4 text-4xl font-bold leading-tight text-black md:text-5xl'>
 						{t('banner.title_1')} <span className='text-primary'>{t('banner.highlight_1')}</span> {t('banner.or')}{' '}
 						<span className='text-primary'>{t('banner.highlight_2')}</span>
 					</h1>
@@ -35,8 +23,13 @@ const Banner = () => {
 						{t('banner.button_text')} →
 					</a>
 				</motion.div>
-				<motion.div {...fadeInRight} className='flex items-center justify-center w-[75%] lg:w-[45%]'>
-					<img src={BannerImg} alt={t('banner.image_alt')} className='h-auto' />
+				<motion.div
+					initial={{ opacity: 0, scale: 0.95 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.3, ease: 'easeOut' }}
+					className='w-[75%] lg:w-[45%]'
+				>
+					<img src={BannerImg} alt={t('banner.image_alt')} className='w-full h-auto' />
 				</motion.div>
 			</section>
 		</div>

@@ -27,17 +27,17 @@ const Teams = () => {
 
 	return (
 		<section id='teams' className='py-12 bg-appbggray'>
-			<motion.div className='container w-full px-6 mx-auto lg:px-0' ref={ref} initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInEffect}>
+			<motion.div ref={ref} initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInEffect} className='container w-full mx-auto'>
 				<div className='mb-12 text-center'>
 					<h2 className='mb-2 text-3xl font-semibold'>{t('team.title')}</h2>
 					<p className='text-lg text-primary'>{t('team.subtitle')}</p>
 				</div>
 
-				<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4'>
+				<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
 					{teams.map((member) => (
 						<motion.div
 							key={member.id}
-							className='flex flex-col items-center p-6 transition-all duration-500 bg-white rounded-lg shadow-md'
+							className='flex flex-col items-center p-6 transition-transform duration-300 bg-white rounded-lg shadow-md'
 							initial={{ opacity: 0, scale: 0.9 }}
 							animate={{ opacity: 1, scale: 1 }}
 							whileHover='hover'
@@ -45,7 +45,7 @@ const Teams = () => {
 						>
 							<img src={member.image} alt={member.name} className='object-cover w-24 h-24 mb-4 rounded-full shadow-lg' />
 							<p className='font-bold text-black'>{member.name}</p>
-							<p className='text-[12px] font-semibold text-appgray'>{member.position}</p>
+							<p className='text-xs font-bold text-appgray'>{member.position}</p>
 						</motion.div>
 					))}
 				</div>

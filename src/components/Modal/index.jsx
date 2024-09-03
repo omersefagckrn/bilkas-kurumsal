@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'; // PropTypes paketini ekliyoruz
+import PropTypes from 'prop-types';
 import { Dialog } from 'primereact/dialog';
 
 const Modal = ({ header, visible, onHide, children }) => {

@@ -17,7 +17,6 @@ i18n.use(LanguageDetector)
 			}
 		},
 		fallbackLng: 'tr',
-		debug: true,
 		interpolation: {
 			escapeValue: false
 		}

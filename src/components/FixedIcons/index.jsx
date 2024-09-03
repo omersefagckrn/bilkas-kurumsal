@@ -11,11 +11,7 @@ const FixedIcons = () => {
 
 	useEffect(() => {
 		const toggleVisibility = () => {
-			if (window.scrollY > 300) {
-				setIsVisible(true);
-			} else {
-				setIsVisible(false);
-			}
+			setIsVisible(window.scrollY > 300);
 		};
 
 		window.addEventListener('scroll', toggleVisibility);
@@ -42,16 +38,16 @@ const FixedIcons = () => {
 				className='p-3 text-white bg-green-600 rounded-full shadow-md'
 				rel='noopener noreferrer'
 			>
-				<FaWhatsapp className='text-white' size={24} />
+				<FaWhatsapp size={24} />
 			</a>
 			<a href={`tel:${KURUMSAL_NUMARA}`} className='p-3 text-white bg-green-600 rounded-full shadow-md phone-icon'>
-				<FaPhone className='text-white' size={24} />
+				<FaPhone size={24} />
 			</a>
-			<div className='flex items-center justify-center p-3 text-white rounded-full cursor-pointer bg-primary' onClick={handleOpenModal}>
+			<button className='flex items-center justify-center p-3 text-white rounded-full shadow-md bg-primary' onClick={handleOpenModal}>
 				<FaCookieBite size={24} />
-			</div>
+			</button>
 			<Modal header={t('cookiePolicy.button')} visible={isModalOpen} onHide={handleCloseModal}>
-				<div className='mt-4 text-justify'>{t('cookiePolicy.message')}</div>
+				<div className='mt-4 text-left'>{t('cookiePolicy.message')}</div>
 			</Modal>
 		</div>
 	);
