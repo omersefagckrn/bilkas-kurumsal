@@ -64,9 +64,17 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 				) : (
 					<>
 						{menuItems.map((item) => (
-							<a key={item.title} href={item.href} className='text-2xl text-white hover:text-appgray' onClick={onClose}>
-								{item.title}
-							</a>
+							<span key={item.title}>
+								{item.href === '/about' ? (
+									<Link onClick={onClose} to={item.href} className='text-2xl text-white hover:text-appgray'>
+										{item.title}
+									</Link>
+								) : (
+									<a onClick={onClose} key={item.title} href={item.href} className='text-2xl text-white hover:text-appgray'>
+										{item.title}
+									</a>
+								)}
+							</span>
 						))}
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}

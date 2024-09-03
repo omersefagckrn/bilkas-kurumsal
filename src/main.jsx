@@ -44,22 +44,6 @@ const router = createBrowserRouter([
 			</Layout>
 		)
 	}
-	/* {
-		path: '/checkout',
-		element: (
-			<Layout>
-				<Checkout />
-			</Layout>
-		)
-	},
-	{
-		path: '/success',
-		element: (
-			<Layout>
-				<PaymentSuccessPage />
-			</Layout>
-		)
-	} */
 ]);
 
 createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);

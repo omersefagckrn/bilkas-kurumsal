@@ -119,18 +119,30 @@ const Navbar = () => {
 							) : (
 								<div className='items-center hidden text-center lg:space-x-4 lg:flex'>
 									{menuItems.map((item) => (
-										<a
-											key={item.title}
-											href={item.href}
-											className='px-3 py-2 text-base font-medium text-black rounded-md'
-										>
-											{item.title}
-										</a>
+										<span key={item.title}>
+											{item.href === '/about' ? (
+												<Link
+													to={item.href}
+													className='px-3 py-2 text-base font-medium text-black rounded-md'
+												>
+													{item.title}
+												</Link>
+											) : (
+												<a
+													key={item.title}
+													href={item.href}
+													className='px-3 py-2 text-base font-medium text-black rounded-md'
+												>
+													{item.title}
+												</a>
+											)}
+										</span>
 									))}
 								</div>
 							)}
 						</div>
 					</div>
+
 					<div className='flex items-center space-x-2'>
 						<a
 							href={`tel:${KURUMSAL_NUMARA}`}

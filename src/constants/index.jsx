@@ -26,7 +26,7 @@ export const NAV_MENU_ITEMS = (t) => {
 		{ href: '#blog', title: t('nav.blog') },
 		{ href: '#services', title: t('nav.services') },
 		{ href: '#contact', title: t('nav.contact') },
-		{ href: 'about', title: t('nav.about') }
+		{ href: '/about', title: t('nav.about') }
 	];
 };
 

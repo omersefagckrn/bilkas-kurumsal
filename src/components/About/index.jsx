@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import Banner from '../../assets/banner.svg';
-const AboutPage = () => {
+
+const About = () => {
 	const { t } = useTranslation();
 
 	const fadeIn = {
@@ -12,7 +13,7 @@ const AboutPage = () => {
 	return (
 		<div className='container py-12 mx-auto'>
 			<motion.div className='flex justify-center' initial='hidden' animate='visible' variants={fadeIn} transition={{ delay: 0.5 }}>
-				<img src={Banner} alt='About Us' className='mb-4 rounded-lg shadow-lg' />
+				<img src={Banner} alt={t('about.title')} className='mb-6 rounded-lg shadow-lg' />
 			</motion.div>
 
 			<motion.div initial='hidden' animate='visible' variants={fadeIn}>
@@ -28,4 +29,4 @@ const AboutPage = () => {
 	);
 };
 
-export default AboutPage;
+export default About;
