@@ -85,7 +85,7 @@ const Services = () => {
 					className='flex items-center justify-between mb-12'
 				>
 					<div className='text-center'>
-						<h3 className='text-5xl font-bold'>5+</h3>
+						<h3 className='text-4xl font-bold'>6+</h3>
 						<p className='text-lg'>{t('servicesSection.solutions')}</p>
 						<div className='flex justify-center mt-2'>
 							{[...Array(5)].map((_, i) => (
@@ -94,7 +94,7 @@ const Services = () => {
 						</div>
 					</div>
 					<div className='text-center'>
-						<h3 className='text-5xl font-bold'>12+</h3>
+						<h3 className='text-4xl font-bold'>55+</h3>
 						<p className='text-lg'>{t('servicesSection.happyClients')}</p>
 					</div>
 				</motion.div>

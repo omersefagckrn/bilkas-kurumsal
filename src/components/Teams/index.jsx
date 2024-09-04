@@ -33,8 +33,27 @@ const Teams = () => {
 					<p className='text-lg text-primary'>{t('team.subtitle')}</p>
 				</div>
 
-				<div className='grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3'>
-					{teams.map((member) => (
+				{/* First Row with 3 People */}
+				<div className='grid grid-cols-1 gap-6 md:grid-cols-3'>
+					{teams.slice(0, 3).map((member) => (
+						<motion.div
+							key={member.id}
+							className='flex flex-col items-center p-6 transition-transform duration-300 bg-white rounded-lg shadow-md'
+							initial={{ opacity: 0, scale: 0.9 }}
+							animate={{ opacity: 1, scale: 1 }}
+							whileHover='hover'
+							variants={hoverEffect}
+						>
+							<img src={member.image} alt={member.name} className='object-cover w-24 h-24 mb-4 rounded-full shadow-lg' />
+							<p className='font-bold text-black'>{member.name}</p>
+							<p className='text-xs font-bold text-appgray'>{member.position}</p>
+						</motion.div>
+					))}
+				</div>
+
+				{/* Second Row with 2 People, centered with max width */}
+				<div className='grid grid-cols-1 gap-6 mx-auto md:grid-cols-2 md:max-w-[65.7%] mt-6'>
+					{teams.slice(3, 5).map((member) => (
 						<motion.div
 							key={member.id}
 							className='flex flex-col items-center p-6 transition-transform duration-300 bg-white rounded-lg shadow-md'

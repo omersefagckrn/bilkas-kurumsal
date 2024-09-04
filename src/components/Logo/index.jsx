@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
 import AppLogo from '../../assets/logo.svg';
+import { HashLink } from 'react-router-hash-link';
 
 const Logo = () => {
 	return (
-		<Link to='/' className='flex items-center justify-center'>
+		<HashLink to='/' className='flex items-center justify-center'>
 			<img src={AppLogo} alt='Logo' className='w-36' />
-		</Link>
+		</HashLink>
 	);
 };
 

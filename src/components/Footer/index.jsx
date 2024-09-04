@@ -31,7 +31,7 @@ const Footer = () => {
 					>
 						<div className='space-y-2 text-[14px]'>
 							<div className='pb-2 mb-2 text-lg font-bold border-b text-primary'>{t('footer.about')}</div>
-							<div className='font-semibold text-left'>{t('footer.aboutDescription')}</div>
+							<div className='text-left'>{t('footer.aboutDescription')}</div>
 						</div>
 						<div className='hidden pt-10 lg:flex'>
 							<Logo />
@@ -41,7 +41,7 @@ const Footer = () => {
 					<motion.div ref={ref} className='text-[14px]' initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInUp}>
 						<div className='pb-2 mb-2 text-lg font-bold border-b text-primary'>{t('footer.contact')}</div>
 						<div className='flex items-center mb-3'>
-							<FiMapPin size={18} className='mr-2' />
+							<FiMapPin size={22} className='mr-2' />
 							<div>{KURUMSAL_ADRES}</div>
 						</div>
 						<a href={`tel:${KURUMSAL_NUMARA}`} className='flex items-center mb-3'>
@@ -56,9 +56,9 @@ const Footer = () => {
 
 					<motion.div ref={ref} initial='hidden' animate={inView ? 'visible' : 'hidden'} variants={fadeInUp}>
 						<iframe
-							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.359728316154!2d29.199280099999996!3d40.907857799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5b2503f514f%3A0x201d85bc7e3203fb!2sDumankaya%20Vizyon!5e0!3m2!1sen!2str!4v1724105058750!5m2!1sen!2str'
+							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.464488250822!2d29.1968173!3d40.9055604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5ac086d81a5%3A0x930c1dd20c470a2b!2sBilkas%20Dijital%20Reklam%20Ajans%C4%B1!5e0!3m2!1sen!2str!4v1725441337381!5m2!1sen!2str'
 							width='100%'
-							height='300'
+							height='350'
 							loading='lazy'
 							title='Kurum Adres'
 						></iframe>

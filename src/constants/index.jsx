@@ -10,7 +10,7 @@ import BaharImage from '../assets/teams/unknown_person.jpeg';
 import WildanImage from '../assets/teams/wildan.jpeg';
 import Petek from '../assets/company/petek.png';
 
-export const KURUMSAL_ADRES = 'Dumankaya Esentepe, S2, Milangaz Cd. No:75, 34870 Kartal/İstanbul';
+export const KURUMSAL_ADRES = 'Esentepe, Milangaz Cd. Dumankaya Vizyon S2 No: 77, 34870 Kartal/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
 export const KURUMSAL_NUMARA = '+90 531 297 1288';
 
@@ -22,11 +22,11 @@ export const KURUMSAL_FACEBOOK = 'https://www.facebook.com/share/dQeX4d2eo4mSP32
 export const NAV_MENU_ITEMS = (t) => {
 	return [
 		{ href: '#banner', title: t('nav.home') },
+		{ href: '/about', title: t('nav.about') },
+		{ href: '#services', title: t('nav.services') },
 		{ href: '#evaluation', title: t('nav.solutions') },
 		{ href: '#blog', title: t('nav.blog') },
-		{ href: '#services', title: t('nav.services') },
-		{ href: '#contact', title: t('nav.contact') },
-		{ href: '/about', title: t('nav.about') }
+		{ href: '#contact', title: t('nav.contact') }
 	];
 };
 
@@ -490,7 +490,7 @@ UI tasarımı, bir ürünün başarısında kritik bir rol oynamaktadır. Bilkas
 		id: 8,
 		title: 'Şahıs Şirketi Nasıl Kurulur?',
 		category: 'Şirket Kurulum Danışmanlığı',
-		image: 'https://img.freepik.com/free-photo/businessman-using-laptop-steps_23-2147932203.jpg?t=st=1724248606~exp=1724252206~hmac=3eb6f50b5125c2e9d072769678d57d57a516683d2db9e8b5f6cf995def0ade4d&w=2000',
+		image: 'https://uploads.mikro.com.tr/sahis_sirketi_nasil_kurulur_1d7c600cb1.jpg',
 		description: `
 Şahıs şirketi, sahibi tek olan, tüzel kişiliği olmayan, tek bir kişi veya az sayıda ortak ile kurulan ticari nitelikli bir işletme türüdür. Şahıs şirketinde ortaklar; gelir, gider ve borçlardan kişisel olarak sorumlu tutulur. Bu şirket yapısı, hızlı, kolay ve düşük maliyetle kuruluş avantajı nedenleri ile genç girişimciler veya yeni iş sahipleri tarafından tercih edilir.
 
@@ -882,7 +882,7 @@ Anonim şirket kurulumu ile ilgili tüm aşamalarda profesyonel destek almak ve 
 		id: 10,
 		title: 'İnternet Vergi Dairesi Nedir?',
 		category: 'Şirket Kurulum Danışmanlığı',
-		image: 'https://img.freepik.com/free-photo/corporate-businessmen-working-tablet-office_53876-97637.jpg?t=st=1724248469~exp=1724252069~hmac=fd3bab3abe7ad470c62556ac26a998724bcbb8ee9ba0c6c95e02f693a062af64&w=2000',
+		image: 'https://blog.mukellef.co/wp-content/uploads/2023/07/Danismanlik-Sirketi-Kurmak-icin-Bilmeniz-Gerekenler.png',
 		description: `
 İnternet Vergi Dairesi, Gelir İdaresi Başkanlığı tarafından sunulan bir çevrimiçi platformdur. Bu platform, vergi mükelleflerinin fiziksel vergi dairelerine gitmeden birçok işlemi internet üzerinden yapabilmelerini sağlar. Bu sayede, vergi dairelerinde oluşan iş yükü azalır ve işlemler daha hızlı bir şekilde gerçekleştirilir. İnternet Vergi Dairesi üzerinden vergi borcu sorgulama, ödeme ve çeşitli diğer işlemler yapılabilir.
 

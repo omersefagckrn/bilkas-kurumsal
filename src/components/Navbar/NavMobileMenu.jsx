@@ -7,6 +7,7 @@ import { BiSolidOffer } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { useMenuItems } from '../../hooks/useMenuItems';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 const variants = {
 	open: {
@@ -65,15 +66,9 @@ const NavMobileMenu = ({ isOpen, onClose, anotherPage }) => {
 					<>
 						{menuItems.map((item) => (
 							<span key={item.title}>
-								{item.href === '/about' ? (
-									<Link onClick={onClose} to={item.href} className='text-2xl text-white hover:text-appgray'>
-										{item.title}
-									</Link>
-								) : (
-									<a onClick={onClose} key={item.title} href={item.href} className='text-2xl text-white hover:text-appgray'>
-										{item.title}
-									</a>
-								)}
+								<HashLink smooth to={item.href} onClick={onClose} key={item.title} className='text-2xl text-white hover:text-appgray'>
+									{item.title}
+								</HashLink>
 							</span>
 						))}
 						<a

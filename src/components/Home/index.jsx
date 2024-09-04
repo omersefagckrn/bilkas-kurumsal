@@ -1,5 +1,4 @@
 import Evaluation from '../Evaluation';
-import Pricing from '../Pricing';
 import Services from '../Services';
 import Blog from '../Blog';
 import Banner from '../Banner';
@@ -11,7 +10,6 @@ const Home = () => {
 		<>
 			<Banner />
 			<Evaluation />
-			{/* <Pricing /> */}
 			<Teams />
 			<OurSupports />
 			<Blog />

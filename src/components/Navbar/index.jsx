@@ -12,6 +12,7 @@ import { BiSolidOffer } from 'react-icons/bi';
 import { useMenuItems } from '../../hooks/useMenuItems';
 import LanguageSwitcher from '../../LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -119,24 +120,14 @@ const Navbar = () => {
 							) : (
 								<div className='items-center hidden text-center lg:space-x-4 lg:flex'>
 									{menuItems.map((item) => (
-										<span key={item.title}>
-											{item.href === '/about' ? (
-												<Link
-													to={item.href}
-													className='px-3 py-2 text-base font-medium text-black rounded-md'
-												>
-													{item.title}
-												</Link>
-											) : (
-												<a
-													key={item.title}
-													href={item.href}
-													className='px-3 py-2 text-base font-medium text-black rounded-md'
-												>
-													{item.title}
-												</a>
-											)}
-										</span>
+										<HashLink
+											key={item.title}
+											smooth
+											to={item.href}
+											className='px-3 py-2 text-base font-medium text-black rounded-md'
+										>
+											{item.title}
+										</HashLink>
 									))}
 								</div>
 							)}

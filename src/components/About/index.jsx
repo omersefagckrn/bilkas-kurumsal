@@ -17,7 +17,7 @@ const About = () => {
 			</motion.div>
 
 			<motion.div initial='hidden' animate='visible' variants={fadeIn}>
-				<h1 className='mb-4 text-4xl font-bold'>{t('about.title')}</h1>
+				<h1 className='mb-4 text-2xl font-bold'>{t('about.title')}</h1>
 				<p className='text-lg text-gray-700'>{t('about.description')}</p>
 			</motion.div>
 
