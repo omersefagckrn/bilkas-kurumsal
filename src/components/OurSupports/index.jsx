@@ -38,7 +38,7 @@ const OurSupports = () => {
 				{KURUMSAL_LOGO.slice(0, 4).map((logo) => (
 					<motion.div
 						key={logo.src}
-						className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${logo.isWhite ? 'bg-primary' : 'bg-white'}`}
+						className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md`}
 						initial={logoAnimation.initial}
 						animate={logoAnimation.animate}
 						whileHover='hover'
@@ -53,7 +53,7 @@ const OurSupports = () => {
 				{KURUMSAL_LOGO.slice(4, 6).map((logo) => (
 					<motion.div
 						key={logo.src}
-						className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md ${logo.isWhite ? 'bg-primary' : 'bg-white'}`}
+						className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md`}
 						initial={logoAnimation.initial}
 						animate={logoAnimation.animate}
 						whileHover='hover'

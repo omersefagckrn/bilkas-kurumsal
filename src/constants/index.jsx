@@ -9,6 +9,7 @@ import EcemImage from '../assets/teams/ecem.jpeg';
 import BaharImage from '../assets/teams/unknown_person.jpeg';
 import WildanImage from '../assets/teams/wildan.jpeg';
 import Petek from '../assets/company/petek.png';
+import TemKurye from '../assets/company/temkurye.svg';
 
 export const KURUMSAL_ADRES = 'Esentepe, Milangaz Cd. Dumankaya Vizyon S2 No: 77, 34870 Kartal/İstanbul';
 export const KURUMSAL_EMAIL = 'info@bilkas.com';
@@ -103,9 +104,9 @@ export const KURUMSAL_LOGO = [
 		isWhite: false
 	},
 	{
-		src: 'https://kutaspack.com.tr/wp-content/uploads/2023/08/kutas-logo-beyaz-new.svg',
-		alt: 'Kutaş Pack',
-		isWhite: true
+		src: 'https://benergroup.com/wp-content/uploads/2024/06/Adsiz-tasarim.png',
+		alt: 'Bener Group "Uluslararası Lojistik Firması"',
+		isWhite: false
 	},
 	{
 		src: 'https://static.ticimax.cloud/55900//uploads/editoruploads/logo-new.png',
@@ -113,18 +114,18 @@ export const KURUMSAL_LOGO = [
 		isWhite: false
 	},
 	{
-		src: 'https://www.temkurye.com/assets/svg/app-logo.svg',
-		alt: 'Tem Kurye',
-		isWhite: true
-	},
-	{
 		src: 'https://www.kuveytturk.com.tr/_assets/svg/logo.svg',
 		alt: 'Kuveyt Türk',
 		isWhite: false
 	},
 	{
-		src: 'https://www.tanyildizisigorta.com/wp-content/uploads/tanyildizi_logo.svg',
-		alt: 'Tanyıldızı Sigorta',
+		src: 'https://www.enkarsigorta.com/images/logo.png',
+		alt: 'Enkar Sigorta Aracılık Hizmetleri',
+		isWhite: false
+	},
+	{
+		src: TemKurye,
+		alt: 'Tem Kurye',
 		isWhite: false
 	}
 ];
@@ -882,7 +883,7 @@ Anonim şirket kurulumu ile ilgili tüm aşamalarda profesyonel destek almak ve 
 		id: 10,
 		title: 'İnternet Vergi Dairesi Nedir?',
 		category: 'Şirket Kurulum Danışmanlığı',
-		image: 'https://blog.mukellef.co/wp-content/uploads/2023/07/Danismanlik-Sirketi-Kurmak-icin-Bilmeniz-Gerekenler.png',
+		image: 'https://cdn.prod.website-files.com/63ad299e67a7fc19da2b5a3c/65521de98677e240f405a323_blog-gorsel-01-1311.png',
 		description: `
 İnternet Vergi Dairesi, Gelir İdaresi Başkanlığı tarafından sunulan bir çevrimiçi platformdur. Bu platform, vergi mükelleflerinin fiziksel vergi dairelerine gitmeden birçok işlemi internet üzerinden yapabilmelerini sağlar. Bu sayede, vergi dairelerinde oluşan iş yükü azalır ve işlemler daha hızlı bir şekilde gerçekleştirilir. İnternet Vergi Dairesi üzerinden vergi borcu sorgulama, ödeme ve çeşitli diğer işlemler yapılabilir.
 
