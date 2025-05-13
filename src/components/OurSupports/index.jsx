@@ -50,7 +50,7 @@ const OurSupports = () => {
 			</div>
 
 			<div className='flex flex-wrap items-center justify-center mt-6'>
-				{KURUMSAL_LOGO.slice(4, 6).map((logo) => (
+				{KURUMSAL_LOGO.slice(4, 7).map((logo) => (
 					<motion.div
 						key={logo.src}
 						className={`flex justify-center items-center p-4 m-2 w-[200px] h-[100px] rounded-lg shadow-md`}

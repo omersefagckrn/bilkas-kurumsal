@@ -127,6 +127,11 @@ export const KURUMSAL_LOGO = [
 		src: TemKurye,
 		alt: 'Tem Kurye',
 		isWhite: false
+	},
+	{
+		src: 'https://www.garantibbva.com.tr/content/experience-fragments/public-website/tr/site/header/master1/_jcr_content/root/header/headermobile/image.coreimg.svg/1699885503269/logo.svg',
+		alt: 'Garanti BBVA',
+		isWhite: false
 	}
 ];
 
